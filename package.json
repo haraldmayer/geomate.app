@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "build:prod": "node scripts/compile-pois.js && NODE_ENV=production astro build && node scripts/cleanup-cms.js",
+    "build:prod": "node scripts/compile-pois.js && node scripts/prepare-static-build.js && NODE_ENV=production astro build --config astro.config.prod.mjs && node scripts/restore-after-build.js",
     "preview": "astro preview",
     "astro": "astro"
   },

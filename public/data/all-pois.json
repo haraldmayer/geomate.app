@@ -1,0 +1,1847 @@
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.364086589301394,
+        48.19818869640931
+      ]
+    },
+    "properties": {
+      "name": "Rösterei Alt Wien",
+      "category": "cafe",
+      "description": {
+        "de": "Wiens erste moderne Kaffeerösterei mit Single-Origin und Bio-Kaffees aus aller Welt.",
+        "en": "Wiens erste moderne Kaffeerösterei mit Single-Origin und Bio-Kaffees aus aller Welt."
+      },
+      "link": "https://www.falter.at/zeitung/20221130/holzer-im-graetzel-schleifmuehlgasse",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765274869129_0000"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.359819554512733,
+        48.19250462346606
+      ]
+    },
+    "properties": {
+      "name": "Filmcasino",
+      "category": "cinema",
+      "description": {
+        "de": "Traditionelles Programmkino mit ausgewählten Arthouse-Filmen und Klassikern.",
+        "en": "Traditionelles Programmkino mit ausgewählten Arthouse-Filmen und Klassikern."
+      },
+      "link": "https://www.filmcasino.at",
+      "id": "poi_1765274869129_0001"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.364,
+        48.1985
+      ]
+    },
+    "properties": {
+      "name": "Naschmarkt",
+      "category": "market",
+      "description": {
+        "de": "Wiens bekanntester Markt mit internationalen Spezialitäten, frischen Produkten und Gastronomiebetrieben.",
+        "en": "Wiens bekanntester Markt mit internationalen Spezialitäten, frischen Produkten und Gastronomiebetrieben."
+      },
+      "link": "https://www.wien.info/de/einkaufen-essen-trinken/maerkte/naschmarkt-333208",
+      "id": "poi_1765274869130_0002"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.3658069,
+        48.1979108
+      ]
+    },
+    "properties": {
+      "name": "Bao Bar",
+      "category": "restaurant",
+      "description": {
+        "de": "Modernes Asian Diner mit Baozi (gedämpfte chinesische Teigtaschen) und asiatischer Fusionsküche. Drei Standorte in Wien.",
+        "en": "Modernes Asian Diner mit Baozi (gedämpfte chinesische Teigtaschen) und asiatischer Fusionsküche. Drei Standorte in Wien."
+      },
+      "link": "https://www.baobar.at",
+      "id": "poi_1765274869130_0003"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.3294563,
+        48.2022857
+      ]
+    },
+    "properties": {
+      "name": "Buchkontor",
+      "category": "bookshop",
+      "description": {
+        "de": "Unabhängige Buchhandlung am Kriemhildplatz seit 16 Jahren. Kuratierte Auswahl mit persönlicher Beratung von Inhaberin Ulla Harms.",
+        "en": "Unabhängige Buchhandlung am Kriemhildplatz seit 16 Jahren. Kuratierte Auswahl mit persönlicher Beratung von Inhaberin Ulla Harms."
+      },
+      "link": "http://www.buchkontor.at",
+      "id": "poi_1765274869130_0004"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.3294563,
+        48.2022857
+      ]
+    },
+    "properties": {
+      "name": "franzundjulius",
+      "category": "cafe",
+      "description": {
+        "de": "Café in umgebauter Tischlerwerkstatt. Benannt nach den Gebrüdern Franz und Julius Huber, den ursprünglichen Architekten. Serviert Kaffee aus lokaler Röstung, hausgemachte Kuchen und regionale Getränke.",
+        "en": "Café in umgebauter Tischlerwerkstatt. Benannt nach den Gebrüdern Franz und Julius Huber, den ursprünglichen Architekten. Serviert Kaffee aus lokaler Röstung, hausgemachte Kuchen und regionale Getränke."
+      },
+      "link": "https://www.franzundjulius.at",
+      "id": "poi_1765274869130_0005"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.330189,
+        48.20195
+      ]
+    },
+    "properties": {
+      "name": "Café Kriemhild",
+      "category": "breakfast",
+      "description": {
+        "de": "Gemütliches Kulturcafé mit saisonalem Gastgarten. Bekannt für Shakshuka und entspannte Atmosphäre. Billardtisch im Innenbereich.",
+        "en": "Gemütliches Kulturcafé mit saisonalem Gastgarten. Bekannt für Shakshuka und entspannte Atmosphäre. Billardtisch im Innenbereich."
+      },
+      "link": "http://www.kulturcafe-kriemhild.at",
+      "id": "poi_1765274869130_0006"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.326765,
+        48.202381
+      ]
+    },
+    "properties": {
+      "name": "Schutzhaus Zukunft",
+      "category": "gasthaus",
+      "description": {
+        "de": "Traditionelles Wiener Gasthaus auf der Schmelz mit Biergarten. Veranstaltet Kulturprogramm und serviert klassische Wiener Küche.",
+        "en": "Traditionelles Wiener Gasthaus auf der Schmelz mit Biergarten. Veranstaltet Kulturprogramm und serviert klassische Wiener Küche."
+      },
+      "link": "https://www.schutzhaus-zukunft.at",
+      "id": "poi_1765274869130_0007"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.3279644,
+        48.2037131
+      ]
+    },
+    "properties": {
+      "name": "Alles Fahnen",
+      "category": "shop",
+      "description": {
+        "de": "Fahnenmanufaktur seit 1982. Spezialisiert auf individuelle Fahnen, diplomatische Banner und personalisierte Wimpelgirlanden.",
+        "en": "Fahnenmanufaktur seit 1982. Spezialisiert auf individuelle Fahnen, diplomatische Banner und personalisierte Wimpelgirlanden."
+      },
+      "link": "https://www.allesfahnen.at",
+      "id": "poi_1765274869130_0008"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.376981,
+        48.217386
+      ]
+    },
+    "properties": {
+      "name": "Karmelitermarkt",
+      "category": "market",
+      "description": {
+        "de": "Einer der schönsten Märkte Wiens mit vielfältigen Ständen, Cafés und Restaurants in einem lebendigen Viertel.",
+        "en": "Einer der schönsten Märkte Wiens mit vielfältigen Ständen, Cafés und Restaurants in einem lebendigen Viertel."
+      },
+      "link": "https://www.wien.gv.at/freizeit/karmelitermarkt-1020",
+      "id": "poi_1765274869130_0009"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36674992567765,
+        48.197624900430014
+      ]
+    },
+    "properties": {
+      "name": "Crupi",
+      "category": "lebensmittelgeschaeft",
+      "description": {
+        "de": "Sizilianische Spezialitäten",
+        "en": "Sizilianische Spezialitäten"
+      },
+      "link": "https://www.crupi.at/",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765274869130_0010"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36534444823908,
+        48.19910522898673
+      ]
+    },
+    "properties": {
+      "name": "Postamt",
+      "category": "post-office",
+      "description": {
+        "de": "Kleines Postamt",
+        "en": "Kleines Postamt"
+      },
+      "link": "",
+      "id": "poi_1765274869131_0011"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.358475328835407,
+        48.19277444701453
+      ]
+    },
+    "properties": {
+      "name": "John Harris 1040",
+      "category": "gym",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://www.johnharris.at/de/studios/detail/2/margaretenplatz.html",
+      "id": "poi_1765274869131_0012"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36443382382972,
+        48.19786513449719
+      ]
+    },
+    "properties": {
+      "name": "Babette's",
+      "category": "bookshop",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://babettes.at/",
+      "instagram": "",
+      "photo": "/uploads/poi_1765602020265.jpg",
+      "tags": [],
+      "id": "poi_1765274869131_0013"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36596075451302,
+        48.19827685274822
+      ]
+    },
+    "properties": {
+      "name": "SHU",
+      "category": "restaurant",
+      "description": {
+        "de": "Sichuan 🌶️",
+        "en": "Sichuan 🌶️"
+      },
+      "link": "",
+      "id": "poi_1765274869131_0014"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.366054606373545,
+        48.19796485686659
+      ]
+    },
+    "properties": {
+      "name": "Matcha Komachi",
+      "category": "restaurant",
+      "description": {
+        "de": "Sushi, Bento, Bulgogi, Takeaway Onigiri",
+        "en": "Sushi, Bento, Bulgogi, Takeaway Onigiri"
+      },
+      "link": "https://www.matchakomachi.com/",
+      "id": "poi_1765274869131_0015"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36017068166236,
+        48.1959801840249
+      ]
+    },
+    "properties": {
+      "name": "XO",
+      "category": "restaurant",
+      "description": {
+        "de": "among the best burgers in town",
+        "en": "among the best burgers in town"
+      },
+      "link": "http://www.xo-grill.at/",
+      "id": "poi_1765274869131_0016"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.333178941181767,
+        48.18083737443849
+      ]
+    },
+    "properties": {
+      "name": "Meidlinger Markt",
+      "category": "market",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "id": "poi_1765275205509_w5p13bcym"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.336786284184004,
+        48.214419205523726
+      ]
+    },
+    "properties": {
+      "name": "Yppenplatz",
+      "category": "market",
+      "description": {
+        "de": "Samstagsmarkt",
+        "en": "Samstagsmarkt"
+      },
+      "link": "",
+      "instagram": "",
+      "tags": [],
+      "id": "poi_1765275411428_9qljz6ydm"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.336405071639252,
+        48.21386698449984
+      ]
+    },
+    "properties": {
+      "name": "KENT",
+      "category": "restaurant",
+      "description": {
+        "de": "Mutterschiff der türkischen Gastro in Wien",
+        "en": "Mutterschiff der türkischen Gastro in Wien"
+      },
+      "link": "http://www.kentrestaurant.at/",
+      "tags": [
+        "tuerkisch"
+      ],
+      "id": "poi_1765275696103_horj8pmur"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.33443095753456,
+        48.214949969320706
+      ]
+    },
+    "properties": {
+      "name": "Wetter",
+      "category": "restaurant",
+      "description": {
+        "de": "Ligurische Küche",
+        "en": "Ligurische Küche"
+      },
+      "link": "http://www.restaurantwetter.net/",
+      "id": "poi_1765276613531_e4x2pt3mh"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.309383738835734,
+        48.201338755800656
+      ]
+    },
+    "properties": {
+      "name": "Breitenseer Lichtspiele",
+      "category": "cinema",
+      "description": {
+        "de": "Ältestes Kino Wiens",
+        "en": "Ältestes Kino Wiens"
+      },
+      "link": "https://www.breitenseer-lichtspiele.at/",
+      "id": "poi_1765277602818_pnkzhrayo"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.309314527689487,
+        48.2018316401354
+      ]
+    },
+    "properties": {
+      "name": "Anna & Jagetsberger",
+      "category": "cafe",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://anna-jagetsberger.at/",
+      "id": "poi_1765277663978_g2j5d7y51"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.358965535143362,
+        48.19688074840358
+      ]
+    },
+    "properties": {
+      "name": "U Kettenbrückengasse",
+      "category": "subway-station",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [
+        "u4"
+      ],
+      "id": "poi_1765279262983_996c7qpf5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.38622933933484,
+        48.223156716587894
+      ]
+    },
+    "properties": {
+      "name": "Volkertmarkt",
+      "category": "market",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765280273752_l9e5g2pdx"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.402189025841516,
+        48.22171017750721
+      ]
+    },
+    "properties": {
+      "name": "Vorgartenmarkt",
+      "category": "market",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765280305288_vec0gry2w"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.401962554185303,
+        48.22193544228238
+      ]
+    },
+    "properties": {
+      "name": "Chicken Karate",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765280336645_tznalctnq"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36455168536053,
+        48.19802091921777
+      ]
+    },
+    "properties": {
+      "name": "Anzengruber",
+      "category": "cafe",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765280402823_mhddqn0al"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.319089608149362,
+        48.19624819514787
+      ]
+    },
+    "properties": {
+      "name": "Gasthaus Jagetsberger",
+      "category": "gasthaus",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [
+        "wiener-kueche"
+      ],
+      "id": "poi_1765294330841_i011cqu5p"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36663276180235,
+        48.19662346278224
+      ]
+    },
+    "properties": {
+      "name": "Blumenkraft",
+      "category": "blumengeschaeft",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765294415842_btjhx58n8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.366153285043467,
+        48.19658500721967
+      ]
+    },
+    "properties": {
+      "name": "Wunderl",
+      "category": "schuhgeschaeft",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765294452662_8fw2r6st0"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36531453933356,
+        48.19704141449791
+      ]
+    },
+    "properties": {
+      "name": "Schikaneder Kino & Bar",
+      "category": "cinema",
+      "description": {
+        "de": "Kino + Bar",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765295329999_6c16edf7p"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.366835583511342,
+        48.19521835895723
+      ]
+    },
+    "properties": {
+      "name": "Zur Herknerin",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765301215244_1u45087vn"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.3642968105189,
+        48.19681078039623
+      ]
+    },
+    "properties": {
+      "name": "Home",
+      "category": "home",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765301258081_r80rnd5f0"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.35976898338075,
+        48.19455064540735
+      ]
+    },
+    "properties": {
+      "name": "Weinschenke",
+      "category": "gasthaus",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [
+        "burger"
+      ],
+      "id": "poi_1765301359273_t4a2bumcd"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.364287492809098,
+        48.2021738550682
+      ]
+    },
+    "properties": {
+      "name": "John Harris",
+      "category": "gym",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765301514193_xo7wjxn26"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.371604558674207,
+        48.20085808839353
+      ]
+    },
+    "properties": {
+      "name": "Albertina Modern",
+      "category": "museum",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765301543120_wcho0qxjq"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.359094736388695,
+        48.20264580661819
+      ]
+    },
+    "properties": {
+      "name": "Leopold Museum",
+      "category": "museum",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765301568699_uwaiqg7hy"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.365744681662413,
+        48.19697385785821
+      ]
+    },
+    "properties": {
+      "name": "EVO",
+      "category": "gym",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765301596383_wn6wogpon"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.366730003268078,
+        48.194626989957705
+      ]
+    },
+    "properties": {
+      "name": "Gourmet Spar",
+      "category": "shop",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765301669160_hzik8w0ea"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.37164326816906,
+        48.1952791141761
+      ]
+    },
+    "properties": {
+      "name": "Post",
+      "category": "post-office",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765301711234_bm2787fqs"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.37294926823222,
+        48.19960144837969
+      ]
+    },
+    "properties": {
+      "name": "Wien Museum",
+      "category": "museum",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "tags": [],
+      "id": "poi_1765301787915_co4jdqhke"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.372943652221558,
+        48.19956583439551
+      ]
+    },
+    "properties": {
+      "name": "U Karlsplatz",
+      "category": "subway-station",
+      "description": {
+        "de": "U1, U2, U4",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765301911269_b5ztl2jya"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.365700144014347,
+        48.19684531236729
+      ]
+    },
+    "properties": {
+      "name": "Mani",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765302007105_lqvd690ic"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.366461891340485,
+        48.19643052033441
+      ]
+    },
+    "properties": {
+      "name": "Galerie König",
+      "category": "gallery",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765311945085_smr1lpiyr"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.370790839333456,
+        48.195048466781756
+      ]
+    },
+    "properties": {
+      "name": "Galerie Neuwirth",
+      "category": "gallery",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "tags": [],
+      "id": "poi_1765312058896_74dhr8z2r"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.370812297004612,
+        48.19501985953923
+      ]
+    },
+    "properties": {
+      "name": "Galerie Neuwirth",
+      "category": "gallery",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://www.galerie-neuwirth.com/",
+      "instagram": "https://www.instagram.com/galerieneuwirth/",
+      "tags": [],
+      "id": "poi_1765312209321_qvq2ogvhm"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36108520528431,
+        48.19994789760283
+      ]
+    },
+    "properties": {
+      "name": "Cafe Sperl",
+      "category": "cafe",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://www.cafesperl.at/",
+      "instagram": "https://www.instagram.com/cafesperl/",
+      "tags": [],
+      "id": "poi_1765478014768_rxiyec2ek"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.45578456261896,
+        48.20405419149171
+      ]
+    },
+    "properties": {
+      "name": "Schillerwasser",
+      "category": "schwimmen",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "/uploads/poi_1765522606936.jpg",
+      "tags": [],
+      "id": "poi_1765478155056_yvvfbq634"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.47278501908926,
+        48.195848158414805
+      ]
+    },
+    "properties": {
+      "name": "Alte Naufahrt",
+      "category": "schwimmen",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "tags": [],
+      "id": "poi_1765478206759_x7i4gzh6p"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.406862954741563,
+        48.23104075380825
+      ]
+    },
+    "properties": {
+      "name": "Pier 22",
+      "category": "schwimmen",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "tags": [],
+      "id": "poi_1765478229869_9xiwjr661"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.429209810561797,
+        48.22869254350631
+      ]
+    },
+    "properties": {
+      "name": "Gänsehäufel",
+      "category": "schwimmen",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "tags": [],
+      "id": "poi_1765478275765_wwofztipq"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.416836803816445,
+        48.24251186836927
+      ]
+    },
+    "properties": {
+      "name": "Strandbad Alte Donau",
+      "category": "schwimmen",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "tags": [],
+      "id": "poi_1765478475573_a16us2z0h"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.395316226392474,
+        48.24456539018753
+      ]
+    },
+    "properties": {
+      "name": "Neue Donau",
+      "category": "schwimmen",
+      "description": {
+        "de": "Treffpunkt für Eisschwimmer",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765522425743_qcw0sa33r"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.337349768169958,
+        48.214084600346254
+      ]
+    },
+    "properties": {
+      "name": "Kafeneon",
+      "category": "restaurant",
+      "description": {
+        "de": "🇬🇷🍋‍🟩",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765557140117_trqfs6uy6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36438872719027,
+        48.19802149812315
+      ]
+    },
+    "properties": {
+      "name": "Lisboa Lounge",
+      "category": "bar",
+      "description": {
+        "de": "🇵🇹🍸",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765557181458_qin7p0kc7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.31522395467498,
+        48.17948855905937
+      ]
+    },
+    "properties": {
+      "name": "Schönbrunner Bad",
+      "category": "schwimmen",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765558092176_k3gye9w99"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.31229958351273,
+        48.22185101370678
+      ]
+    },
+    "properties": {
+      "name": "Kongressbad",
+      "category": "schwimmen",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765558124347_1ak7chzav"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.349198154676213,
+        48.20502081440197
+      ]
+    },
+    "properties": {
+      "name": "Felicitas",
+      "category": "moebel",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765577310724_yjan2lwz6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.363158312346723,
+        48.19139040382033
+      ]
+    },
+    "properties": {
+      "name": "CARLA",
+      "category": "moebel",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765577348479_ucmc8hnba"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.360634823991372,
+        48.19982944211317
+      ]
+    },
+    "properties": {
+      "name": "Lichterloh",
+      "category": "moebel",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765577388400_2rjn4idy3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.334844083511474,
+        48.197272998381976
+      ]
+    },
+    "properties": {
+      "name": "Glasfabrik",
+      "category": "moebel",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765577423644_yh9e0s2c1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.345658066320325,
+        48.202646034508035
+      ]
+    },
+    "properties": {
+      "name": "Möbel vom Wiesinger",
+      "category": "moebel",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765577563632_nbb0n3zux"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.361376654676032,
+        48.20014890235271
+      ]
+    },
+    "properties": {
+      "name": "Das Möbel",
+      "category": "moebel",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765577596262_e5ra4xo0k"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.352265997004743,
+        48.198623754305444
+      ]
+    },
+    "properties": {
+      "name": "Vintagerie",
+      "category": "moebel",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765577919401_6ygp0ozom"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.3598167,
+        48.1971083
+      ]
+    },
+    "properties": {
+      "name": "Wiener Blumen",
+      "category": "blumengeschaeft",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "/uploads/poi_1765601869511.jpg",
+      "tags": [],
+      "id": "poi_1765601869516_e0jankrzm"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.3581611,
+        48.1987806
+      ]
+    },
+    "properties": {
+      "name": "Bakalowits",
+      "category": "moebel",
+      "description": {
+        "de": "🛋️💡",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765602417571_zdyw3zfe0"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36228408351153,
+        48.19797364804036
+      ]
+    },
+    "properties": {
+      "name": "Käsehütte",
+      "category": "lebensmittelgeschaeft",
+      "description": {
+        "de": "🧀",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765609379368_oecm0c2ip"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36590687379292,
+        48.19183669537418
+      ]
+    },
+    "properties": {
+      "name": "Tancredi",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": "Italian with beautiful garden"
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765727391935_gj25vv0ec"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -116.65311749007635,
+        31.979954086494207
+      ]
+    },
+    "properties": {
+      "name": "Conchas de Piedra",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://guide.michelin.com/us/en/baja-california/valle-de-guadalupe_7770290/restaurant/conchas-de-piedra",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765732963205_310hbbpf1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.300305397428695,
+        48.86920550176403
+      ]
+    },
+    "properties": {
+      "name": "L'Orangerie",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://guide.michelin.com/us/en/ile-de-france/paris/restaurant/l-orangerie505878",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765733152621_o5lto8v9u"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.6414185255405727,
+        39.572688311151296
+      ]
+    },
+    "properties": {
+      "name": "Mombo",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://guide.michelin.com/us/en/islas-baleares/palma/restaurant/mombo",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765733540822_cwurjtk9p"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.652615967869528,
+        39.5692161314835
+      ]
+    },
+    "properties": {
+      "name": "Quadrat",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://guide.michelin.com/us/en/islas-baleares/palma/restaurant/quadrat",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765733621098_whl8fj8av"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -122.86971394994261,
+        38.61248693290427
+      ]
+    },
+    "properties": {
+      "name": "Single Thread",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://guide.michelin.com/us/en/california/healdsburg/restaurant/singlethread",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765733725769_zse5mj500"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.3609197458291,
+        34.07196597590626
+      ]
+    },
+    "properties": {
+      "name": "Sora Temaki handroll bar rooftop",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765733971389_luccr4s9h"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.31101249000623,
+        34.07675517776411
+      ]
+    },
+    "properties": {
+      "name": "Antico Nuevo",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765734010728_xotjo4un4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.23312442253905,
+        34.04182035732012
+      ]
+    },
+    "properties": {
+      "name": "Bavel",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765734087679_4icja54gw"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        9.194774468121706,
+        45.468617526350194
+      ]
+    },
+    "properties": {
+      "name": "Bacaro Montenapoleone",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765734296597_y6clnjiw6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.31698316836662,
+        48.200284225495125
+      ]
+    },
+    "properties": {
+      "name": "Herzig",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765734443232_34xx21dr0"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.6431838966080856,
+        39.57341015974593
+      ]
+    },
+    "properties": {
+      "name": "Adrian Quetglas",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765737064492_bgwv4xkbj"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.618923148027204,
+        39.710338019409946
+      ]
+    },
+    "properties": {
+      "name": "Es Taller",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765737214170_mdmx2qzxp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -122.4659902592881,
+        37.76252255233695
+      ]
+    },
+    "properties": {
+      "name": "Kothai Republic",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://kothairepublic.com/",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
+      "id": "poi_1765739701564_2mau7eu9g"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        11.435668907946095,
+        46.390124952266206
+      ]
+    },
+    "properties": {
+      "name": "Laab Alm",
+      "category": "gasthaus",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765741959129_aky1rd3ql"
+    }
+  }
+]
