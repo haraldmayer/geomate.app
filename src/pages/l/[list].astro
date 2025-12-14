@@ -2,9 +2,41 @@
 // This dynamic route handles /l/<list-slug> URLs
 // It simply returns the main page, which will handle the list selection client-side
 import Layout from '../../layouts/Layout.astro';
+import { nameToSlug } from '../../lib/slug-utils.js';
 
-// Use server-side rendering or fallback mode since lists are managed dynamically
-export const prerender = false;
+// For production builds, generate static paths for all lists
+// For dev builds with SSR, allow dynamic rendering
+export async function getStaticPaths() {
+  // Only run in production/static builds
+  if (import.meta.env.MODE !== 'production') {
+    return [];
+  }
+
+  try {
+    // Load lists from compiled JSON
+    const listsModule = await import('../../../public/data/lists.json');
+    const lists = listsModule.default?.lists || listsModule.lists || [];
+
+    // Generate paths for each list
+    return lists.map(list => {
+      const titleText = typeof list.title === 'string'
+        ? list.title
+        : (list.title.de || list.title.en || '');
+
+      return {
+        params: {
+          list: nameToSlug(titleText)
+        }
+      };
+    });
+  } catch (error) {
+    console.warn('Could not load lists for static paths:', error);
+    return [];
+  }
+}
+
+// Use server-side rendering in dev mode for dynamic lists
+export const prerender = import.meta.env.MODE === 'production';
 ---
 
 <Layout>
