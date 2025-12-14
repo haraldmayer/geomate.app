@@ -1282,7 +1282,7 @@ function createCategoryFilters() {
 
 			let visibleCount = 0;
 			options.forEach(option => {
-				const name = option.dataset.name.toLowerCase();
+				const name = (option.dataset.name || '').toLowerCase();
 				if (name.includes(term)) {
 					option.style.display = 'block';
 					visibleCount++;

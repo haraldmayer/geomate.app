@@ -4,7 +4,7 @@
 export default {
 	// Header
 	header: {
-		subtitle: 'Entdecke Wien'
+		subtitle: 'Places'
 	},
 
 	// Navigation
