@@ -102,11 +102,12 @@ window.addEventListener('load', async function() {
 	// Function to load lists
 	async function loadLists() {
 		try {
-			const response = await fetch('/api/lists');
+			const response = await fetch('/data/lists.json');
 			if (!response.ok) {
 				throw new Error('Failed to load lists');
 			}
-			listData = await response.json();
+			const data = await response.json();
+			listData = data.lists || data;
 
 			// Sort lists by order field (if exists), then by title
 			sortLists();
