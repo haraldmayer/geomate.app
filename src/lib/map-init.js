@@ -1264,7 +1264,9 @@ function createCategoryFilters() {
 				const option = document.createElement('div');
 				option.className = 'graetzl-option';
 				option.dataset.id = list.id;
-				const prefix = list.showAsWalk ? '🚶 ' : '📋 ';
+				// Determine type icon (handle legacy showAsWalk field)
+				const listType = list.type || (list.showAsWalk ? 'walk' : 'list');
+				const prefix = listType === 'walk' ? '🚶 ' : (listType === 'map' ? '🗺️ ' : '📋 ');
 				const title = getTranslated(list.title);
 				option.dataset.name = title;
 				option.textContent = prefix + title;
@@ -1312,7 +1314,9 @@ function createCategoryFilters() {
 		function selectList(list) {
 			if (list) {
 				selectedList = list;
-				const prefix = list.showAsWalk ? '🚶 ' : '📋 ';
+				// Determine type icon (handle legacy showAsWalk field)
+				const listType = list.type || (list.showAsWalk ? 'walk' : 'list');
+				const prefix = listType === 'walk' ? '🚶 ' : (listType === 'map' ? '🗺️ ' : '📋 ');
 				searchInput.value = prefix + getTranslated(list.title);
 				searchInput.dataset.selected = 'true';
 				activateList(list.id);
@@ -1479,12 +1483,10 @@ function createCategoryFilters() {
 				return;
 			}
 
-			console.log('Found list:', getTranslated(list.title), 'POIs:', list.pois.length, 'showAsWalk:', list.showAsWalk);
+			// Determine type (handle legacy showAsWalk field)
+			const listType = list.type || (list.showAsWalk ? 'walk' : 'list');
+			console.log('Found list:', getTranslated(list.title), 'POIs:', list.pois.length, 'type:', listType);
 			currentList = list;
-
-			// Show sidebar
-			updateSidebar(list);
-			document.querySelector('.container').classList.add('sidebar-active');
 
 			// Disable category filter toggle
 			if (categoryToggle) {
@@ -1501,26 +1503,59 @@ function createCategoryFilters() {
 			// Update markers to show only list POIs
 			updateMarkers();
 
-			// Wait for sidebar animation to complete, then invalidate map size and zoom
-			setTimeout(() => {
-				// Invalidate map size so it recalculates based on new container dimensions
-				map.invalidateSize();
+			// For 'map' type, don't show sidebar
+			if (listType === 'map') {
+				// Close sidebar if it was open from previous list/walk
+				const container = document.querySelector('.container');
+				const sidebarWasActive = container.classList.contains('sidebar-active');
+				container.classList.remove('sidebar-active');
 
-				// Zoom map to fit all list POIs
-				zoomToListPOIs(list.pois);
+				// Wait for sidebar to close if it was active, then invalidate map size
+				const delay = sidebarWasActive ? 350 : 50;
+				setTimeout(() => {
+					map.invalidateSize();
+					zoomToListPOIs(list.pois);
+				}, delay);
+			} else {
+				// Show sidebar for 'list' and 'walk' types
+				updateSidebar(list);
+				document.querySelector('.container').classList.add('sidebar-active');
 
-				// Draw arrows if showAsWalk is true, otherwise just numbers
-				if (list.showAsWalk) {
-					drawWalkthroughArrows(list.pois);
-				} else {
-					drawListNumbers(list.pois);
-				}
-			}, 350); // Wait for CSS transition (0.3s) plus a small buffer
+				// Wait for sidebar animation to complete, then invalidate map size and zoom
+				setTimeout(() => {
+					// Invalidate map size so it recalculates based on new container dimensions
+					map.invalidateSize();
+
+					// Zoom map to fit all list POIs
+					zoomToListPOIs(list.pois);
+
+					// Draw arrows for 'walk', numbers for 'list'
+					if (listType === 'walk') {
+						drawWalkthroughArrows(list.pois);
+					} else {
+						drawListNumbers(list.pois);
+					}
+				}, 350); // Wait for CSS transition (0.3s) plus a small buffer
+			}
 
 			// Update URL
 			updateUrlForList(list);
 
-			console.log('List activated:', list.title, 'showAsWalk:', list.showAsWalk);
+			// Update the list dropdown to show selected list
+			const listSearchInput = document.getElementById('list-search');
+			if (listSearchInput) {
+				const prefix = listType === 'walk' ? '🚶 ' : (listType === 'map' ? '🗺️ ' : '📋 ');
+				listSearchInput.value = prefix + getTranslated(list.title);
+				listSearchInput.dataset.selected = 'true';
+
+				// Update clear button visibility
+				const clearButton = document.getElementById('clear-list-search');
+				if (clearButton) {
+					clearButton.style.display = 'flex';
+				}
+			}
+
+			console.log('List activated:', list.title, 'type:', listType);
 		}
 
 		// Deactivate list
@@ -1689,14 +1724,18 @@ function createCategoryFilters() {
 			listData.forEach(list => {
 				const option = document.createElement('div');
 				option.className = 'graetzl-option';
-				const prefix = list.showAsWalk ? '🚶 ' : '📋 ';
+				// Determine type icon (handle legacy showAsWalk field)
+				const listType = list.type || (list.showAsWalk ? 'walk' : 'list');
+				const prefix = listType === 'walk' ? '🚶 ' : (listType === 'map' ? '🗺️ ' : '📋 ');
 				option.textContent = prefix + getTranslated(list.title);
 				listDropdownEl.appendChild(option);
 			});
 
 			// Update current selection if active
 			if (currentSelected) {
-				const prefix = currentSelected.showAsWalk ? '🚶 ' : '📋 ';
+				// Determine type icon (handle legacy showAsWalk field)
+				const listType = currentSelected.type || (currentSelected.showAsWalk ? 'walk' : 'list');
+				const prefix = listType === 'walk' ? '🚶 ' : (listType === 'map' ? '🗺️ ' : '📋 ');
 				listSearchEl.value = prefix + getTranslated(currentSelected.title);
 			}
 		}

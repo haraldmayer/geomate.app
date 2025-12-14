@@ -721,7 +721,7 @@ const title = "POI Management System";
       <div class="layout">
         <!-- List Form Panel -->
         <div class="panel">
-          <h1 id="listFormTitle">Add New List or Walk</h1>
+          <h1 id="listFormTitle">Add New List, Walk or Map</h1>
 
           <form id="listForm">
             <input type="hidden" id="listEditingId" value="" />
@@ -762,16 +762,40 @@ const title = "POI Management System";
             </div>
 
             <div class="full">
-              <label
-                style="display: flex; align-items: center; gap: 8px; cursor: pointer;"
-              >
-                <input
-                  type="checkbox"
-                  id="listShowAsWalk"
-                  style="width: auto; margin: 0;"
-                />
-                <span>Show as walk (connects POIs with arrows)</span>
-              </label>
+              <label>Type</label>
+              <div style="display: flex; gap: 20px; margin-top: 8px;">
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                  <input
+                    type="radio"
+                    name="listType"
+                    value="list"
+                    id="listTypeList"
+                    checked
+                    style="width: auto; margin: 0;"
+                  />
+                  <span>📋 List (sidebar with numbers)</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                  <input
+                    type="radio"
+                    name="listType"
+                    value="walk"
+                    id="listTypeWalk"
+                    style="width: auto; margin: 0;"
+                  />
+                  <span>🚶 Walk (arrows connecting POIs)</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                  <input
+                    type="radio"
+                    name="listType"
+                    value="map"
+                    id="listTypeMap"
+                    style="width: auto; margin: 0;"
+                  />
+                  <span>🗺️ Map (only POIs, no sidebar)</span>
+                </label>
+              </div>
             </div>
 
             <div class="full">
@@ -1538,6 +1562,7 @@ const title = "POI Management System";
       let lists = [];
       let selectedListPOIs = []; // Array of POI IDs in order
       let currentListId = null;
+      let currentListOrder = undefined; // Store order when editing
       let draggedElement = null;
 
       // Slug generation function
@@ -1635,14 +1660,16 @@ const title = "POI Management System";
                 ? title
                 : title.de || title.en || "Untitled";
 
-            const walkIcon = list.showAsWalk ? '🚶 ' : '📋 ';
+            // Determine type icon (handle legacy showAsWalk field)
+            const listType = list.type || (list.showAsWalk ? 'walk' : 'list');
+            const typeIcon = listType === 'walk' ? '🚶' : (listType === 'map' ? '🗺️' : '📋');
             const orderBadge = list.order !== undefined ? `<span style="font-size: 11px; color: #6b7280; margin-left: 8px;">#${list.order}</span>` : '';
 
             return `
           <div class="poi-item" draggable="true" data-list-id="${list.id}" data-index="${index}" style="cursor: move;">
             <div class="drag-handle">☰</div>
             <div class="poi-info" style="flex: 1;">
-              <div class="poi-name">${walkIcon}${displayTitle}${orderBadge}</div>
+              <div class="poi-name">${typeIcon} ${displayTitle}${orderBadge}</div>
               <div class="poi-coords">${list.pois.length} POIs</div>
             </div>
             <div class="poi-actions">
@@ -1663,9 +1690,13 @@ const title = "POI Management System";
         const list = lists.find((l) => l.id === id);
         if (!list) return;
 
-        document.getElementById("listFormTitle").textContent = list.showAsWalk
-          ? "Edit Walk"
-          : "Edit List";
+        // Store the current order to preserve it when saving
+        currentListOrder = list.order;
+
+        // Determine type for title (handle legacy showAsWalk field)
+        const listType = list.type || (list.showAsWalk ? 'walk' : 'list');
+        const typeLabel = listType === 'walk' ? 'Walk' : (listType === 'map' ? 'Map' : 'List');
+        document.getElementById("listFormTitle").textContent = `Edit ${typeLabel}`;
         document.getElementById("listEditingId").value = id;
 
         // Handle multilingual titles
@@ -1692,9 +1723,10 @@ const title = "POI Management System";
             description.en || "";
         }
 
-        // Set showAsWalk checkbox
-        document.getElementById("listShowAsWalk").checked =
-          list.showAsWalk || false;
+        // Set type radio button (already determined above in listType variable)
+        document.getElementById('listTypeList').checked = (listType === 'list');
+        document.getElementById('listTypeWalk').checked = (listType === 'walk');
+        document.getElementById('listTypeMap').checked = (listType === 'map');
 
         selectedListPOIs = [...list.pois];
         renderSelectedListPOIs();
@@ -1749,11 +1781,21 @@ const title = "POI Management System";
         }
 
         const filtered = allPOIs
-          .filter(
-            (poi) =>
-              !selectedListPOIs.includes(poi.properties.id) &&
-              poi.properties.name.toLowerCase().includes(searchTerm)
-          )
+          .filter((poi) => {
+            if (selectedListPOIs.includes(poi.properties.id)) return false;
+
+            const name = poi.properties.name.toLowerCase();
+
+            // Get category name for searching
+            const category = categoriesData[poi.properties.category];
+            const categoryName = category
+              ? (typeof category.name === 'object'
+                  ? (category.name.de || category.name.en || '').toLowerCase()
+                  : category.name.toLowerCase())
+              : '';
+
+            return name.includes(searchTerm) || categoryName.includes(searchTerm);
+          })
           .slice(0, 10);
 
         if (filtered.length === 0) {
@@ -1936,15 +1978,16 @@ const title = "POI Management System";
       // Reset list form
       function resetListForm() {
         currentListId = null;
+        currentListOrder = undefined; // Reset order
         document.getElementById("listFormTitle").textContent =
-          "Add New List or Walk";
+          "Add New List, Walk or Map";
         document.getElementById("listEditingId").value = "";
         document.getElementById("listForm").reset();
         document.getElementById("listTitle-de").value = "";
         document.getElementById("listTitle-en").value = "";
         document.getElementById("listDescription-de").value = "";
         document.getElementById("listDescription-en").value = "";
-        document.getElementById("listShowAsWalk").checked = false;
+        document.getElementById("listTypeList").checked = true;
         selectedListPOIs = [];
         renderSelectedListPOIs();
       }
@@ -1980,8 +2023,8 @@ const title = "POI Management System";
               return;
             }
 
-            const showAsWalk =
-              document.getElementById("listShowAsWalk").checked;
+            // Get selected type from radio buttons
+            const selectedType = document.querySelector('input[name="listType"]:checked').value;
 
             const list = {
               title: {
@@ -1994,8 +2037,13 @@ const title = "POI Management System";
               },
               slug: generateSlug(titleDe), // Generate slug from German title
               pois: selectedListPOIs,
-              showAsWalk: showAsWalk,
+              type: selectedType,
             };
+
+            // Preserve order if editing
+            if (editingId && currentListOrder !== undefined) {
+              list.order = currentListOrder;
+            }
 
             const url = editingId ? `/api/lists/${editingId}` : "/api/lists";
             const method = editingId ? "PUT" : "POST";

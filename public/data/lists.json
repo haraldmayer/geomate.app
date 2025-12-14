@@ -20,7 +20,7 @@
       ],
       "showAsWalk": false,
       "id": "list_1765475474952_ojsmqc88l",
-      "order": 1
+      "order": 2
     },
     {
       "title": {
@@ -67,7 +67,7 @@
       ],
       "showAsWalk": true,
       "id": "list_1765577637788_15qtlk1gs",
-      "order": 2
+      "order": 1
     },
     {
       "title": {
@@ -91,10 +91,41 @@
         "poi_1765301669160_hzik8w0ea",
         "poi_1765274869129_0001",
         "poi_1765274869131_0012",
-        "poi_1765301514193_xo7wjxn26"
+        "poi_1765301514193_xo7wjxn26",
+        "poi_1765274869131_0015",
+        "poi_1765301596383_wn6wogpon",
+        "poi_1765727391935_gj25vv0ec",
+        "poi_1765274869131_0016",
+        "poi_1765302007105_lqvd690ic"
       ],
-      "showAsWalk": false,
+      "type": "map",
+      "order": 0,
       "id": "list_1765727446200_9h88qwgzx"
+    },
+    {
+      "title": {
+        "de": "Our food experiences",
+        "en": "Our food experiences"
+      },
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "slug": "our-food-experiences",
+      "pois": [
+        "poi_1765733725769_zse5mj500",
+        "poi_1765733152621_o5lto8v9u",
+        "poi_1765732963205_310hbbpf1",
+        "poi_1765734443232_34xx21dr0",
+        "poi_1765734296597_y6clnjiw6",
+        "poi_1765733621098_whl8fj8av",
+        "poi_1765733971389_luccr4s9h",
+        "poi_1765733540822_cwurjtk9p",
+        "poi_1765734010728_xotjo4un4",
+        "poi_1765734087679_4icja54gw"
+      ],
+      "type": "list",
+      "id": "list_1765733233739_lajoliavr"
     }
   ]
 }

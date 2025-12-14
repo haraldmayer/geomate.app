@@ -47,6 +47,14 @@
     "burger": {
       "name": "Burger",
       "count": 0
+    },
+    "fine-dining": {
+      "name": "Fine Dining",
+      "count": 0
+    },
+    "maria": {
+      "name": "Maria",
+      "count": 0
     }
   }
 }

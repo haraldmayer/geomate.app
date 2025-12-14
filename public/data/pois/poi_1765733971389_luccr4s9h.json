@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -118.3609197458291,
+      34.07196597590626
+    ]
+  },
+  "properties": {
+    "name": "Sora Temaki handroll bar rooftop",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "fine-dining",
+      "maria"
+    ],
+    "id": "poi_1765733971389_luccr4s9h"
+  }
+}

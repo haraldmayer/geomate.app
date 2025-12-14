@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.300305397428695,
+      48.86920550176403
+    ]
+  },
+  "properties": {
+    "name": "L'Orangerie",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "https://guide.michelin.com/us/en/ile-de-france/paris/restaurant/l-orangerie505878",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "fine-dining",
+      "maria"
+    ],
+    "id": "poi_1765733152621_o5lto8v9u"
+  }
+}

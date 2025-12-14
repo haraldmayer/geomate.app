@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.6414185255405727,
+      39.572688311151296
+    ]
+  },
+  "properties": {
+    "name": "Mombo",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "https://guide.michelin.com/us/en/islas-baleares/palma/restaurant/mombo",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "fine-dining",
+      "maria"
+    ],
+    "id": "poi_1765733540822_cwurjtk9p"
+  }
+}

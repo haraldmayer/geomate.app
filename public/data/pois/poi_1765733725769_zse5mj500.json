@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.86971394994261,
+      38.61248693290427
+    ]
+  },
+  "properties": {
+    "name": "Single Thread",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "https://guide.michelin.com/us/en/california/healdsburg/restaurant/singlethread",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "fine-dining",
+      "maria"
+    ],
+    "id": "poi_1765733725769_zse5mj500"
+  }
+}

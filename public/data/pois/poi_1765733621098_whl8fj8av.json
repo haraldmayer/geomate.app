@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.652615967869528,
+      39.5692161314835
+    ]
+  },
+  "properties": {
+    "name": "Quadrat",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "https://guide.michelin.com/us/en/islas-baleares/palma/restaurant/quadrat",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "fine-dining",
+      "maria"
+    ],
+    "id": "poi_1765733621098_whl8fj8av"
+  }
+}

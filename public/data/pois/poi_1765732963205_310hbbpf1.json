@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -116.65311749007635,
+      31.979954086494207
+    ]
+  },
+  "properties": {
+    "name": "Conchas de Piedra",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "https://guide.michelin.com/us/en/baja-california/valle-de-guadalupe_7770290/restaurant/conchas-de-piedra",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "fine-dining",
+      "maria"
+    ],
+    "id": "poi_1765732963205_310hbbpf1"
+  }
+}
