@@ -1,0 +1,23 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      11.435668907946095,
+      46.390124952266206
+    ]
+  },
+  "properties": {
+    "name": "Laab Alm",
+    "category": "gasthaus",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "",
+    "instagram": "",
+    "photo": "",
+    "tags": [],
+    "id": "poi_1765741959129_aky1rd3ql"
+  }
+}

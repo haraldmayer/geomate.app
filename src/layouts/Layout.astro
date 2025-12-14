@@ -30,6 +30,20 @@ const { title = "Geomate" } = Astro.props;
     <div class="container">
       <Header />
 
+      <!-- Mobile Navigation Toggle -->
+      <button
+        id="mobile-nav-toggle"
+        class="mobile-nav-toggle"
+        type="button"
+        title="Toggle navigation"
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
+
+      <!-- Mobile Navigation Overlay -->
+      <div id="mobile-nav-overlay" class="mobile-nav-overlay"></div>
+
       <!-- Language Switcher -->
       <button
         id="language-switcher"
@@ -48,13 +62,19 @@ const { title = "Geomate" } = Astro.props;
       <!-- POI Sidebar (for Lists and Walkthroughs) -->
       <div id="poi-sidebar" class="poi-sidebar">
         <div class="poi-sidebar-header">
-          <div>
+          <div class="poi-sidebar-header-content">
             <h2 id="poi-sidebar-title"></h2>
             <p id="poi-sidebar-description" class="poi-sidebar-description"></p>
           </div>
-          <button id="close-poi-sidebar" class="close-sidebar-btn" type="button"
-            >×</button
+          <button
+            id="toggle-poi-sidebar"
+            class="toggle-sidebar-btn"
+            type="button"
+            title="Collapse sidebar"
+            aria-label="Toggle sidebar"
           >
+            <span id="toggle-sidebar-icon">›</span>
+          </button>
         </div>
         <div id="poi-sidebar-items" class="poi-sidebar-items">
           <!-- Items will be populated dynamically -->
@@ -69,5 +89,67 @@ const { title = "Geomate" } = Astro.props;
       src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"
     ></script>
     <script type="module" src="/src/lib/map-init.js"></script>
+
+    <script is:inline>
+      // Mobile navigation toggle
+      (function() {
+        const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+        const nav = document.querySelector('.graetzl-nav');
+
+        if (mobileNavToggle && mobileNavOverlay && nav) {
+          function openMobileNav() {
+            nav.classList.add('mobile-nav-open');
+            mobileNavOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when nav is open
+          }
+
+          function closeMobileNav() {
+            nav.classList.remove('mobile-nav-open');
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+
+          // Toggle navigation on button click
+          mobileNavToggle.addEventListener('click', function() {
+            if (nav.classList.contains('mobile-nav-open')) {
+              closeMobileNav();
+            } else {
+              openMobileNav();
+            }
+          });
+
+          // Close navigation when clicking overlay
+          mobileNavOverlay.addEventListener('click', closeMobileNav);
+
+          // Close mobile nav when selecting a list or category
+          nav.addEventListener('click', function(e) {
+            const target = e.target;
+            // Close if clicking on a dropdown option or list select option
+            if (target.classList.contains('graetzl-option') ||
+                target.closest('.graetzl-option') ||
+                (target.tagName === 'OPTION' && target.closest('.list-select'))) {
+              // Delay closing slightly to allow the selection to register
+              setTimeout(closeMobileNav, 100);
+            }
+          });
+
+          // Hide mobile nav toggle and show nav on desktop
+          function handleResize() {
+            if (window.innerWidth > 768) {
+              closeMobileNav();
+              mobileNavToggle.style.display = 'none';
+              mobileNavOverlay.style.display = 'none';
+            } else {
+              mobileNavToggle.style.display = 'flex';
+              mobileNavOverlay.style.display = 'block';
+            }
+          }
+
+          handleResize();
+          window.addEventListener('resize', handleResize);
+        }
+      })();
+    </script>
   </body>
 </html>

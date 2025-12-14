@@ -48,7 +48,7 @@
     {
       "title": {
         "de": "Möbel shopping",
-        "en": "Shop for our apartment"
+        "en": "Furniture thrifting Vienna"
       },
       "description": {
         "de": "",
@@ -115,18 +115,19 @@
       "slug": "our-food-experiences",
       "pois": [
         "poi_1765733725769_zse5mj500",
-        "poi_1765733152621_o5lto8v9u",
+        "poi_1765739701564_2mau7eu9g",
+        "poi_1765733971389_luccr4s9h",
+        "poi_1765734087679_4icja54gw",
+        "poi_1765734010728_xotjo4un4",
         "poi_1765732963205_310hbbpf1",
-        "poi_1765734443232_34xx21dr0",
         "poi_1765734296597_y6clnjiw6",
+        "poi_1765733152621_o5lto8v9u",
+        "poi_1765741959129_aky1rd3ql",
+        "poi_1765734443232_34xx21dr0",
         "poi_1765733621098_whl8fj8av",
         "poi_1765737214170_mdmx2qzxp",
         "poi_1765737064492_bgwv4xkbj",
-        "poi_1765733540822_cwurjtk9p",
-        "poi_1765734010728_xotjo4un4",
-        "poi_1765733971389_luccr4s9h",
-        "poi_1765734087679_4icja54gw",
-        "poi_1765739701564_2mau7eu9g"
+        "poi_1765733540822_cwurjtk9p"
       ],
       "type": "list",
       "id": "list_1765733233739_lajoliavr"

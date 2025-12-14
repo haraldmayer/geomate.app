@@ -4,7 +4,7 @@
 export default {
 	// Header
 	header: {
-		subtitle: 'Places'
+		subtitle: 'Let\'s Go Places'
 	},
 
 	// Navigation
