@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.4659902592881,
+      37.76252255233695
+    ]
+  },
+  "properties": {
+    "name": "Kothai Republic",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "https://kothairepublic.com/",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "fine-dining",
+      "maria"
+    ],
+    "id": "poi_1765739701564_2mau7eu9g"
+  }
+}
