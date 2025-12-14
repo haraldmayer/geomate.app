@@ -3,8 +3,8 @@ import { defineConfig } from 'astro/config';
 import node from '@astrojs/node';
 import cloudflare from '@astrojs/cloudflare';
 
-const isProduction = process.env.NODE_ENV === 'production';
-const isCloudflare = process.env.CF_PAGES === '1';
+// Cloudflare Pages sets CF_PAGES=1 during build
+const isCloudflare = process.env.CF_PAGES === '1' || process.env.CF_PAGES_BRANCH !== undefined;
 
 // https://astro.build/config
 export default defineConfig({
