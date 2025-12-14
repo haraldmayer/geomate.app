@@ -2,45 +2,6 @@
   "lists": [
     {
       "title": {
-        "de": "Vom Naschmarkt ins Freihausviertel",
-        "en": "From Naschmarkt to Freihausviertel"
-      },
-      "description": {
-        "de": "Wir starten bei der U4 Station Kettenbrückengasse....",
-        "en": "We start at the U4 station Kettenbrückengasse...."
-      },
-      "slug": "vom-naschmarkt-ins-freihausviertel",
-      "pois": [
-        "poi_1765279262983_996c7qpf5",
-        "poi_1765274869130_0002",
-        "poi_1765274869131_0014",
-        "poi_1765274869130_0010",
-        "poi_1765274869131_0015",
-        "poi_1765280402823_mhddqn0al"
-      ],
-      "showAsWalk": true,
-      "id": "walk_1765279436525_vvtzw0cv9"
-    },
-    {
-      "title": {
-        "de": "Die besten im 4.",
-        "en": "The best in the 4th district"
-      },
-      "description": {
-        "de": "",
-        "en": ""
-      },
-      "slug": "die-besten-im-4",
-      "pois": [
-        "poi_1765274869131_0014",
-        "poi_1765274869130_0003",
-        "poi_1765280402823_mhddqn0al"
-      ],
-      "showAsWalk": false,
-      "id": "list_1765469098673_jjs7cp57i"
-    },
-    {
-      "title": {
         "de": "Die schönsten Märkte",
         "en": "The best farmers markets"
       },
@@ -58,7 +19,8 @@
         "poi_1765274869130_0009"
       ],
       "showAsWalk": false,
-      "id": "list_1765475474952_ojsmqc88l"
+      "id": "list_1765475474952_ojsmqc88l",
+      "order": 1
     },
     {
       "title": {
@@ -80,7 +42,8 @@
         "poi_1765558092176_k3gye9w99"
       ],
       "showAsWalk": false,
-      "id": "list_1765478372407_o59hbz5bs"
+      "id": "list_1765478372407_o59hbz5bs",
+      "order": 3
     },
     {
       "title": {
@@ -103,7 +66,35 @@
         "poi_1765577919401_6ygp0ozom"
       ],
       "showAsWalk": true,
-      "id": "list_1765577637788_15qtlk1gs"
+      "id": "list_1765577637788_15qtlk1gs",
+      "order": 2
+    },
+    {
+      "title": {
+        "de": "Willkommen im Freihausviertel",
+        "en": "Welcome to Freihausviertel"
+      },
+      "description": {
+        "de": "",
+        "en": "Our neighbourhood.."
+      },
+      "slug": "willkommen-im-freihausviertel",
+      "pois": [
+        "poi_1765301258081_r80rnd5f0",
+        "poi_1765295329999_6c16edf7p",
+        "poi_1765274869131_0014",
+        "poi_1765274869130_0002",
+        "poi_1765274869131_0011",
+        "poi_1765301711234_bm2787fqs",
+        "poi_1765279262983_996c7qpf5",
+        "poi_1765301911269_b5ztl2jya",
+        "poi_1765301669160_hzik8w0ea",
+        "poi_1765274869129_0001",
+        "poi_1765274869131_0012",
+        "poi_1765301514193_xo7wjxn26"
+      ],
+      "showAsWalk": false,
+      "id": "list_1765727446200_9h88qwgzx"
     }
   ]
 }

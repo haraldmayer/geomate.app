@@ -4,7 +4,7 @@
 export default {
 	// Header
 	header: {
-		subtitle: 'Discover Vienna\'s Neighborhoods'
+		subtitle: 'Discover Vienna'
 	},
 
 	// Navigation
@@ -35,13 +35,30 @@ export default {
 
 	// Category toggle
 	category: {
-		allCategories: 'All Categories'
+		allCategories: 'All Categories',
+		noCategories: 'No Categories',
+		categoriesCount: 'Categories',
+		of: 'of'
 	},
 
 	// Sidebar
 	sidebar: {
 		list: 'List',
 		walkthrough: 'Walk'
+	},
+
+	// Dropdown options
+	dropdown: {
+		showAll: 'Show all',
+		noList: 'No list',
+		noPOIsFound: 'No POIs found'
+	},
+
+	// POI links
+	poi: {
+		website: 'Website',
+		route: 'Directions',
+		instagram: 'Instagram'
 	},
 
 	// Language switcher

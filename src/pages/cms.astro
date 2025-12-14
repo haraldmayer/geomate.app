@@ -1611,8 +1611,23 @@ const title = "POI Management System";
           return;
         }
 
-        container.innerHTML = lists
-          .map((list) => {
+        // Sort lists by order field (if exists), then alphabetically
+        const sortedLists = [...lists].sort((a, b) => {
+          // If both have order field, sort by order
+          if (a.order !== undefined && b.order !== undefined) {
+            return a.order - b.order;
+          }
+          // If only one has order, prioritize it
+          if (a.order !== undefined) return -1;
+          if (b.order !== undefined) return 1;
+          // Otherwise sort alphabetically by title
+          const titleA = (typeof a.title === 'string' ? a.title : a.title?.de || a.title?.en || '').toLowerCase();
+          const titleB = (typeof b.title === 'string' ? b.title : b.title?.de || b.title?.en || '').toLowerCase();
+          return titleA.localeCompare(titleB);
+        });
+
+        container.innerHTML = sortedLists
+          .map((list, index) => {
             // Handle multilingual titles
             const title = list.title || {};
             const displayTitle =
@@ -1620,10 +1635,14 @@ const title = "POI Management System";
                 ? title
                 : title.de || title.en || "Untitled";
 
+            const walkIcon = list.showAsWalk ? '🚶 ' : '📋 ';
+            const orderBadge = list.order !== undefined ? `<span style="font-size: 11px; color: #6b7280; margin-left: 8px;">#${list.order}</span>` : '';
+
             return `
-          <div class="poi-item">
-            <div class="poi-info">
-              <div class="poi-name">${displayTitle}</div>
+          <div class="poi-item" draggable="true" data-list-id="${list.id}" data-index="${index}" style="cursor: move;">
+            <div class="drag-handle">☰</div>
+            <div class="poi-info" style="flex: 1;">
+              <div class="poi-name">${walkIcon}${displayTitle}${orderBadge}</div>
               <div class="poi-coords">${list.pois.length} POIs</div>
             </div>
             <div class="poi-actions">
@@ -1634,6 +1653,8 @@ const title = "POI Management System";
         `;
           })
           .join("");
+
+        setupListsDragAndDrop();
       }
 
       // Edit list
@@ -2008,6 +2029,112 @@ const title = "POI Management System";
       document
         .getElementById("listCancelBtn")
         .addEventListener("click", resetListForm);
+
+      // Drag and drop for lists reordering
+      let draggedListElement = null;
+
+      function setupListsDragAndDrop() {
+        const items = document.querySelectorAll('#listList .poi-item[draggable="true"]');
+
+        items.forEach((item) => {
+          item.addEventListener("dragstart", handleListDragStart);
+          item.addEventListener("dragover", handleListDragOver);
+          item.addEventListener("drop", handleListDrop);
+          item.addEventListener("dragend", handleListDragEnd);
+        });
+      }
+
+      function handleListDragStart(e) {
+        draggedListElement = this;
+        e.dataTransfer.effectAllowed = "move";
+        e.dataTransfer.setData("text/html", this.innerHTML);
+        this.classList.add("dragging");
+      }
+
+      function handleListDragOver(e) {
+        if (e.preventDefault) {
+          e.preventDefault();
+        }
+        e.dataTransfer.dropEffect = "move";
+        return false;
+      }
+
+      function handleListDrop(e) {
+        if (e.stopPropagation) {
+          e.stopPropagation();
+        }
+
+        if (draggedListElement !== this) {
+          const draggedId = draggedListElement.dataset.listId;
+          const targetId = this.dataset.listId;
+          const draggedIndex = parseInt(draggedListElement.dataset.index);
+          const targetIndex = parseInt(this.dataset.index);
+
+          // Find the lists in the sorted array
+          const sortedLists = [...lists].sort((a, b) => {
+            if (a.order !== undefined && b.order !== undefined) {
+              return a.order - b.order;
+            }
+            if (a.order !== undefined) return -1;
+            if (b.order !== undefined) return 1;
+            const titleA = (typeof a.title === 'string' ? a.title : a.title?.de || a.title?.en || '').toLowerCase();
+            const titleB = (typeof b.title === 'string' ? b.title : b.title?.de || b.title?.en || '').toLowerCase();
+            return titleA.localeCompare(titleB);
+          });
+
+          // Reorder the sorted array
+          const movedList = sortedLists[draggedIndex];
+          sortedLists.splice(draggedIndex, 1);
+          sortedLists.splice(targetIndex, 0, movedList);
+
+          // Assign new order values
+          sortedLists.forEach((list, index) => {
+            list.order = index;
+          });
+
+          // Update the original lists array with new order values
+          lists = lists.map(list => {
+            const sortedList = sortedLists.find(sl => sl.id === list.id);
+            return { ...list, order: sortedList.order };
+          });
+
+          // Save the new order to the backend
+          saveListOrder();
+
+          // Re-render
+          renderLists();
+        }
+
+        return false;
+      }
+
+      function handleListDragEnd(e) {
+        this.classList.remove("dragging");
+      }
+
+      // Save list order to backend
+      async function saveListOrder() {
+        try {
+          const response = await fetch("/api/lists/reorder", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              lists: lists.map(l => ({ id: l.id, order: l.order }))
+            }),
+          });
+
+          if (response.ok) {
+            showToast("List order saved successfully");
+          } else {
+            throw new Error("Failed to save order");
+          }
+        } catch (error) {
+          showToast("Failed to save list order", "error");
+          console.error(error);
+        }
+      }
     </script>
   </body>
 </html>

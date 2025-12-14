@@ -1,0 +1,23 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      16.36590687379292,
+      48.19183669537418
+    ]
+  },
+  "properties": {
+    "name": "Tancredi",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": "Italian with beautiful garden"
+    },
+    "link": "",
+    "instagram": "",
+    "photo": "",
+    "tags": [],
+    "id": "poi_1765727391935_gj25vv0ec"
+  }
+}

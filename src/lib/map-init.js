@@ -82,6 +82,23 @@ window.addEventListener('load', async function() {
 		}
 	}
 
+	// Helper function to sort lists by order field, then alphabetically
+	function sortLists() {
+		listData.sort((a, b) => {
+			// If both have order field, sort by order
+			if (a.order !== undefined && b.order !== undefined) {
+				return a.order - b.order;
+			}
+			// If only one has order, prioritize it
+			if (a.order !== undefined) return -1;
+			if (b.order !== undefined) return 1;
+			// Otherwise sort alphabetically by title
+			const titleA = getTranslated(a.title).toLowerCase();
+			const titleB = getTranslated(b.title).toLowerCase();
+			return titleA.localeCompare(titleB, getCurrentLanguage());
+		});
+	}
+
 	// Function to load lists
 	async function loadLists() {
 		try {
@@ -90,11 +107,15 @@ window.addEventListener('load', async function() {
 				throw new Error('Failed to load lists');
 			}
 			listData = await response.json();
+
+			// Sort lists by order field (if exists), then by title
+			sortLists();
+
 			console.log('Lists loaded:', listData.length, listData);
 
 			// Debug: log each list
 			listData.forEach((list, i) => {
-				console.log(`List ${i}:`, list.id, getTranslated(list.title), 'showAsWalk:', list.showAsWalk);
+				console.log(`List ${i}:`, list.id, getTranslated(list.title), 'order:', list.order, 'showAsWalk:', list.showAsWalk);
 			});
 		} catch (error) {
 			console.error('Error loading lists:', error);
@@ -234,11 +255,11 @@ function createCategoryFilters() {
 
 		// Update toggle button text
 		if (checkedCount === 0) {
-			toggleText.textContent = 'Keine Kategorien';
+			toggleText.textContent = t('category.noCategories');
 		} else if (checkedCount === allCheckboxes.length) {
-			toggleText.textContent = 'Alle Kategorien';
+			toggleText.textContent = t('category.allCategories');
 		} else {
-			toggleText.textContent = `${checkedCount} von ${allCheckboxes.length} Kategorien`;
+			toggleText.textContent = `${checkedCount} ${t('category.of')} ${allCheckboxes.length} ${t('category.categoriesCount')}`;
 		}
 
 		updateMarkers();
@@ -318,7 +339,7 @@ function createCategoryFilters() {
 		// Update search input
 		const searchInput = document.getElementById('graetzl-search');
 		searchInput.value = '';
-		searchInput.placeholder = 'Alle Grätzl werden angezeigt';
+		searchInput.placeholder = t('placeholder.allGraetzl');
 		searchInput.dataset.selected = 'false';
 		selectedGraetzl = null;
 	}
@@ -414,7 +435,7 @@ function createCategoryFilters() {
 
 			// Create popup content
 			const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coords[0]},${coords[1]}`;
-			const learnMoreLink = poi.link ? `<a href="${poi.link}" target="_blank" class="poi-link">Website →</a>` : '';
+			const learnMoreLink = poi.link ? `<a href="${poi.link}" target="_blank" class="poi-link">${t('poi.website')} →</a>` : '';
 
 			// Get category info
 			const categoryInfo = categories[poi.category];
@@ -441,7 +462,7 @@ function createCategoryFilters() {
 					${tagsHtml}
 					<div class="poi-actions">
 						${learnMoreLink}
-						<a href="${googleMapsUrl}" target="_blank" class="poi-link poi-link-secondary">Route</a>
+						<a href="${googleMapsUrl}" target="_blank" class="poi-link poi-link-secondary">${t('poi.route')}</a>
 					</div>
 				</div>
 			`;
@@ -461,7 +482,7 @@ function createCategoryFilters() {
 	map.on('zoomend', updateMarkerSizes);
 
 	// Handle map clicks to activate Grätzl
-	map.on('click', (e) => {
+	/*map.on('click', (e) => {
 		// Convert Leaflet coords [lat, lng] to GeoJSON [lng, lat]
 		const point = [e.latlng.lng, e.latlng.lat];
 
@@ -472,7 +493,7 @@ function createCategoryFilters() {
 			// Activate the clicked Grätzl and update URL
 			selectGraetzl(graetzl);
 		}
-	});
+	});*/
 
 	// Searchable dropdown state
 	let allGraetzls = [];
@@ -507,12 +528,12 @@ function createCategoryFilters() {
 			a.properties.Graetzl_Name.localeCompare(b.properties.Graetzl_Name, 'de')
 		);
 
-		// Add "Alle anzeigen" option
+		// Add "Show all" option
 		const allOption = document.createElement('div');
 		allOption.className = 'graetzl-option';
 		allOption.dataset.id = '';
-		allOption.dataset.name = 'Alle anzeigen';
-		allOption.textContent = 'Alle anzeigen';
+		allOption.dataset.name = t('dropdown.showAll');
+		allOption.textContent = t('dropdown.showAll');
 		allOption.addEventListener('click', () => selectGraetzl(null));
 		dropdown.appendChild(allOption);
 
@@ -548,7 +569,8 @@ function createCategoryFilters() {
 				// Select the text if a Grätzl is selected
 				searchInput.select();
 			}
-			filterDropdown(searchInput.value);
+			// Always show all options when focused
+			filterDropdown('');
 			dropdown.style.display = 'block';
 		});
 
@@ -635,7 +657,7 @@ function createCategoryFilters() {
 		} else {
 			selectedGraetzl = null;
 			searchInput.value = '';
-			searchInput.placeholder = 'Alle Grätzl werden angezeigt';
+			searchInput.placeholder = t('placeholder.allGraetzl');
 			searchInput.dataset.selected = 'false';
 			showAllPOIs();
 
@@ -747,7 +769,14 @@ function createCategoryFilters() {
 			const results = geoData.features.filter(poi => {
 				const name = (poi.properties.name || '').toLowerCase();
 				const description = getTranslated(poi.properties.description).toLowerCase();
-				return name.includes(searchTerm) || description.includes(searchTerm);
+
+				// Get category name for searching
+				const category = categories[poi.properties.category];
+				const categoryName = category ? getTranslated(category.name).toLowerCase() : '';
+
+				return name.includes(searchTerm) ||
+				       description.includes(searchTerm) ||
+				       categoryName.includes(searchTerm);
 			});
 
 			displaySearchResults(results);
@@ -755,7 +784,7 @@ function createCategoryFilters() {
 
 		function displaySearchResults(results) {
 			if (results.length === 0) {
-				dropdown.innerHTML = '<div class="graetzl-option">Keine POIs gefunden</div>';
+				dropdown.innerHTML = `<div class="graetzl-option">${t('dropdown.noPOIsFound')}</div>`;
 				dropdown.style.display = 'block';
 				return;
 			}
@@ -827,10 +856,9 @@ function createCategoryFilters() {
 			if (searchInput.dataset.selected === 'true' && selectedPOI) {
 				searchInput.select();
 			}
+			// Always show all POIs when focused (empty search shows all)
 			const searchTerm = searchInput.value.trim().toLowerCase();
-			if (searchTerm) {
-				searchPOIs(searchTerm);
-			}
+			searchPOIs(searchTerm || ' ');
 		});
 
 		// Keyboard navigation
@@ -1009,7 +1037,7 @@ function createCategoryFilters() {
 				// Create and bind the same popup as the main marker
 				const icon = getCategoryIcon(poi.properties.category);
 				const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coord[0]},${coord[1]}`;
-				const learnMoreLink = poi.properties.link ? `<a href="${poi.properties.link}" target="_blank" class="poi-link">Website →</a>` : '';
+				const learnMoreLink = poi.properties.link ? `<a href="${poi.properties.link}" target="_blank" class="poi-link">${t('poi.website')} →</a>` : '';
 				const categoryInfo = categories[poi.properties.category];
 				const categoryName = categoryInfo ? `${categoryInfo.emoji} ${getTranslated(categoryInfo.name)}` : '';
 				const tags = poi.properties.tags || [];
@@ -1030,7 +1058,7 @@ function createCategoryFilters() {
 						${tagsHtml}
 						<div class="poi-actions">
 							${learnMoreLink}
-							<a href="${googleMapsUrl}" target="_blank" class="poi-link poi-link-secondary">Route</a>
+							<a href="${googleMapsUrl}" target="_blank" class="poi-link poi-link-secondary">${t('poi.route')}</a>
 						</div>
 					</div>
 				`;
@@ -1118,7 +1146,7 @@ function createCategoryFilters() {
 				// Create and bind the same popup as the main marker
 				const icon = getCategoryIcon(poi.properties.category);
 				const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coord[0]},${coord[1]}`;
-				const learnMoreLink = poi.properties.link ? `<a href="${poi.properties.link}" target="_blank" class="poi-link">Website →</a>` : '';
+				const learnMoreLink = poi.properties.link ? `<a href="${poi.properties.link}" target="_blank" class="poi-link">${t('poi.website')} →</a>` : '';
 				const categoryInfo = categories[poi.properties.category];
 				const categoryName = categoryInfo ? `${categoryInfo.emoji} ${getTranslated(categoryInfo.name)}` : '';
 				const tags = poi.properties.tags || [];
@@ -1139,7 +1167,7 @@ function createCategoryFilters() {
 						${tagsHtml}
 						<div class="poi-actions">
 							${learnMoreLink}
-							<a href="${googleMapsUrl}" target="_blank" class="poi-link poi-link-secondary">Route</a>
+							<a href="${googleMapsUrl}" target="_blank" class="poi-link poi-link-secondary">${t('poi.route')}</a>
 						</div>
 					</div>
 				`;
@@ -1222,12 +1250,12 @@ function createCategoryFilters() {
 		function populateLists() {
 			dropdown.innerHTML = '';
 
-			// Add "Keine Liste" option
+			// Add "No list" option
 			const noneOption = document.createElement('div');
 			noneOption.className = 'graetzl-option';
 			noneOption.dataset.id = '';
-			noneOption.dataset.name = 'Keine Liste';
-			noneOption.textContent = 'Keine Liste';
+			noneOption.dataset.name = t('dropdown.noList');
+			noneOption.textContent = t('dropdown.noList');
 			noneOption.addEventListener('click', () => selectList(null));
 			dropdown.appendChild(noneOption);
 
@@ -1291,7 +1319,7 @@ function createCategoryFilters() {
 			} else {
 				selectedList = null;
 				searchInput.value = '';
-				searchInput.placeholder = 'Keine Liste ausgewählt';
+				searchInput.placeholder = t('placeholder.noList');
 				searchInput.dataset.selected = 'false';
 				deactivateList();
 			}
@@ -1314,7 +1342,8 @@ function createCategoryFilters() {
 			} else if (selectedList) {
 				searchInput.select();
 			}
-			filterListDropdown(searchInput.value);
+			// Always show all options when focused
+			filterListDropdown('');
 			dropdown.style.display = 'block';
 		});
 
@@ -1377,8 +1406,8 @@ function createCategoryFilters() {
 					<div class="list-item-content">
 						<div class="list-item-name">${categoryIcon} ${poi.properties.name}</div>
 						${description ? `<div class="list-item-description">${description}</div>` : ''}
-						${poi.properties.link ? `<a href="${poi.properties.link}" target="_blank" class="list-item-link">Webseite</a>` : ''}
-						${poi.properties.instagram ? `<a href="${poi.properties.instagram}" target="_blank" class="list-item-link">Instagram</a>` : ''}
+						${poi.properties.link ? `<a href="${poi.properties.link}" target="_blank" class="list-item-link">${t('poi.website')}</a>` : ''}
+						${poi.properties.instagram ? `<a href="${poi.properties.instagram}" target="_blank" class="list-item-link">${t('poi.instagram')}</a>` : ''}
 					</div>
 				`;
 
@@ -1472,15 +1501,21 @@ function createCategoryFilters() {
 			// Update markers to show only list POIs
 			updateMarkers();
 
-			// Zoom map to fit all list POIs
-			zoomToListPOIs(list.pois);
+			// Wait for sidebar animation to complete, then invalidate map size and zoom
+			setTimeout(() => {
+				// Invalidate map size so it recalculates based on new container dimensions
+				map.invalidateSize();
 
-			// Draw arrows if showAsWalk is true, otherwise just numbers
-			if (list.showAsWalk) {
-				drawWalkthroughArrows(list.pois);
-			} else {
-				drawListNumbers(list.pois);
-			}
+				// Zoom map to fit all list POIs
+				zoomToListPOIs(list.pois);
+
+				// Draw arrows if showAsWalk is true, otherwise just numbers
+				if (list.showAsWalk) {
+					drawWalkthroughArrows(list.pois);
+				} else {
+					drawListNumbers(list.pois);
+				}
+			}, 350); // Wait for CSS transition (0.3s) plus a small buffer
 
 			// Update URL
 			updateUrlForList(list);
@@ -1495,6 +1530,12 @@ function createCategoryFilters() {
 
 			// Hide sidebar
 			document.querySelector('.container').classList.remove('sidebar-active');
+
+			// Wait for sidebar animation to complete, then invalidate map size
+			setTimeout(() => {
+				// Invalidate map size so it recalculates based on new container dimensions
+				map.invalidateSize();
+			}, 350); // Wait for CSS transition (0.3s) plus a small buffer
 
 			// Clear sidebar content
 			if (sidebarTitle) sidebarTitle.textContent = '';
@@ -1539,7 +1580,7 @@ function createCategoryFilters() {
 	}
 
 	// Handle browser back/forward buttons
-	window.addEventListener('popstate', (event) => {
+	window.addEventListener('popstate', () => {
 		const graetzlSlug = getGraetzlSlugFromPath();
 		if (graetzlSlug) {
 			const graetzl = findGraetzlBySlug(graetzlData, graetzlSlug);
@@ -1633,6 +1674,9 @@ function createCategoryFilters() {
 		const listDropdownEl = document.getElementById('list-dropdown');
 		if (listSearchEl && listDropdownEl && listData.length > 0) {
 			const currentSelected = currentList;
+
+			// Re-sort lists based on new language (for alphabetical fallback)
+			sortLists();
 
 			// Re-populate dropdown with translated titles
 			listDropdownEl.innerHTML = '';

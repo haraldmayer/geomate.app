@@ -1,8 +1,8 @@
-# Grätzlmap - Agent Development Guide
+# Geomate - Agent Development Guide
 
 ## Project Overview
 
-Grätzlmap is an interactive guide to Vienna's neighborhoods (called "Grätzl" in Viennese dialect). The application features an interactive map where users can explore different neighborhoods, discover points of interest (POIs), curate lists, and follow guided walks through the city.
+Geomate is an interactive guide to Vienna's neighborhoods (called "Grätzl" in Viennese dialect). The application features an interactive map where users can explore different neighborhoods, discover points of interest (POIs), curate lists, and follow guided walks through the city.
 
 ## Tech Stack
 

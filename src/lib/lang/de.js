@@ -4,7 +4,7 @@
 export default {
 	// Header
 	header: {
-		subtitle: 'Entdecke Wiens Grätzln'
+		subtitle: 'Entdecke Wien'
 	},
 
 	// Navigation
@@ -35,13 +35,30 @@ export default {
 
 	// Category toggle
 	category: {
-		allCategories: 'Alle Kategorien'
+		allCategories: 'Alle Kategorien',
+		noCategories: 'Keine Kategorien',
+		categoriesCount: 'Kategorien',
+		of: 'von'
 	},
 
 	// Sidebar
 	sidebar: {
 		list: 'Liste',
 		walkthrough: 'Walk'
+	},
+
+	// Dropdown options
+	dropdown: {
+		showAll: 'Alle anzeigen',
+		noList: 'Keine Liste',
+		noPOIsFound: 'Keine POIs gefunden'
+	},
+
+	// POI links
+	poi: {
+		website: 'Website',
+		route: 'Route',
+		instagram: 'Instagram'
 	},
 
 	// Language switcher
