@@ -1,0 +1,7 @@
+{
+    "name": "hutte-website-astro",
+    "compatibility_date": "2025-11-07",
+    "assets": {
+        "directory": "./dist"
+    }
+}
