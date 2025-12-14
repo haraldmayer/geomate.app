@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.618923148027204,
+      39.710338019409946
+    ]
+  },
+  "properties": {
+    "name": "Es Taller",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "fine-dining",
+      "maria"
+    ],
+    "id": "poi_1765737214170_mdmx2qzxp"
+  }
+}

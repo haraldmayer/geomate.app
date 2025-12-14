@@ -56,18 +56,19 @@
       },
       "slug": "moebel-shopping",
       "pois": [
+        "poi_1765301258081_r80rnd5f0",
         "poi_1765577348479_ucmc8hnba",
-        "poi_1765577388400_2rjn4idy3",
         "poi_1765577596262_e5ra4xo0k",
+        "poi_1765577388400_2rjn4idy3",
         "poi_1765602417571_zdyw3zfe0",
         "poi_1765577310724_yjan2lwz6",
         "poi_1765577563632_nbb0n3zux",
         "poi_1765577423644_yh9e0s2c1",
         "poi_1765577919401_6ygp0ozom"
       ],
-      "showAsWalk": true,
-      "id": "list_1765577637788_15qtlk1gs",
-      "order": 1
+      "type": "walk",
+      "order": 1,
+      "id": "list_1765577637788_15qtlk1gs"
     },
     {
       "title": {
@@ -119,9 +120,11 @@
         "poi_1765734443232_34xx21dr0",
         "poi_1765734296597_y6clnjiw6",
         "poi_1765733621098_whl8fj8av",
-        "poi_1765733971389_luccr4s9h",
+        "poi_1765737214170_mdmx2qzxp",
+        "poi_1765737064492_bgwv4xkbj",
         "poi_1765733540822_cwurjtk9p",
         "poi_1765734010728_xotjo4un4",
+        "poi_1765733971389_luccr4s9h",
         "poi_1765734087679_4icja54gw"
       ],
       "type": "list",

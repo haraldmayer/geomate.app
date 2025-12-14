@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.6431838966080856,
+      39.57341015974593
+    ]
+  },
+  "properties": {
+    "name": "Adrian Quetglas",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "fine-dining",
+      "maria"
+    ],
+    "id": "poi_1765737064492_bgwv4xkbj"
+  }
+}
