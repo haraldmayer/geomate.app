@@ -19,9 +19,9 @@ export default {
 
 	// Placeholders
 	placeholder: {
-		noList: 'No list selected',
-		noWalk: 'No walk selected',
-		allGraetzl: 'All neighborhoods shown',
+		noList: 'Select a list',
+		noWalk: 'Select a walk',
+		allGraetzl: 'Select a neighborhood',
 		searchPOI: 'Search POI by name...',
 		searchCategories: 'Search categories...'
 	},

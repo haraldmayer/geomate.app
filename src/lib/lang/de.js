@@ -19,9 +19,9 @@ export default {
 
 	// Placeholders
 	placeholder: {
-		noList: 'Keine Liste ausgewählt',
-		noWalk: 'Kein Walk ausgewählt',
-		allGraetzl: 'Alle Grätzl werden angezeigt',
+		noList: 'Liste wählen',
+		noWalk: 'Walk wählen',
+		allGraetzl: 'Grätzl wählen',
 		searchPOI: 'POI nach Name suchen...',
 		searchCategories: 'Kategorien suchen...'
 	},
