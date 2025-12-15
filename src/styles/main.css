@@ -1049,6 +1049,8 @@ main {
 		transform: translateX(100%);
 		transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 		box-shadow: -2px 0 12px rgba(0, 0, 0, 0.15);
+		box-sizing: border-box;
+		overflow-x: hidden;
 	}
 
 	.container.sidebar-active .poi-sidebar {
@@ -1069,6 +1071,8 @@ main {
 
 	.poi-sidebar-header {
 		padding: 1.25rem 1rem;
+		box-sizing: border-box;
+		width: 100%;
 	}
 
 	.poi-sidebar-header h2 {
@@ -1081,6 +1085,8 @@ main {
 
 	.poi-sidebar-items {
 		padding: 0.75rem;
+		box-sizing: border-box;
+		width: 100%;
 	}
 
 	.poi-sidebar-item {
@@ -1129,5 +1135,13 @@ main {
 	.poi-link {
 		padding: 0.5rem 0.75rem;
 		font-size: 0.8125rem;
+	}
+
+	/* Fix locate button visibility on mobile */
+	.locate-me-btn {
+		position: fixed;
+		z-index: 1600;
+		bottom: 1rem;
+		left: 1rem;
 	}
 }
