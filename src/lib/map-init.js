@@ -1428,8 +1428,6 @@ function createCategoryFilters() {
 					<div class="list-item-content">
 						<div class="list-item-name">${categoryIcon} ${poi.properties.name}</div>
 						${description ? `<div class="list-item-description">${description}</div>` : ''}
-						${poi.properties.link ? `<a href="${poi.properties.link}" target="_blank" class="list-item-link">${t('poi.website')}</a>` : ''}
-						${poi.properties.instagram ? `<a href="${poi.properties.instagram}" target="_blank" class="list-item-link">${t('poi.instagram')}</a>` : ''}
 					</div>
 				`;
 
