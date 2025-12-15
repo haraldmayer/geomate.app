@@ -39,6 +39,7 @@
         "en": "Traditionelles Programmkino mit ausgewählten Arthouse-Filmen und Klassikern."
       },
       "link": "https://www.filmcasino.at",
+      "instagram": "https://www.instagram.com/filmcasino/",
       "id": "poi_1765274869129_0001"
     }
   },
@@ -79,6 +80,7 @@
         "en": "Modernes Asian Diner mit Baozi (gedämpfte chinesische Teigtaschen) und asiatischer Fusionsküche. Drei Standorte in Wien."
       },
       "link": "https://www.baobar.at",
+      "instagram": "https://www.instagram.com/baobarwien/",
       "id": "poi_1765274869130_0003"
     }
   },
@@ -99,6 +101,7 @@
         "en": "Unabhängige Buchhandlung am Kriemhildplatz seit 16 Jahren. Kuratierte Auswahl mit persönlicher Beratung von Inhaberin Ulla Harms."
       },
       "link": "http://www.buchkontor.at",
+      "instagram": "buchkontor1150",
       "id": "poi_1765274869130_0004"
     }
   },
@@ -119,6 +122,7 @@
         "en": "Café in umgebauter Tischlerwerkstatt. Benannt nach den Gebrüdern Franz und Julius Huber, den ursprünglichen Architekten. Serviert Kaffee aus lokaler Röstung, hausgemachte Kuchen und regionale Getränke."
       },
       "link": "https://www.franzundjulius.at",
+      "instagram": "https://www.instagram.com/franzundjulius/",
       "id": "poi_1765274869130_0005"
     }
   },
@@ -139,6 +143,7 @@
         "en": "Gemütliches Kulturcafé mit saisonalem Gastgarten. Bekannt für Shakshuka und entspannte Atmosphäre. Billardtisch im Innenbereich."
       },
       "link": "http://www.kulturcafe-kriemhild.at",
+      "instagram": "https://www.instagram.com/cafe.kriemhild/",
       "id": "poi_1765274869130_0006"
     }
   },
@@ -159,6 +164,7 @@
         "en": "Traditionelles Wiener Gasthaus auf der Schmelz mit Biergarten. Veranstaltet Kulturprogramm und serviert klassische Wiener Küche."
       },
       "link": "https://www.schutzhaus-zukunft.at",
+      "instagram": "https://www.instagram.com/schutzhauszukunft/",
       "id": "poi_1765274869130_0007"
     }
   },
@@ -179,6 +185,7 @@
         "en": "Fahnenmanufaktur seit 1982. Spezialisiert auf individuelle Fahnen, diplomatische Banner und personalisierte Wimpelgirlanden."
       },
       "link": "https://www.allesfahnen.at",
+      "instagram": "allesfahnen",
       "id": "poi_1765274869130_0008"
     }
   },
@@ -219,7 +226,7 @@
         "en": "Sizilianische Spezialitäten"
       },
       "link": "https://www.crupi.at/",
-      "instagram": "",
+      "instagram": "https://www.instagram.com/crupi_group/",
       "photo": "",
       "tags": [],
       "id": "poi_1765274869130_0010"
@@ -282,7 +289,7 @@
         "en": ""
       },
       "link": "https://babettes.at/",
-      "instagram": "",
+      "instagram": "https://www.instagram.com/babettesspices/",
       "photo": "/uploads/poi_1765602020265.jpg",
       "tags": [],
       "id": "poi_1765274869131_0013"
@@ -325,6 +332,7 @@
         "en": "Sushi, Bento, Bulgogi, Takeaway Onigiri"
       },
       "link": "https://www.matchakomachi.com/",
+      "instagram": "https://www.instagram.com/matchakomachi_vienna/",
       "id": "poi_1765274869131_0015"
     }
   },
@@ -345,6 +353,7 @@
         "en": "among the best burgers in town"
       },
       "link": "http://www.xo-grill.at/",
+      "instagram": "https://www.instagram.com/xo_grill/",
       "id": "poi_1765274869131_0016"
     }
   },
@@ -407,6 +416,7 @@
         "en": "Mutterschiff der türkischen Gastro in Wien"
       },
       "link": "http://www.kentrestaurant.at/",
+      "instagram": "https://www.instagram.com/kentrestaurants.vienna/",
       "tags": [
         "tuerkisch"
       ],
@@ -430,6 +440,7 @@
         "en": "Ligurische Küche"
       },
       "link": "http://www.restaurantwetter.net/",
+      "instagram": "https://www.instagram.com/restaurantwetterwien/",
       "id": "poi_1765276613531_e4x2pt3mh"
     }
   },
@@ -450,6 +461,7 @@
         "en": "Ältestes Kino Wiens"
       },
       "link": "https://www.breitenseer-lichtspiele.at/",
+      "instagram": "breitenseerlichtspiele",
       "id": "poi_1765277602818_pnkzhrayo"
     }
   },
@@ -470,6 +482,7 @@
         "en": ""
       },
       "link": "https://anna-jagetsberger.at/",
+      "instagram": "https://www.instagram.com/annaundjagetsberger/",
       "id": "poi_1765277663978_g2j5d7y51"
     }
   },
@@ -575,7 +588,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://anzengruber.cafe/",
+      "instagram": "https://www.instagram.com/explore/locations/840479/anzengruber-cafe/",
       "tags": [],
       "id": "poi_1765280402823_mhddqn0al"
     }
@@ -596,7 +610,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://www.anna-jagetsberger.at/",
+      "instagram": "https://www.instagram.com/gasthaus_jagetsberger/",
       "tags": [
         "wiener-kueche"
       ],
@@ -619,7 +634,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://www.blumenkraft.at",
+      "instagram": "blumenkraft.wien",
       "tags": [],
       "id": "poi_1765294415842_btjhx58n8"
     }
@@ -641,6 +657,7 @@
         "en": ""
       },
       "link": "",
+      "instagram": "wunderl_",
       "tags": [],
       "id": "poi_1765294452662_8fw2r6st0"
     }
@@ -661,8 +678,8 @@
         "de": "Kino + Bar",
         "en": ""
       },
-      "link": "",
-      "instagram": "",
+      "link": "https://www.schikaneder.at",
+      "instagram": "https://www.instagram.com/schikaneder.at/",
       "photo": "",
       "tags": [],
       "id": "poi_1765295329999_6c16edf7p"
@@ -684,7 +701,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://www.zurherknerin.at/",
+      "instagram": "https://www.instagram.com/zurherknerin/",
       "tags": [],
       "id": "poi_1765301215244_1u45087vn"
     }
@@ -705,7 +723,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "http://www.homestorevienna.com/",
+      "instagram": "https://www.instagram.com/homestorevienna/",
       "tags": [],
       "id": "poi_1765301258081_r80rnd5f0"
     }
@@ -726,7 +745,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://www.weinschenke-wien.com",
+      "instagram": "weinschenke",
       "tags": [
         "burger"
       ],
@@ -875,8 +895,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
-      "instagram": "",
+      "link": "https://www.wienmuseum.at",
+      "instagram": "https://www.instagram.com/wienmuseum/",
       "tags": [],
       "id": "poi_1765301787915_co4jdqhke"
     }
@@ -897,7 +917,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://www.mani.wien/",
+      "instagram": "https://www.instagram.com/mani_im_vierten/",
       "tags": [],
       "id": "poi_1765302007105_lqvd690ic"
     }
@@ -918,7 +939,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://christinekoeniggalerie.com",
+      "instagram": "christinekoeniggalerie",
       "tags": [],
       "id": "poi_1765311945085_smr1lpiyr"
     }
@@ -939,7 +961,7 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://galerie-neuwirth.com",
       "tags": [],
       "id": "poi_1765312058896_74dhr8z2r"
     }
@@ -1071,7 +1093,7 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://www.gaensehaeufel.at",
       "instagram": "",
       "tags": [],
       "id": "poi_1765478275765_wwofztipq"
@@ -1230,7 +1252,7 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://www.felicitas-home.at",
       "instagram": "",
       "photo": "",
       "tags": [],
@@ -1253,8 +1275,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
-      "instagram": "",
+      "link": "https://www.carla-wien.at",
+      "instagram": "carlaladen",
       "photo": "",
       "tags": [],
       "id": "poi_1765577348479_ucmc8hnba"
@@ -1276,8 +1298,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
-      "instagram": "",
+      "link": "https://www.lichterloh.com",
+      "instagram": "lichterloh_vienna",
       "photo": "",
       "tags": [],
       "id": "poi_1765577388400_2rjn4idy3"
@@ -1299,8 +1321,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
-      "instagram": "",
+      "link": "https://www.glasfabrik.at",
+      "instagram": "dieglasfabrik",
       "photo": "",
       "tags": [],
       "id": "poi_1765577423644_yh9e0s2c1"
@@ -1322,8 +1344,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
-      "instagram": "",
+      "link": "https://wiesinger.furniture",
+      "instagram": "wiesinger.furniture",
       "photo": "",
       "tags": [],
       "id": "poi_1765577563632_nbb0n3zux"
@@ -1345,8 +1367,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
-      "instagram": "",
+      "link": "https://www.das-cafe.wien",
+      "instagram": "https://www.instagram.com/dascafe_wien/",
       "photo": "",
       "tags": [],
       "id": "poi_1765577596262_e5ra4xo0k"
@@ -1368,8 +1390,8 @@
         "de": "",
         "en": ""
       },
-      "link": "",
-      "instagram": "",
+      "link": "https://www.vintagerie.at",
+      "instagram": "vintagerie_vienna",
       "photo": "",
       "tags": [],
       "id": "poi_1765577919401_6ygp0ozom"
@@ -1414,8 +1436,8 @@
         "de": "🛋️💡",
         "en": ""
       },
-      "link": "",
-      "instagram": "",
+      "link": "https://www.bakalowits.com",
+      "instagram": "bakalowits",
       "photo": "",
       "tags": [],
       "id": "poi_1765602417571_zdyw3zfe0"
@@ -1460,8 +1482,8 @@
         "de": "",
         "en": "Italian with beautiful garden"
       },
-      "link": "",
-      "instagram": "",
+      "link": "https://www.tancredi.at/",
+      "instagram": "https://www.instagram.com/tancredi_restaurant/",
       "photo": "",
       "tags": [],
       "id": "poi_1765727391935_gj25vv0ec"
