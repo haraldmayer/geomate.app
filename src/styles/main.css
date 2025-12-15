@@ -1043,20 +1043,22 @@ main {
 		right: 0;
 		top: 3.5rem;
 		bottom: 0;
-		width: 85vw;
-		max-width: min(380px, 85vw);
+		width: 80vw;
+		max-width: 80vw;
 		z-index: 1500;
-		transform: translateX(100%);
+		transform: translate3d(100%, 0, 0);
 		transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-		box-shadow: -2px 0 12px rgba(0, 0, 0, 0.15);
+		box-shadow: none;
 		box-sizing: border-box;
 		overflow-x: hidden;
-		will-change: transform;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		contain: layout;
 	}
 
 	.container.sidebar-active .poi-sidebar {
 		display: flex;
-		transform: translateX(0);
+		transform: translate3d(0, 0, 0);
 	}
 
 	/* Ensure sidebar doesn't cause overflow when hidden */
@@ -1093,6 +1095,14 @@ main {
 		padding: 0.75rem;
 		box-sizing: border-box;
 		width: 100%;
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+	/* Ensure all sidebar children are constrained */
+	.poi-sidebar * {
+		max-width: 100%;
+		box-sizing: border-box;
 	}
 
 	.poi-sidebar-item {
@@ -1150,5 +1160,15 @@ main {
 		bottom: 1rem !important;
 		left: 1rem !important;
 		display: flex !important;
+		visibility: visible !important;
+		opacity: 1 !important;
+		pointer-events: auto !important;
+		transform: translate3d(0, 0, 0) !important;
+	}
+
+	/* Ensure main doesn't clip fixed elements */
+	main {
+		overflow: visible !important;
+		position: static !important;
 	}
 }
