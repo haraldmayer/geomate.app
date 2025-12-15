@@ -1058,8 +1058,8 @@ main {
 		right: -100%;
 		top: 3.5rem;
 		bottom: 0;
-		width: 75vw;
-		max-width: 320px;
+		width: 70vw;
+		max-width: 300px;
 		z-index: 1500;
 		transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 		box-shadow: none;
@@ -1088,17 +1088,31 @@ main {
 	}
 
 	.poi-sidebar-header {
-		padding: 1.25rem 1rem;
+		padding: 1rem 0.75rem;
 		box-sizing: border-box;
 		width: 100%;
+		min-width: 0;
+		overflow: hidden;
 	}
 
 	.poi-sidebar-header h2 {
 		font-size: 1rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		min-width: 0;
 	}
 
 	.poi-sidebar-description {
 		font-size: 0.8125rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.poi-sidebar-header-content {
+		min-width: 0;
+		flex: 1;
+		overflow: hidden;
 	}
 
 	.poi-sidebar-items {
