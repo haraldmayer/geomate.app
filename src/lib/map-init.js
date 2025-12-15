@@ -1561,7 +1561,7 @@ function createCategoryFilters() {
 				listSearchInput.dataset.selected = 'true';
 
 				// Update clear button visibility
-				const clearButton = document.getElementById('clear-list-search');
+				const clearButton = document.getElementById('clear-list');
 				if (clearButton) {
 					clearButton.style.display = 'flex';
 				}
