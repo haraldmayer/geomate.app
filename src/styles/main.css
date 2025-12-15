@@ -4,12 +4,20 @@
 	box-sizing: border-box;
 }
 
+html {
+	overflow-x: hidden;
+	max-width: 100vw;
+}
+
 body {
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 	background: #ffffff;
 	color: #202020;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	max-width: 100vw;
+	position: relative;
 }
 
 .container {
@@ -21,6 +29,8 @@ body {
 	grid-template-rows: auto 1fr;
 	height: 100vh;
 	max-height: 100vh;
+	width: 100vw;
+	max-width: 100vw;
 	overflow: hidden;
 	transition: grid-template-columns 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

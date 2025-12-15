@@ -1529,6 +1529,9 @@ function createCategoryFilters() {
 				// Ensure sidebar is expanded when activating a new list
 				if (sidebar) sidebar.classList.remove('collapsed');
 				container.classList.remove('sidebar-collapsed');
+				// Update toggle icon to show collapse state
+				const toggleIcon = document.getElementById('toggle-sidebar-icon');
+				if (toggleIcon) toggleIcon.textContent = '›';
 
 				// Wait for sidebar animation to complete, then invalidate map size and zoom
 				setTimeout(() => {
