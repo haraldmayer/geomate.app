@@ -5,5 +5,16 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
-  // No adapter needed for static builds
+  vite: {
+    build: {
+      // Ensure asset filenames include content hash for cache busting
+      rollupOptions: {
+        output: {
+          entryFileNames: 'entry.[hash].js',
+          chunkFileNames: 'chunks/chunk.[hash].js',
+          assetFileNames: 'assets/asset.[hash][extname]'
+        }
+      }
+    }
+  }
 });
