@@ -1482,6 +1482,16 @@ function createCategoryFilters() {
 			}
 			container.classList.add('sidebar-active');
 
+			// Open mobile navigation on mobile devices
+			if (window.innerWidth <= 768) {
+				const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+				nav.classList.add('mobile-nav-open');
+				if (mobileNavOverlay) {
+					mobileNavOverlay.classList.add('active');
+				}
+				document.body.style.overflow = 'hidden';
+			}
+
 			// Wait for sidebar animation to complete, then invalidate map size and zoom
 			setTimeout(() => {
 				// Invalidate map size so it recalculates based on new container dimensions
