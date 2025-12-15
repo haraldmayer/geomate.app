@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { compilePOIs } from '../../../lib/compile-pois.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -52,6 +53,9 @@ export async function POST({ request }) {
     // Save to file
     const filepath = path.join(POIS_DIR, `${id}.json`);
     fs.writeFileSync(filepath, JSON.stringify(poi, null, 2));
+
+    // Recompile all-pois.json
+    compilePOIs();
 
     return new Response(JSON.stringify({ success: true, id, poi }), {
       status: 201,

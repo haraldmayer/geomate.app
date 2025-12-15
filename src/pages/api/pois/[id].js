@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { compilePOIs } from '../../../lib/compile-pois.js';
 
 const POIS_DIR = path.join(process.cwd(), 'public', 'data', 'pois');
 
@@ -60,6 +61,9 @@ export async function PUT({ params, request }) {
 
     fs.writeFileSync(filepath, JSON.stringify(poi, null, 2));
 
+    // Recompile all-pois.json
+    compilePOIs();
+
     return new Response(JSON.stringify({ success: true, poi }), {
       status: 200,
       headers: {
@@ -92,6 +96,9 @@ export async function DELETE({ params }) {
     }
 
     fs.unlinkSync(filepath);
+
+    // Recompile all-pois.json
+    compilePOIs();
 
     return new Response(JSON.stringify({ success: true }), {
       status: 200,

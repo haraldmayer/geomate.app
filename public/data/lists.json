@@ -38,12 +38,13 @@
         "poi_1765478155056_yvvfbq634",
         "poi_1765478275765_wwofztipq",
         "poi_1765478475573_a16us2z0h",
+        "poi_1765522425743_qcw0sa33r",
         "poi_1765558124347_1ak7chzav",
         "poi_1765558092176_k3gye9w99"
       ],
-      "showAsWalk": false,
-      "id": "list_1765478372407_o59hbz5bs",
-      "order": 3
+      "type": "list",
+      "order": 3,
+      "id": "list_1765478372407_o59hbz5bs"
     },
     {
       "title": {
