@@ -166,6 +166,42 @@ window.addEventListener('load', async function() {
 		return cat?.color || '#FFFFFF';
 	}
 
+	// Function to create popup content (reusable across all marker types)
+	function createPopupContent(poiProperties, coords) {
+		const icon = getCategoryIcon(poiProperties.category);
+		const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coords[0]},${coords[1]}`;
+		const learnMoreLink = poiProperties.link ? `<a href="${poiProperties.link}" target="_blank" class="poi-link">${t('poi.website')} →</a>` : '';
+		const instagramLink = poiProperties.instagram ? `<a href="${poiProperties.instagram}" target="_blank" class="poi-link poi-link-instagram">Instagram →</a>` : '';
+
+		const categoryInfo = categories[poiProperties.category];
+		const categoryName = categoryInfo ? `${categoryInfo.emoji} ${getTranslated(categoryInfo.name)}` : '';
+
+		const tags = poiProperties.tags || [];
+		const tagsHtml = tags.length > 0
+			? `<div class="poi-tags">${tags.map(tag => `<span class="poi-tag">${tag}</span>`).join('')}</div>`
+			: '';
+
+		const photoHtml = poiProperties.photo
+			? `<img src="${poiProperties.photo}" alt="${poiProperties.name}" class="poi-photo" />`
+			: '';
+
+		return `
+			<div class="poi-popup">
+				<div class="poi-icon">${icon}</div>
+				<h3>${poiProperties.name}</h3>
+				${categoryName ? `<div class="poi-category-label">${categoryName}</div>` : ''}
+				${photoHtml}
+				<p>${getTranslated(poiProperties.description)}</p>
+				${tagsHtml}
+				<div class="poi-actions">
+					${learnMoreLink}
+					${instagramLink}
+					<a href="${googleMapsUrl}" target="_blank" class="poi-link poi-link-secondary">${t('poi.route')}</a>
+				</div>
+			</div>
+		`;
+	}
+
 	// Function to calculate marker size based on zoom level
 	function getMarkerSize(zoom) {
 		return Math.max(10, Math.min(50, 10 + (zoom - 10) * 3.33));
@@ -451,39 +487,8 @@ function createCategoryFilters() {
 				opacity: 0.9
 			});
 
-			// Create popup content
-			const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coords[0]},${coords[1]}`;
-			const learnMoreLink = poi.link ? `<a href="${poi.link}" target="_blank" class="poi-link">${t('poi.website')} →</a>` : '';
-
-			// Get category info
-			const categoryInfo = categories[poi.category];
-			const categoryName = categoryInfo ? `${categoryInfo.emoji} ${getTranslated(categoryInfo.name)}` : '';
-
-			// Format tags if available
-			const tags = poi.tags || [];
-			const tagsHtml = tags.length > 0
-				? `<div class="poi-tags">${tags.map(tag => `<span class="poi-tag">${tag}</span>`).join('')}</div>`
-				: '';
-
-			// Format photo if available
-			const photoHtml = poi.photo
-				? `<img src="${poi.photo}" alt="${poi.name}" class="poi-photo" />`
-				: '';
-
-			const popupContent = `
-				<div class="poi-popup">
-					<div class="poi-icon">${icon}</div>
-					<h3>${poi.name}</h3>
-					${categoryName ? `<div class="poi-category-label">${categoryName}</div>` : ''}
-					${photoHtml}
-					<p>${getTranslated(poi.description)}</p>
-					${tagsHtml}
-					<div class="poi-actions">
-						${learnMoreLink}
-						<a href="${googleMapsUrl}" target="_blank" class="poi-link poi-link-secondary">${t('poi.route')}</a>
-					</div>
-				</div>
-			`;
+			// Create and bind popup
+			const popupContent = createPopupContent(poi, coords);
 
 			marker.bindPopup(popupContent, {
 				maxWidth: 300,
@@ -1053,33 +1058,7 @@ function createCategoryFilters() {
 				});
 
 				// Create and bind the same popup as the main marker
-				const icon = getCategoryIcon(poi.properties.category);
-				const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coord[0]},${coord[1]}`;
-				const learnMoreLink = poi.properties.link ? `<a href="${poi.properties.link}" target="_blank" class="poi-link">${t('poi.website')} →</a>` : '';
-				const categoryInfo = categories[poi.properties.category];
-				const categoryName = categoryInfo ? `${categoryInfo.emoji} ${getTranslated(categoryInfo.name)}` : '';
-				const tags = poi.properties.tags || [];
-				const tagsHtml = tags.length > 0
-					? `<div class="poi-tags">${tags.map(tag => `<span class="poi-tag">${tag}</span>`).join('')}</div>`
-					: '';
-				const photoHtml = poi.properties.photo
-					? `<img src="${poi.properties.photo}" alt="${poi.properties.name}" class="poi-photo" />`
-					: '';
-
-				const popupContent = `
-					<div class="poi-popup">
-						<div class="poi-icon">${icon}</div>
-						<h3>${poi.properties.name}</h3>
-						${categoryName ? `<div class="poi-category-label">${categoryName}</div>` : ''}
-						${photoHtml}
-						<p>${getTranslated(poi.properties.description)}</p>
-						${tagsHtml}
-						<div class="poi-actions">
-							${learnMoreLink}
-							<a href="${googleMapsUrl}" target="_blank" class="poi-link poi-link-secondary">${t('poi.route')}</a>
-						</div>
-					</div>
-				`;
+				const popupContent = createPopupContent(poi.properties, coord);
 
 				numberMarker.bindPopup(popupContent, {
 					maxWidth: 300,
@@ -1162,33 +1141,7 @@ function createCategoryFilters() {
 				});
 
 				// Create and bind the same popup as the main marker
-				const icon = getCategoryIcon(poi.properties.category);
-				const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coord[0]},${coord[1]}`;
-				const learnMoreLink = poi.properties.link ? `<a href="${poi.properties.link}" target="_blank" class="poi-link">${t('poi.website')} →</a>` : '';
-				const categoryInfo = categories[poi.properties.category];
-				const categoryName = categoryInfo ? `${categoryInfo.emoji} ${getTranslated(categoryInfo.name)}` : '';
-				const tags = poi.properties.tags || [];
-				const tagsHtml = tags.length > 0
-					? `<div class="poi-tags">${tags.map(tag => `<span class="poi-tag">${tag}</span>`).join('')}</div>`
-					: '';
-				const photoHtml = poi.properties.photo
-					? `<img src="${poi.properties.photo}" alt="${poi.properties.name}" class="poi-photo" />`
-					: '';
-
-				const popupContent = `
-					<div class="poi-popup">
-						<div class="poi-icon">${icon}</div>
-						<h3>${poi.properties.name}</h3>
-						${categoryName ? `<div class="poi-category-label">${categoryName}</div>` : ''}
-						${photoHtml}
-						<p>${getTranslated(poi.properties.description)}</p>
-						${tagsHtml}
-						<div class="poi-actions">
-							${learnMoreLink}
-							<a href="${googleMapsUrl}" target="_blank" class="poi-link poi-link-secondary">${t('poi.route')}</a>
-						</div>
-					</div>
-				`;
+				const popupContent = createPopupContent(poi.properties, coord);
 
 				numberMarker.bindPopup(popupContent, {
 					maxWidth: 300,

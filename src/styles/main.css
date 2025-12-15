@@ -770,6 +770,9 @@ main {
 
 .poi-popup {
 	padding: 0.5rem;
+	width: 320px;
+	max-width: 90vw;
+	box-sizing: border-box;
 }
 
 .poi-popup .poi-icon {
@@ -840,6 +843,8 @@ main {
 	display: flex;
 	gap: 0.5rem;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 .poi-link {
