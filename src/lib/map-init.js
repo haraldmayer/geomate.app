@@ -1526,12 +1526,20 @@ function createCategoryFilters() {
 
 				container.classList.add('sidebar-active');
 
-				// Ensure sidebar is expanded when activating a new list
-				if (sidebar) sidebar.classList.remove('collapsed');
-				container.classList.remove('sidebar-collapsed');
-				// Update toggle icon to show collapse state
-				const toggleIcon = document.getElementById('toggle-sidebar-icon');
-				if (toggleIcon) toggleIcon.textContent = '›';
+				// On mobile: start in collapsed/peek view, on desktop: expanded
+				if (sidebar) {
+					if (window.innerWidth <= 768) {
+						// Mobile: show in peek mode (collapsed)
+						sidebar.classList.remove('expanded');
+						sidebar.classList.add('collapsed');
+					} else {
+						// Desktop: show expanded
+						sidebar.classList.remove('collapsed');
+						sidebar.classList.add('expanded');
+						const toggleIcon = document.getElementById('toggle-sidebar-icon');
+						if (toggleIcon) toggleIcon.textContent = '›';
+					}
+				}
 
 				// Wait for sidebar animation to complete, then invalidate map size and zoom
 				setTimeout(() => {
@@ -1622,31 +1630,33 @@ function createCategoryFilters() {
 		// Function to toggle sidebar collapse/expand (without deactivating list)
 		function toggleSidebar() {
 			const sidebar = document.getElementById('poi-sidebar');
-			const container = document.querySelector('.container');
-			const toggleIcon = document.getElementById('toggle-sidebar-icon');
-			const isCollapsed = sidebar.classList.contains('collapsed');
+			const isExpanded = sidebar.classList.contains('expanded');
 
-			if (isCollapsed) {
-				// Expand sidebar
-				sidebar.classList.remove('collapsed');
-				container.classList.remove('sidebar-collapsed');
-				if (toggleIcon) toggleIcon.textContent = '›';
-			} else {
-				// Collapse sidebar
+			if (isExpanded) {
+				// Collapse to peek view
+				sidebar.classList.remove('expanded');
 				sidebar.classList.add('collapsed');
-				container.classList.add('sidebar-collapsed');
-				if (toggleIcon) toggleIcon.textContent = '‹';
+			} else {
+				// Expand to full view
+				sidebar.classList.remove('collapsed');
+				sidebar.classList.add('expanded');
 			}
-
-			// Recalculate map size after animation
-			setTimeout(() => {
-				map.invalidateSize();
-			}, 350);
 		}
 
-		// Handle toggle button - collapses/expands sidebar
+		// Mobile: tap header to toggle, desktop: use button
+		const sidebarHeader = document.querySelector('.poi-sidebar-header');
+		if (sidebarHeader && window.innerWidth <= 768) {
+			sidebarHeader.addEventListener('click', (e) => {
+				// Don't toggle if clicking on a link or button
+				if (e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
+					toggleSidebar();
+				}
+			});
+		}
+
+		// Desktop toggle button
 		const toggleSidebarBtn = document.getElementById('toggle-poi-sidebar');
-		if (toggleSidebarBtn) {
+		if (toggleSidebarBtn && window.innerWidth > 768) {
 			toggleSidebarBtn.addEventListener('click', () => {
 				toggleSidebar();
 			});

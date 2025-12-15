@@ -3,7 +3,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.364086589301394, 48.19818869640931]
+      "coordinates": [
+        16.364086589301394,
+        48.19818869640931
+      ]
     },
     "properties": {
       "name": "Rösterei Alt Wien",
@@ -23,7 +26,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.359819554512733, 48.19250462346606]
+      "coordinates": [
+        16.359819554512733,
+        48.19250462346606
+      ]
     },
     "properties": {
       "name": "Filmcasino",
@@ -40,7 +46,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.364, 48.1985]
+      "coordinates": [
+        16.364,
+        48.1985
+      ]
     },
     "properties": {
       "name": "Naschmarkt",
@@ -57,7 +66,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.3658069, 48.1979108]
+      "coordinates": [
+        16.3658069,
+        48.1979108
+      ]
     },
     "properties": {
       "name": "Bao Bar",
@@ -74,7 +86,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.3294563, 48.2022857]
+      "coordinates": [
+        16.3294563,
+        48.2022857
+      ]
     },
     "properties": {
       "name": "Buchkontor",
@@ -91,7 +106,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.3294563, 48.2022857]
+      "coordinates": [
+        16.3294563,
+        48.2022857
+      ]
     },
     "properties": {
       "name": "franzundjulius",
@@ -108,7 +126,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.330189, 48.20195]
+      "coordinates": [
+        16.330189,
+        48.20195
+      ]
     },
     "properties": {
       "name": "Café Kriemhild",
@@ -125,7 +146,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.326765, 48.202381]
+      "coordinates": [
+        16.326765,
+        48.202381
+      ]
     },
     "properties": {
       "name": "Schutzhaus Zukunft",
@@ -142,7 +166,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.3279644, 48.2037131]
+      "coordinates": [
+        16.3279644,
+        48.2037131
+      ]
     },
     "properties": {
       "name": "Alles Fahnen",
@@ -159,7 +186,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.376981, 48.217386]
+      "coordinates": [
+        16.376981,
+        48.217386
+      ]
     },
     "properties": {
       "name": "Karmelitermarkt",
@@ -176,7 +206,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36674992567765, 48.197624900430014]
+      "coordinates": [
+        16.36674992567765,
+        48.197624900430014
+      ]
     },
     "properties": {
       "name": "Crupi",
@@ -196,7 +229,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36534444823908, 48.19910522898673]
+      "coordinates": [
+        16.36534444823908,
+        48.19910522898673
+      ]
     },
     "properties": {
       "name": "Postamt",
@@ -213,7 +249,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.358475328835407, 48.19277444701453]
+      "coordinates": [
+        16.358475328835407,
+        48.19277444701453
+      ]
     },
     "properties": {
       "name": "John Harris 1040",
@@ -230,7 +269,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36443382382972, 48.19786513449719]
+      "coordinates": [
+        16.36443382382972,
+        48.19786513449719
+      ]
     },
     "properties": {
       "name": "Babette's",
@@ -250,7 +292,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36596075451302, 48.19827685274822]
+      "coordinates": [
+        16.36596075451302,
+        48.19827685274822
+      ]
     },
     "properties": {
       "name": "SHU",
@@ -267,7 +312,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.366054606373545, 48.19796485686659]
+      "coordinates": [
+        16.366054606373545,
+        48.19796485686659
+      ]
     },
     "properties": {
       "name": "Matcha Komachi",
@@ -284,7 +332,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36017068166236, 48.1959801840249]
+      "coordinates": [
+        16.36017068166236,
+        48.1959801840249
+      ]
     },
     "properties": {
       "name": "XO",
@@ -301,7 +352,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.333178941181767, 48.18083737443849]
+      "coordinates": [
+        16.333178941181767,
+        48.18083737443849
+      ]
     },
     "properties": {
       "name": "Meidlinger Markt",
@@ -318,7 +372,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.336786284184004, 48.214419205523726]
+      "coordinates": [
+        16.336786284184004,
+        48.214419205523726
+      ]
     },
     "properties": {
       "name": "Yppenplatz",
@@ -337,7 +394,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.336405071639252, 48.21386698449984]
+      "coordinates": [
+        16.336405071639252,
+        48.21386698449984
+      ]
     },
     "properties": {
       "name": "KENT",
@@ -347,7 +407,9 @@
         "en": "Mutterschiff der türkischen Gastro in Wien"
       },
       "link": "http://www.kentrestaurant.at/",
-      "tags": ["tuerkisch"],
+      "tags": [
+        "tuerkisch"
+      ],
       "id": "poi_1765275696103_horj8pmur"
     }
   },
@@ -355,7 +417,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.33443095753456, 48.214949969320706]
+      "coordinates": [
+        16.33443095753456,
+        48.214949969320706
+      ]
     },
     "properties": {
       "name": "Wetter",
@@ -372,7 +437,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.309383738835734, 48.201338755800656]
+      "coordinates": [
+        16.309383738835734,
+        48.201338755800656
+      ]
     },
     "properties": {
       "name": "Breitenseer Lichtspiele",
@@ -389,7 +457,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.309314527689487, 48.2018316401354]
+      "coordinates": [
+        16.309314527689487,
+        48.2018316401354
+      ]
     },
     "properties": {
       "name": "Anna & Jagetsberger",
@@ -406,7 +477,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.358965535143362, 48.19688074840358]
+      "coordinates": [
+        16.358965535143362,
+        48.19688074840358
+      ]
     },
     "properties": {
       "name": "U Kettenbrückengasse",
@@ -416,7 +490,9 @@
         "en": ""
       },
       "link": "",
-      "tags": ["u4"],
+      "tags": [
+        "u4"
+      ],
       "id": "poi_1765279262983_996c7qpf5"
     }
   },
@@ -424,7 +500,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.38622933933484, 48.223156716587894]
+      "coordinates": [
+        16.38622933933484,
+        48.223156716587894
+      ]
     },
     "properties": {
       "name": "Volkertmarkt",
@@ -442,7 +521,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.402189025841516, 48.22171017750721]
+      "coordinates": [
+        16.402189025841516,
+        48.22171017750721
+      ]
     },
     "properties": {
       "name": "Vorgartenmarkt",
@@ -460,7 +542,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.401962554185303, 48.22193544228238]
+      "coordinates": [
+        16.401962554185303,
+        48.22193544228238
+      ]
     },
     "properties": {
       "name": "Chicken Karate",
@@ -478,7 +563,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36455168536053, 48.19802091921777]
+      "coordinates": [
+        16.36455168536053,
+        48.19802091921777
+      ]
     },
     "properties": {
       "name": "Anzengruber",
@@ -496,7 +584,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.319089608149362, 48.19624819514787]
+      "coordinates": [
+        16.319089608149362,
+        48.19624819514787
+      ]
     },
     "properties": {
       "name": "Gasthaus Jagetsberger",
@@ -506,7 +597,9 @@
         "en": ""
       },
       "link": "",
-      "tags": ["wiener-kueche"],
+      "tags": [
+        "wiener-kueche"
+      ],
       "id": "poi_1765294330841_i011cqu5p"
     }
   },
@@ -514,7 +607,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36663276180235, 48.19662346278224]
+      "coordinates": [
+        16.36663276180235,
+        48.19662346278224
+      ]
     },
     "properties": {
       "name": "Blumenkraft",
@@ -532,7 +628,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.366153285043467, 48.19658500721967]
+      "coordinates": [
+        16.366153285043467,
+        48.19658500721967
+      ]
     },
     "properties": {
       "name": "Wunderl",
@@ -550,7 +649,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36531453933356, 48.19704141449791]
+      "coordinates": [
+        16.36532060927133,
+        48.19692143820072
+      ]
     },
     "properties": {
       "name": "Schikaneder Kino & Bar",
@@ -560,6 +662,8 @@
         "en": ""
       },
       "link": "",
+      "instagram": "",
+      "photo": "",
       "tags": [],
       "id": "poi_1765295329999_6c16edf7p"
     }
@@ -568,7 +672,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.366835583511342, 48.19521835895723]
+      "coordinates": [
+        16.366835583511342,
+        48.19521835895723
+      ]
     },
     "properties": {
       "name": "Zur Herknerin",
@@ -586,7 +693,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.3642968105189, 48.19681078039623]
+      "coordinates": [
+        16.3642968105189,
+        48.19681078039623
+      ]
     },
     "properties": {
       "name": "Home",
@@ -604,7 +714,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.35976898338075, 48.19455064540735]
+      "coordinates": [
+        16.35976898338075,
+        48.19455064540735
+      ]
     },
     "properties": {
       "name": "Weinschenke",
@@ -614,7 +727,9 @@
         "en": ""
       },
       "link": "",
-      "tags": ["burger"],
+      "tags": [
+        "burger"
+      ],
       "id": "poi_1765301359273_t4a2bumcd"
     }
   },
@@ -622,7 +737,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.364287492809098, 48.2021738550682]
+      "coordinates": [
+        16.364287492809098,
+        48.2021738550682
+      ]
     },
     "properties": {
       "name": "John Harris",
@@ -640,7 +758,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.371604558674207, 48.20085808839353]
+      "coordinates": [
+        16.371604558674207,
+        48.20085808839353
+      ]
     },
     "properties": {
       "name": "Albertina Modern",
@@ -658,7 +779,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.359094736388695, 48.20264580661819]
+      "coordinates": [
+        16.359094736388695,
+        48.20264580661819
+      ]
     },
     "properties": {
       "name": "Leopold Museum",
@@ -676,7 +800,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.365744681662413, 48.19697385785821]
+      "coordinates": [
+        16.365744681662413,
+        48.19697385785821
+      ]
     },
     "properties": {
       "name": "EVO",
@@ -694,7 +821,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.366730003268078, 48.194626989957705]
+      "coordinates": [
+        16.366730003268078,
+        48.194626989957705
+      ]
     },
     "properties": {
       "name": "Gourmet Spar",
@@ -712,7 +842,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.37164326816906, 48.1952791141761]
+      "coordinates": [
+        16.37164326816906,
+        48.1952791141761
+      ]
     },
     "properties": {
       "name": "Post",
@@ -730,7 +863,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.37294926823222, 48.19960144837969]
+      "coordinates": [
+        16.37294926823222,
+        48.19960144837969
+      ]
     },
     "properties": {
       "name": "Wien Museum",
@@ -749,25 +885,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.3704287386753, 48.20004513852232]
-    },
-    "properties": {
-      "name": "U Karlsplatz",
-      "category": "subway-station",
-      "description": {
-        "de": "U1, U2, U4",
-        "en": ""
-      },
-      "link": "",
-      "tags": [],
-      "id": "poi_1765301911269_b5ztl2jya"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [16.365700144014347, 48.19684531236729]
+      "coordinates": [
+        16.365700144014347,
+        48.19684531236729
+      ]
     },
     "properties": {
       "name": "Mani",
@@ -785,7 +906,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.366461891340485, 48.19643052033441]
+      "coordinates": [
+        16.366461891340485,
+        48.19643052033441
+      ]
     },
     "properties": {
       "name": "Galerie König",
@@ -803,7 +927,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.370790839333456, 48.195048466781756]
+      "coordinates": [
+        16.370790839333456,
+        48.195048466781756
+      ]
     },
     "properties": {
       "name": "Galerie Neuwirth",
@@ -821,7 +948,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.370812297004612, 48.19501985953923]
+      "coordinates": [
+        16.370812297004612,
+        48.19501985953923
+      ]
     },
     "properties": {
       "name": "Galerie Neuwirth",
@@ -840,7 +970,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36108520528431, 48.19994789760283]
+      "coordinates": [
+        16.36108520528431,
+        48.19994789760283
+      ]
     },
     "properties": {
       "name": "Cafe Sperl",
@@ -859,7 +992,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.45578456261896, 48.20405419149171]
+      "coordinates": [
+        16.45578456261896,
+        48.20405419149171
+      ]
     },
     "properties": {
       "name": "Schillerwasser",
@@ -879,7 +1015,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.47278501908926, 48.195848158414805]
+      "coordinates": [
+        16.47278501908926,
+        48.195848158414805
+      ]
     },
     "properties": {
       "name": "Alte Naufahrt",
@@ -898,7 +1037,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.406862954741563, 48.23104075380825]
+      "coordinates": [
+        16.406862954741563,
+        48.23104075380825
+      ]
     },
     "properties": {
       "name": "Pier 22",
@@ -917,7 +1059,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.429209810561797, 48.22869254350631]
+      "coordinates": [
+        16.429209810561797,
+        48.22869254350631
+      ]
     },
     "properties": {
       "name": "Gänsehäufel",
@@ -936,7 +1081,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.416836803816445, 48.24251186836927]
+      "coordinates": [
+        16.416836803816445,
+        48.24251186836927
+      ]
     },
     "properties": {
       "name": "Strandbad Alte Donau",
@@ -955,7 +1103,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.395316226392474, 48.24456539018753]
+      "coordinates": [
+        16.395316226392474,
+        48.24456539018753
+      ]
     },
     "properties": {
       "name": "Neue Donau",
@@ -975,7 +1126,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.337349768169958, 48.214084600346254]
+      "coordinates": [
+        16.337349768169958,
+        48.214084600346254
+      ]
     },
     "properties": {
       "name": "Kafeneon",
@@ -995,7 +1149,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36438872719027, 48.19802149812315]
+      "coordinates": [
+        16.36438872719027,
+        48.19802149812315
+      ]
     },
     "properties": {
       "name": "Lisboa Lounge",
@@ -1015,7 +1172,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.31522395467498, 48.17948855905937]
+      "coordinates": [
+        16.31522395467498,
+        48.17948855905937
+      ]
     },
     "properties": {
       "name": "Schönbrunner Bad",
@@ -1035,7 +1195,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.31229958351273, 48.22185101370678]
+      "coordinates": [
+        16.31229958351273,
+        48.22185101370678
+      ]
     },
     "properties": {
       "name": "Kongressbad",
@@ -1055,7 +1218,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.349198154676213, 48.20502081440197]
+      "coordinates": [
+        16.349198154676213,
+        48.20502081440197
+      ]
     },
     "properties": {
       "name": "Felicitas",
@@ -1075,7 +1241,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.363158312346723, 48.19139040382033]
+      "coordinates": [
+        16.363158312346723,
+        48.19139040382033
+      ]
     },
     "properties": {
       "name": "CARLA",
@@ -1095,7 +1264,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.360634823991372, 48.19982944211317]
+      "coordinates": [
+        16.360634823991372,
+        48.19982944211317
+      ]
     },
     "properties": {
       "name": "Lichterloh",
@@ -1115,7 +1287,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.334844083511474, 48.197272998381976]
+      "coordinates": [
+        16.334844083511474,
+        48.197272998381976
+      ]
     },
     "properties": {
       "name": "Glasfabrik",
@@ -1135,7 +1310,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.345658066320325, 48.202646034508035]
+      "coordinates": [
+        16.345658066320325,
+        48.202646034508035
+      ]
     },
     "properties": {
       "name": "Möbel vom Wiesinger",
@@ -1155,7 +1333,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.361376654676032, 48.20014890235271]
+      "coordinates": [
+        16.361376654676032,
+        48.20014890235271
+      ]
     },
     "properties": {
       "name": "Das Möbel",
@@ -1175,7 +1356,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.352265997004743, 48.198623754305444]
+      "coordinates": [
+        16.352265997004743,
+        48.198623754305444
+      ]
     },
     "properties": {
       "name": "Vintagerie",
@@ -1195,7 +1379,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.3598167, 48.1971083]
+      "coordinates": [
+        16.3598167,
+        48.1971083
+      ]
     },
     "properties": {
       "name": "Wiener Blumen",
@@ -1215,7 +1402,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.3581611, 48.1987806]
+      "coordinates": [
+        16.3581611,
+        48.1987806
+      ]
     },
     "properties": {
       "name": "Bakalowits",
@@ -1235,7 +1425,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36228408351153, 48.19797364804036]
+      "coordinates": [
+        16.36228408351153,
+        48.19797364804036
+      ]
     },
     "properties": {
       "name": "Käsehütte",
@@ -1255,7 +1448,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.36590687379292, 48.19183669537418]
+      "coordinates": [
+        16.36590687379292,
+        48.19183669537418
+      ]
     },
     "properties": {
       "name": "Tancredi",
@@ -1275,7 +1471,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-116.65311749007635, 31.979954086494207]
+      "coordinates": [
+        -116.65311749007635,
+        31.979954086494207
+      ]
     },
     "properties": {
       "name": "Conchas de Piedra",
@@ -1287,7 +1486,10 @@
       "link": "https://guide.michelin.com/us/en/baja-california/valle-de-guadalupe_7770290/restaurant/conchas-de-piedra",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765732963205_310hbbpf1"
     }
   },
@@ -1295,7 +1497,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [2.300305397428695, 48.86920550176403]
+      "coordinates": [
+        2.300305397428695,
+        48.86920550176403
+      ]
     },
     "properties": {
       "name": "L'Orangerie",
@@ -1307,7 +1512,10 @@
       "link": "https://guide.michelin.com/us/en/ile-de-france/paris/restaurant/l-orangerie505878",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765733152621_o5lto8v9u"
     }
   },
@@ -1315,7 +1523,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [2.6414185255405727, 39.572688311151296]
+      "coordinates": [
+        2.6414185255405727,
+        39.572688311151296
+      ]
     },
     "properties": {
       "name": "Mombo",
@@ -1327,7 +1538,10 @@
       "link": "https://guide.michelin.com/us/en/islas-baleares/palma/restaurant/mombo",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765733540822_cwurjtk9p"
     }
   },
@@ -1335,7 +1549,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [2.652615967869528, 39.5692161314835]
+      "coordinates": [
+        2.652615967869528,
+        39.5692161314835
+      ]
     },
     "properties": {
       "name": "Quadrat",
@@ -1347,7 +1564,10 @@
       "link": "https://guide.michelin.com/us/en/islas-baleares/palma/restaurant/quadrat",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765733621098_whl8fj8av"
     }
   },
@@ -1355,7 +1575,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-122.86971394994261, 38.61248693290427]
+      "coordinates": [
+        -122.86971394994261,
+        38.61248693290427
+      ]
     },
     "properties": {
       "name": "Single Thread",
@@ -1367,7 +1590,10 @@
       "link": "https://guide.michelin.com/us/en/california/healdsburg/restaurant/singlethread",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765733725769_zse5mj500"
     }
   },
@@ -1375,7 +1601,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-118.3609197458291, 34.07196597590626]
+      "coordinates": [
+        -118.3609197458291,
+        34.07196597590626
+      ]
     },
     "properties": {
       "name": "Sora Temaki handroll bar rooftop",
@@ -1387,7 +1616,10 @@
       "link": "",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765733971389_luccr4s9h"
     }
   },
@@ -1395,7 +1627,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-118.31101249000623, 34.07675517776411]
+      "coordinates": [
+        -118.31101249000623,
+        34.07675517776411
+      ]
     },
     "properties": {
       "name": "Antico Nuevo",
@@ -1415,7 +1650,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-118.23312442253905, 34.04182035732012]
+      "coordinates": [
+        -118.23312442253905,
+        34.04182035732012
+      ]
     },
     "properties": {
       "name": "Bavel",
@@ -1427,7 +1665,10 @@
       "link": "",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765734087679_4icja54gw"
     }
   },
@@ -1435,7 +1676,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [9.194774468121706, 45.468617526350194]
+      "coordinates": [
+        9.194774468121706,
+        45.468617526350194
+      ]
     },
     "properties": {
       "name": "Bacaro Montenapoleone",
@@ -1447,7 +1691,10 @@
       "link": "",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765734296597_y6clnjiw6"
     }
   },
@@ -1455,7 +1702,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [16.31698316836662, 48.200284225495125]
+      "coordinates": [
+        16.31698316836662,
+        48.200284225495125
+      ]
     },
     "properties": {
       "name": "Herzig",
@@ -1467,7 +1717,10 @@
       "link": "",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765734443232_34xx21dr0"
     }
   },
@@ -1475,7 +1728,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [2.6431838966080856, 39.57341015974593]
+      "coordinates": [
+        2.6431838966080856,
+        39.57341015974593
+      ]
     },
     "properties": {
       "name": "Adrian Quetglas",
@@ -1487,7 +1743,10 @@
       "link": "",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765737064492_bgwv4xkbj"
     }
   },
@@ -1495,7 +1754,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [2.618923148027204, 39.710338019409946]
+      "coordinates": [
+        2.618923148027204,
+        39.710338019409946
+      ]
     },
     "properties": {
       "name": "Es Taller",
@@ -1507,7 +1769,10 @@
       "link": "",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765737214170_mdmx2qzxp"
     }
   },
@@ -1515,7 +1780,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [-122.4659902592881, 37.76252255233695]
+      "coordinates": [
+        -122.4659902592881,
+        37.76252255233695
+      ]
     },
     "properties": {
       "name": "Kothai Republic",
@@ -1527,7 +1795,10 @@
       "link": "https://kothairepublic.com/",
       "instagram": "",
       "photo": "",
-      "tags": ["fine-dining", "maria"],
+      "tags": [
+        "fine-dining",
+        "maria"
+      ],
       "id": "poi_1765739701564_2mau7eu9g"
     }
   },
@@ -1535,7 +1806,10 @@
     "type": "Feature",
     "geometry": {
       "type": "Point",
-      "coordinates": [11.435668907946095, 46.390124952266206]
+      "coordinates": [
+        11.435668907946095,
+        46.390124952266206
+      ]
     },
     "properties": {
       "name": "Laab Alm",
@@ -1549,6 +1823,75 @@
       "photo": "",
       "tags": [],
       "id": "poi_1765741959129_aky1rd3ql"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.36498208166234,
+        48.19624395262766
+      ]
+    },
+    "properties": {
+      "name": "DENNS Biomarkt",
+      "category": "shop",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765746710946_0nrn36uq1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.365862909162026,
+        48.195941944372144
+      ]
+    },
+    "properties": {
+      "name": "Hofer",
+      "category": "shop",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765746752967_wxg2e5qg8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.37044432151105,
+        48.200065911432326
+      ]
+    },
+    "properties": {
+      "name": "U Karlsplatz",
+      "category": "subway-station",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765764584759_y0zrtm9s2"
     }
   }
 ]
