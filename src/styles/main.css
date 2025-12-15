@@ -23,9 +23,9 @@ body {
 .container {
 	display: grid;
 	grid-template-areas:
-		"header header header"
-		"nav main main";
-	grid-template-columns: 260px 1fr 0;
+		"header header"
+		"nav main";
+	grid-template-columns: 260px 1fr;
 	grid-template-rows: auto 1fr;
 	height: 100vh;
 	max-height: 100vh;
@@ -37,15 +37,11 @@ body {
 }
 
 .container.sidebar-active {
-	grid-template-areas:
-		"header header header"
-		"nav main sidebar";
-	grid-template-columns: 260px calc(100vw - 260px - 360px) 360px;
-	transition: grid-template-columns 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	/* No change needed - still 2-column layout */
 }
 
 .container.sidebar-active.sidebar-collapsed {
-	grid-template-columns: 260px calc(100vw - 260px - 48px) 48px;
+	/* No change needed - still 2-column layout */
 }
 
 header {
@@ -111,6 +107,8 @@ header h1 {
 	border-right: 1px solid #e5e5e5;
 	padding: 1.25rem;
 	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .nav-section {
@@ -128,6 +126,143 @@ header h1 {
 	color: #6b6b6b;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
+}
+
+/* Integrated POI Sidebar */
+.poi-sidebar-integrated {
+	flex: 1;
+	display: none;
+	flex-direction: column;
+	border-top: 1px solid #e5e5e5;
+	margin-top: 1rem;
+	padding-top: 1rem;
+	min-height: 0; /* Allows flex child to shrink below content size */
+}
+
+.graetzl-nav.poi-sidebar-visible .poi-sidebar-integrated {
+	display: flex;
+}
+
+.poi-sidebar-integrated .poi-sidebar-header {
+	padding: 0 0 1rem 0;
+	border-bottom: 1px solid #e5e5e5;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	background: transparent;
+	margin-bottom: 1rem;
+}
+
+.poi-sidebar-integrated .poi-sidebar-header h2 {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #202020;
+	text-transform: none;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+.poi-sidebar-integrated .poi-sidebar-description {
+	margin: 0.25rem 0 0 0;
+	font-size: 0.75rem;
+	color: #6b6b6b;
+	line-height: 1.4;
+}
+
+.poi-sidebar-integrated .toggle-poi-sidebar-btn {
+	background: transparent;
+	border: none;
+	color: #6b6b6b;
+	font-size: 1.5rem;
+	width: 24px;
+	height: 24px;
+	border-radius: 0.375rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+	padding: 0;
+	transition: all 0.15s ease;
+	flex-shrink: 0;
+}
+
+.poi-sidebar-integrated .toggle-poi-sidebar-btn:hover {
+	background: #f0f0f0;
+	color: #202020;
+}
+
+.poi-sidebar-integrated .poi-sidebar-items {
+	flex: 1;
+	overflow-y: auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.poi-sidebar-integrated .poi-sidebar-item {
+	display: flex;
+	gap: 0.625rem;
+	padding: 0.625rem;
+	background: #ffffff;
+	border: 1px solid #e5e5e5;
+	border-radius: 0.375rem;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	font-size: 0.875rem;
+}
+
+.poi-sidebar-integrated .poi-sidebar-item:hover {
+	background: #f0f0f0;
+	border-color: #d4d4d4;
+}
+
+.poi-sidebar-integrated .poi-sidebar-item.active {
+	background: #f0f0f0;
+	border-color: #202020;
+}
+
+.poi-sidebar-integrated .list-item-number {
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+	background: #202020;
+	color: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 0.75rem;
+}
+
+.poi-sidebar-integrated .list-item-content {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.poi-sidebar-integrated .list-item-content h3 {
+	margin: 0;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #202020;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.poi-sidebar-integrated .list-item-content p {
+	margin: 0.125rem 0 0 0;
+	font-size: 0.75rem;
+	color: #6b6b6b;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .searchable-select {
@@ -460,16 +595,9 @@ header h1 {
 	background: #ffffff;
 }
 
+/* Old right sidebar - deprecated, integrated into left nav */
 .poi-sidebar {
-	grid-area: sidebar;
-	background: #ffffff;
-	border-left: 1px solid #e5e5e5;
-	flex-direction: column;
-	height: 100%;
-	max-height: 100%;
-	overflow: hidden;
-	display: none;
-	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	display: none !important;
 }
 
 .container.sidebar-active .poi-sidebar {

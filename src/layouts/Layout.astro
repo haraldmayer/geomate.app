@@ -72,28 +72,6 @@ const { title = "Geomate" } = Astro.props;
       >
         📍
       </button>
-
-      <!-- POI Sidebar (for Lists and Walkthroughs) -->
-      <div id="poi-sidebar" class="poi-sidebar">
-        <div class="poi-sidebar-header">
-          <div class="poi-sidebar-header-content">
-            <h2 id="poi-sidebar-title"></h2>
-            <p id="poi-sidebar-description" class="poi-sidebar-description"></p>
-          </div>
-          <button
-            id="toggle-poi-sidebar"
-            class="toggle-sidebar-btn"
-            type="button"
-            title="Collapse sidebar"
-            aria-label="Toggle sidebar"
-          >
-            <span id="toggle-sidebar-icon">›</span>
-          </button>
-        </div>
-        <div id="poi-sidebar-items" class="poi-sidebar-items">
-          <!-- Items will be populated dynamically -->
-        </div>
-      </div>
     </div>
 
     <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

@@ -1508,6 +1508,10 @@ function createCategoryFilters() {
 			// For 'map' type, don't show sidebar
 			if (listType === 'map') {
 				// Close sidebar if it was open from previous list/walk
+				const nav = document.querySelector('.graetzl-nav');
+				if (nav) {
+					nav.classList.remove('poi-sidebar-visible');
+				}
 				const container = document.querySelector('.container');
 				const sidebarWasActive = container.classList.contains('sidebar-active');
 				container.classList.remove('sidebar-active');
@@ -1521,25 +1525,13 @@ function createCategoryFilters() {
 			} else {
 				// Show sidebar for 'list' and 'walk' types
 				updateSidebar(list);
+				const nav = document.querySelector('.graetzl-nav');
 				const container = document.querySelector('.container');
-				const sidebar = document.getElementById('poi-sidebar');
 
-				container.classList.add('sidebar-active');
-
-				// On mobile: start in collapsed/peek view, on desktop: expanded
-				if (sidebar) {
-					if (window.innerWidth <= 768) {
-						// Mobile: show in peek mode (collapsed)
-						sidebar.classList.remove('expanded');
-						sidebar.classList.add('collapsed');
-					} else {
-						// Desktop: show expanded
-						sidebar.classList.remove('collapsed');
-						sidebar.classList.add('expanded');
-						const toggleIcon = document.getElementById('toggle-sidebar-icon');
-						if (toggleIcon) toggleIcon.textContent = '›';
-					}
+				if (nav) {
+					nav.classList.add('poi-sidebar-visible');
 				}
+				container.classList.add('sidebar-active');
 
 				// Wait for sidebar animation to complete, then invalidate map size and zoom
 				setTimeout(() => {
@@ -1584,14 +1576,13 @@ function createCategoryFilters() {
 			currentList = null;
 
 			// Hide sidebar
+			const nav = document.querySelector('.graetzl-nav');
 			const container = document.querySelector('.container');
-			const sidebar = document.getElementById('poi-sidebar');
 
+			if (nav) {
+				nav.classList.remove('poi-sidebar-visible');
+			}
 			container.classList.remove('sidebar-active');
-			container.classList.remove('sidebar-collapsed');
-
-			// Remove collapsed state when deactivating
-			if (sidebar) sidebar.classList.remove('collapsed');
 
 			// Wait for sidebar animation to complete, then invalidate map size
 			setTimeout(() => {
@@ -1627,20 +1618,9 @@ function createCategoryFilters() {
 			console.log('List deactivated');
 		}
 
-		// Function to toggle sidebar collapse/expand (without deactivating list)
+		// Function to toggle sidebar (integrated into left nav - no toggle needed)
 		function toggleSidebar() {
-			const sidebar = document.getElementById('poi-sidebar');
-			const isExpanded = sidebar.classList.contains('expanded');
-
-			if (isExpanded) {
-				// Collapse to peek view
-				sidebar.classList.remove('expanded');
-				sidebar.classList.add('collapsed');
-			} else {
-				// Expand to full view
-				sidebar.classList.remove('collapsed');
-				sidebar.classList.add('expanded');
-			}
+			// Integrated sidebar is part of left nav, no toggle collapse/expand needed
 		}
 
 		// Mobile: tap header to toggle, desktop: use button
@@ -1654,11 +1634,11 @@ function createCategoryFilters() {
 			});
 		}
 
-		// Desktop toggle button
+		// Desktop toggle button - close POI sidebar
 		const toggleSidebarBtn = document.getElementById('toggle-poi-sidebar');
-		if (toggleSidebarBtn && window.innerWidth > 768) {
+		if (toggleSidebarBtn) {
 			toggleSidebarBtn.addEventListener('click', () => {
-				toggleSidebar();
+				deactivateList();
 			});
 		}
 
