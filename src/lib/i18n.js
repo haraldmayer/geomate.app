@@ -8,8 +8,8 @@ import en from './lang/en.js';
 // Language files
 const languages = { de, en };
 
-// Current language (default: German)
-let currentLanguage = 'de';
+// Current language (default: English)
+let currentLanguage = 'en';
 
 // Get current language from localStorage or browser
 export function initLanguage() {
@@ -22,7 +22,7 @@ export function initLanguage() {
 
 	// Otherwise, detect from browser
 	const browserLang = navigator.language.split('-')[0];
-	currentLanguage = (browserLang === 'de' || browserLang === 'en') ? browserLang : 'de';
+	currentLanguage = (browserLang === 'de' || browserLang === 'en') ? browserLang : 'en';
 	localStorage.setItem('graetzlmap-language', currentLanguage);
 }
 
@@ -42,11 +42,12 @@ export function setLanguage(lang) {
 }
 
 // Get translated text from multilingual object or string
+// Falls back to English if current language not available
 export function getTranslated(textObj) {
 	if (!textObj) return '';
 	if (typeof textObj === 'string') return textObj;
 	if (typeof textObj === 'object') {
-		return textObj[currentLanguage] || textObj.de || textObj.en || '';
+		return textObj[currentLanguage] || textObj.en || textObj.de || '';
 	}
 	return '';
 }

@@ -11,7 +11,8 @@ export default {
 	nav: {
 		list: 'Liste',
 		walkthrough: 'Grätzlwalk',
-		selectGraetzl: 'Grätzl auswählen',
+		selectList: 'Liste wählen',
+		selectGraetzl: 'Grätzl wählen',
 		searchPOI: 'POI suchen',
 		filterCategories: 'Kategorien filtern'
 	},

@@ -1677,6 +1677,24 @@ function createCategoryFilters() {
 
 	// Function to update all UI text based on current language
 	function updateUILanguage() {
+		// Update all elements with data-i18n attributes
+		document.querySelectorAll('[data-i18n]').forEach(el => {
+			const key = el.getAttribute('data-i18n');
+			el.textContent = t(key);
+		});
+
+		// Update all elements with data-i18n-placeholder attributes
+		document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+			const key = el.getAttribute('data-i18n-placeholder');
+			el.placeholder = t(key);
+		});
+
+		// Update all elements with data-i18n-title attributes
+		document.querySelectorAll('[data-i18n-title]').forEach(el => {
+			const key = el.getAttribute('data-i18n-title');
+			el.title = t(key);
+		});
+
 		// Header
 		const headerSubtitle = document.getElementById('header-subtitle');
 		if (headerSubtitle) {

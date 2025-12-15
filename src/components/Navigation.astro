@@ -1,12 +1,13 @@
 <nav class="graetzl-nav">
   <div class="nav-section">
-    <h2>Liste wählen</h2>
+    <h2 data-i18n="nav.selectList">Choose List</h2>
     <div class="searchable-select">
       <input
         type="text"
         id="list-search"
         class="graetzl-search-input"
-        placeholder="Keine Liste ausgewählt"
+        data-i18n-placeholder="placeholder.noList"
+        placeholder="Select a list"
         autocomplete="off"
         data-selected="false"
       />
@@ -15,7 +16,8 @@
         class="clear-button"
         type="button"
         style="display: none;"
-        title="Auswahl löschen">×</button
+        data-i18n-title="button.clearSelection"
+        title="Clear selection">×</button
       >
       <div id="list-dropdown" class="graetzl-dropdown" style="display: none;">
         <!-- Options will be populated dynamically -->
@@ -24,13 +26,14 @@
   </div>
 
   <div class="nav-section" style="display: none;">
-    <h2>Grätzl wählen</h2>
+    <h2 data-i18n="nav.selectGraetzl">Select Neighborhood</h2>
     <div class="searchable-select">
       <input
         type="text"
         id="graetzl-search"
         class="graetzl-search-input"
-        placeholder="Alle Grätzl werden angezeigt"
+        data-i18n-placeholder="placeholder.allGraetzl"
+        placeholder="All neighborhoods shown"
         autocomplete="off"
         data-selected="false"
       />
@@ -39,7 +42,8 @@
         class="clear-button"
         type="button"
         style="display: none;"
-        title="Auswahl löschen">×</button
+        data-i18n-title="button.clearSelection"
+        title="Clear selection">×</button
       >
       <div
         id="graetzl-dropdown"
@@ -52,10 +56,12 @@
   </div>
 
   <div class="nav-section" style="display: none;">
-    <h2>Kategorien filtern</h2>
+    <h2 data-i18n="nav.filterCategories">Filter Categories</h2>
     <div class="category-filter-container">
       <button id="category-toggle" class="category-toggle" type="button">
-        <span class="category-toggle-text">Alle Kategorien</span>
+        <span class="category-toggle-text" data-i18n="category.allCategories"
+          >All Categories</span
+        >
         <span class="category-toggle-icon">▼</span>
       </button>
       <div
@@ -67,12 +73,14 @@
           <button
             id="select-all-categories"
             class="category-action-btn"
-            type="button">Alle auswählen</button
+            type="button"
+            data-i18n="button.selectAll">Select all</button
           >
           <button
             id="deselect-all-categories"
             class="category-action-btn"
-            type="button">Alle abwählen</button
+            type="button"
+            data-i18n="button.deselectAll">Deselect all</button
           >
         </div>
         <div class="category-search-wrapper">
@@ -80,7 +88,8 @@
             type="text"
             id="category-search"
             class="category-search-input"
-            placeholder="Kategorien suchen..."
+            data-i18n-placeholder="placeholder.searchCategories"
+            placeholder="Search categories..."
             autocomplete="off"
           />
         </div>

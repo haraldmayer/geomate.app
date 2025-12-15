@@ -11,6 +11,7 @@ export default {
 	nav: {
 		list: 'List',
 		walkthrough: 'Neighborhood Walk',
+		selectList: 'Choose List',
 		selectGraetzl: 'Select Neighborhood',
 		searchPOI: 'Search POI',
 		filterCategories: 'Filter Categories'
