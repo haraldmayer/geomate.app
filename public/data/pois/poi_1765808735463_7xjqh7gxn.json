@@ -1,0 +1,23 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      16.365483566320258,
+      48.19977078279889
+    ]
+  },
+  "properties": {
+    "name": "Umar Fisch",
+    "category": "fischgeschaeft",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "https://www.umarfisch.at/",
+    "instagram": "",
+    "photo": "",
+    "tags": [],
+    "id": "poi_1765808735463_7xjqh7gxn"
+  }
+}
