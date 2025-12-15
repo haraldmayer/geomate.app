@@ -55,6 +55,18 @@ header {
 	width: 100%;
 }
 
+.header-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.header-title {
+	flex: 1;
+	min-width: 0;
+}
+
 header h1 {
 	font-size: 1.25rem;
 	font-weight: 600;
@@ -69,9 +81,7 @@ header h1 {
 }
 
 .language-switcher {
-	position: fixed;
-	top: 1rem;
-	right: 1.5rem;
+	position: static;
 	background: #ffffff;
 	color: #202020;
 	border: 1px solid #e5e5e5;
@@ -81,7 +91,9 @@ header h1 {
 	font-weight: 500;
 	cursor: pointer;
 	transition: all 0.15s ease;
-	z-index: 1000;
+	z-index: auto;
+	flex-shrink: 0;
+	white-space: nowrap;
 }
 
 .mobile-nav-toggle {
@@ -1019,7 +1031,25 @@ main {
 	}
 
 	header {
-		padding: 0.875rem 1rem 0.875rem 4.5rem;
+		padding: 0.875rem 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	.header-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.75rem;
+		width: 100%;
+	}
+
+	.header-title {
+		flex: 1;
+		min-width: 0;
+		padding-left: 3.5rem;
 	}
 
 	header h1 {
@@ -1031,8 +1061,7 @@ main {
 	}
 
 	.language-switcher {
-		top: 0.75rem;
-		right: 1rem;
+		position: static;
 		padding: 0.375rem 0.75rem;
 		font-size: 0.8125rem;
 	}
