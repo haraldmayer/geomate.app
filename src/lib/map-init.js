@@ -53,6 +53,7 @@ window.addEventListener('load', async function() {
 	let currentList = null; // Track currently active list
 	let listData = []; // Store list data (includes walks with showAsWalk flag)
 	let listMarkers = []; // Store list number markers
+	let userLocationMarker = null; // Store user's current location marker
 
 	// References to activate functions (set by setup functions)
 	let activateListFn = null;
@@ -1818,6 +1819,96 @@ function createCategoryFilters() {
 		window.addEventListener('languagechange', () => {
 			updateUILanguage();
 		});
+	}
+
+	// Geolocation functionality
+	function showUserLocation() {
+		const locateBtn = document.getElementById('locate-me-btn');
+
+		if (!navigator.geolocation) {
+			alert(t('geolocation.notSupported') || 'Geolocation is not supported by your browser');
+			return;
+		}
+
+		// Add loading state
+		if (locateBtn) locateBtn.classList.add('locating');
+
+		navigator.geolocation.getCurrentPosition(
+			(position) => {
+				const { latitude, longitude } = position.coords;
+				const userLatLng = [latitude, longitude];
+
+				// Remove loading state
+				if (locateBtn) locateBtn.classList.remove('locating');
+
+				// Remove existing user location marker if any
+				if (userLocationMarker) {
+					map.removeLayer(userLocationMarker);
+				}
+
+				// Create custom user location marker
+				const userIcon = L.divIcon({
+					html: `<div style="
+						width: 20px;
+						height: 20px;
+						background: #4285f4;
+						border: 3px solid white;
+						border-radius: 50%;
+						box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+					"></div>`,
+					className: 'user-location-marker',
+					iconSize: [20, 20],
+					iconAnchor: [10, 10]
+				});
+
+				// Add marker to map
+				userLocationMarker = L.marker(userLatLng, {
+					icon: userIcon,
+					zIndexOffset: 2000
+				}).addTo(map);
+
+				// Add popup
+				userLocationMarker.bindPopup(t('geolocation.yourLocation') || 'Your location').openPopup();
+
+				// Center map on user location
+				map.setView(userLatLng, 15, {
+					animate: true,
+					duration: 0.5
+				});
+			},
+			(error) => {
+				// Remove loading state
+				if (locateBtn) locateBtn.classList.remove('locating');
+
+				let errorMsg;
+				switch (error.code) {
+					case error.PERMISSION_DENIED:
+						errorMsg = t('geolocation.permissionDenied') || 'Location permission denied';
+						break;
+					case error.POSITION_UNAVAILABLE:
+						errorMsg = t('geolocation.unavailable') || 'Location information unavailable';
+						break;
+					case error.TIMEOUT:
+						errorMsg = t('geolocation.timeout') || 'Location request timed out';
+						break;
+					default:
+						errorMsg = t('geolocation.error') || 'An unknown error occurred';
+						break;
+				}
+				alert(errorMsg);
+			},
+			{
+				enableHighAccuracy: true,
+				timeout: 10000,
+				maximumAge: 0
+			}
+		);
+	}
+
+	// Setup locate me button
+	const locateMeBtn = document.getElementById('locate-me-btn');
+	if (locateMeBtn) {
+		locateMeBtn.addEventListener('click', showUserLocation);
 	}
 
 	// Setup language system

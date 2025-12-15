@@ -61,6 +61,16 @@ export default {
 		instagram: 'Instagram'
 	},
 
+	// Geolocation
+	geolocation: {
+		notSupported: 'Geolokalisierung wird von Ihrem Browser nicht unterstützt',
+		yourLocation: 'Ihr Standort',
+		permissionDenied: 'Standortberechtigung verweigert',
+		unavailable: 'Standortinformationen nicht verfügbar',
+		timeout: 'Standortanfrage hat Zeitüberschreitung',
+		error: 'Ein unbekannter Fehler ist aufgetreten'
+	},
+
 	// Language switcher
 	language: {
 		switchTo: 'English'
