@@ -57,17 +57,18 @@ const { title = "Geomate" } = Astro.props;
       <Navigation />
       <main>
         <slot />
-        <!-- Locate Me Button -->
-        <button
-          id="locate-me-btn"
-          class="locate-me-btn"
-          type="button"
-          title="Show my location"
-          aria-label="Show my location"
-        >
-          📍
-        </button>
       </main>
+
+      <!-- Locate Me Button - outside main to avoid layout issues -->
+      <button
+        id="locate-me-btn"
+        class="locate-me-btn"
+        type="button"
+        title="Show my location"
+        aria-label="Show my location"
+      >
+        📍
+      </button>
 
       <!-- POI Sidebar (for Lists and Walkthroughs) -->
       <div id="poi-sidebar" class="poi-sidebar">
