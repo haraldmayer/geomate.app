@@ -149,9 +149,6 @@ header h1 {
 	flex: 1;
 	display: none;
 	flex-direction: column;
-	border-top: 1px solid #e5e5e5;
-	margin-top: 1rem;
-	padding-top: 1rem;
 	min-height: 0; /* Allows flex child to shrink below content size */
 }
 
@@ -159,55 +156,20 @@ header h1 {
 	display: flex;
 }
 
-.poi-sidebar-integrated .poi-sidebar-header {
-	padding: 0 0 1rem 0;
-	border-bottom: 1px solid #e5e5e5;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	background: transparent;
-	margin-bottom: 1rem;
-}
-
-.poi-sidebar-integrated .poi-sidebar-header h2 {
-	margin: 0;
-	font-size: 1rem;
-	font-weight: 600;
-	color: #202020;
-	text-transform: none;
-	letter-spacing: 0;
-	text-align: left;
-}
-
 .poi-sidebar-integrated .poi-sidebar-description {
-	margin: 0.25rem 0 0 0;
-	font-size: 0.75rem;
+	padding: 0.75rem 0;
+	margin: 0;
+	font-size: 0.875rem;
 	color: #6b6b6b;
-	line-height: 1.4;
+	line-height: 1.5;
+	display: none; /* Hidden by default, shown when description exists */
 }
 
-.poi-sidebar-integrated .toggle-poi-sidebar-btn {
-	background: transparent;
-	border: none;
-	color: #6b6b6b;
-	font-size: 1.5rem;
-	width: 24px;
-	height: 24px;
-	border-radius: 0.375rem;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	line-height: 1;
-	padding: 0;
-	transition: all 0.15s ease;
-	flex-shrink: 0;
+.poi-sidebar-integrated .poi-sidebar-description:not(:empty) {
+	display: block;
 }
 
-.poi-sidebar-integrated .toggle-poi-sidebar-btn:hover {
-	background: #f0f0f0;
-	color: #202020;
-}
+/* POI sidebar toggle button removed — using integrated sidebar controls */
 
 .poi-sidebar-integrated .poi-sidebar-items {
 	flex: 1;
@@ -624,88 +586,11 @@ header h1 {
 	width: 48px !important;
 	min-width: 48px;
 }
-
-.poi-sidebar.collapsed .poi-sidebar-header-content,
 .poi-sidebar.collapsed .poi-sidebar-items {
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 0.2s ease;
-	position: absolute;
-	visibility: hidden;
+	/* collapsed behavior retained for items only; header removed */
 }
 
-.poi-sidebar.collapsed .poi-sidebar-header {
-	justify-content: center;
-	align-items: center;
-	padding: 1rem 0.5rem;
-	border-bottom: none;
-}
-
-.poi-sidebar.collapsed .toggle-sidebar-btn {
-	background: #f0f0f0;
-	color: #202020;
-	border: 1px solid #e5e5e5;
-}
-
-.poi-sidebar.collapsed .toggle-sidebar-btn:hover {
-	background: #e5e5e5;
-}
-
-.poi-sidebar-header-content {
-	transition: opacity 0.2s ease;
-	opacity: 1;
-	flex: 1;
-}
-
-.poi-sidebar-header {
-	padding: 1.5rem;
-	border-bottom: 1px solid #e5e5e5;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	background: #ffffff;
-}
-
-.poi-sidebar-header h2 {
-	margin: 0;
-	font-size: 1.125rem;
-	font-weight: 600;
-	color: #202020;
-}
-
-.poi-sidebar-description {
-	margin: 0.5rem 0 0 0;
-	font-size: 0.875rem;
-	color: #6b6b6b;
-	line-height: 1.5;
-}
-
-.toggle-sidebar-btn {
-	background: transparent;
-	border: none;
-	color: #6b6b6b;
-	font-size: 1.5rem;
-	width: 32px;
-	height: 32px;
-	border-radius: 0.375rem;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	line-height: 1;
-	padding: 0;
-	transition: all 0.15s ease;
-	flex-shrink: 0;
-}
-
-.toggle-sidebar-btn:hover {
-	background: #f0f0f0;
-	color: #202020;
-}
-
-.toggle-sidebar-btn:active {
-	transform: scale(0.95);
-}
+/* Sidebar collapse toggle removed; styles cleaned up. */
 
 .poi-sidebar-items {
 	flex: 1;
@@ -792,38 +677,7 @@ main {
 	height: 100%;
 }
 
-.locate-me-btn {
-	position: fixed;
-	bottom: 1.5rem;
-	left: 1rem;
-	z-index: 2000;
-	width: 48px;
-	height: 48px;
-	background: #ffffff;
-	border: 2px solid rgba(0, 0, 0, 0.2);
-	border-radius: 0.5rem;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 1.5rem;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-	transition: all 0.2s ease;
-}
-
-.locate-me-btn:hover {
-	background: #f7f7f7;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.locate-me-btn:active {
-	transform: scale(0.95);
-}
-
-.locate-me-btn.locating {
-	background: #f0f0f0;
-	animation: pulse 1s ease-in-out infinite;
-}
+/* Legacy locate button CSS removed; native Leaflet control styles follow. */
 
 @keyframes pulse {
 	0%, 100% {
@@ -832,6 +686,40 @@ main {
 	50% {
 		opacity: 0.6;
 	}
+}
+
+/* Old anchored locate button rules removed. */
+
+/* Legacy static button removed from markup; use native Leaflet control */
+
+/* Leaflet native locate control styling */
+.leaflet-control-locate {
+	box-shadow: none;
+}
+.leaflet-control-locate.leaflet-bar {
+	background: transparent;
+}
+.leaflet-control-locate-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	background: #ffffff;
+	border: 2px solid rgba(0,0,0,0.12);
+	border-radius: 0.5rem;
+	cursor: pointer;
+	font-size: 1.25rem;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+	text-decoration: none;
+	color: inherit;
+}
+.leaflet-control-locate-btn:hover {
+	background: #f7f7f7;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.16);
+}
+.leaflet-control-locate-btn.locating {
+	animation: pulse 1s ease-in-out infinite;
 }
 
 .custom-marker {
@@ -1070,6 +958,30 @@ main {
 		font-size: 0.8125rem;
 	}
 
+	/* Move Leaflet controls below the fixed header so they don't overlap
+	   with the header or the mobile hamburger. */
+	.leaflet-top {
+		top: 3.875rem !important; /* mobile header height */
+	}
+
+	/* Push zoom controls to the right a bit so they don't collide with
+	   the hamburger/menu button on the left. */
+	.leaflet-left .leaflet-control-zoom,
+	.leaflet-left .leaflet-control {
+		margin-left: 48px;
+	}
+
+
+/* Desktop / default offsets: keep controls below header */
+.leaflet-top {
+	top: 4.375rem !important; /* desktop header height */
+}
+
+/* Ensure on all viewports the zoom controls don't sit under fixed UI */
+.leaflet-left .leaflet-control-zoom,
+.leaflet-left .leaflet-control {
+	margin-left: 0.5rem;
+}
 	/* Left navigation - overlay on mobile */
 	.graetzl-nav {
 		position: fixed;
@@ -1250,56 +1162,7 @@ main {
 		min-height: 3.5rem;
 	}
 
-	/* Drag handle for bottom sheet */
-	.poi-sidebar::before {
-		content: '';
-		position: absolute;
-		top: 0.5rem;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 2.5rem;
-		height: 0.25rem;
-		background: #d4d4d4;
-		border-radius: 0.125rem;
-		z-index: 1;
-	}
-
-	.poi-sidebar-header {
-		padding: 1.5rem 1rem 1rem 1rem;
-		box-sizing: border-box;
-		width: 100%;
-		cursor: pointer;
-		flex-shrink: 0;
-		background: #ffffff;
-		border-bottom: 1px solid #e5e5e5;
-		position: relative;
-	}
-
-	.poi-sidebar-header h2 {
-		font-size: 1.125rem;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		margin-bottom: 0.25rem;
-	}
-
-	.poi-sidebar-description {
-		font-size: 0.875rem;
-		color: #6b6b6b;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-	}
-
-	.poi-sidebar-header-content {
-		flex: 1;
-		overflow: hidden;
-	}
-
-	/* Hide toggle button on mobile, use tap on header instead */
-	.toggle-sidebar-btn {
-		display: none;
-	}
+	/* POI sidebar header and drag-handle removed (markup and styles eliminated). */
 
 	.poi-sidebar-items {
 		flex: 1;
@@ -1362,32 +1225,6 @@ main {
 		font-size: 0.8125rem;
 	}
 
-	/* Fix locate button visibility on mobile - must stay fixed to viewport */
-	.locate-me-btn {
-		position: fixed !important;
-		z-index: 2100 !important;
-		bottom: 1rem !important;
-		left: 1rem !important;
-		display: flex !important;
-		visibility: visible !important;
-		opacity: 1 !important;
-		pointer-events: auto !important;
-		transform: none !important;
-		/* Ensure it's truly fixed and not affected by parent transforms */
-		-webkit-transform: none !important;
-		will-change: auto !important;
-	}
-
-	/* Prevent any parent from affecting the fixed button */
-	body {
-		transform: none !important;
-	}
-
-	/* Ensure main doesn't clip fixed elements */
-	main {
-		position: static !important;
-		width: 100%;
-		max-width: 100vw;
-		height: 100%;
-	}
+	/* Mobile-specific locate-button overrides removed; native Leaflet control
+	   is used and positioned via Leaflet's control system. */
 }

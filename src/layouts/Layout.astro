@@ -52,16 +52,7 @@ const { title = "Geomate" } = Astro.props;
         <slot />
       </main>
 
-      <!-- Locate Me Button - outside main to avoid layout issues -->
-      <button
-        id="locate-me-btn"
-        class="locate-me-btn"
-        type="button"
-        title="Show my location"
-        aria-label="Show my location"
-      >
-        📍
-      </button>
+      
     </div>
 
     <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

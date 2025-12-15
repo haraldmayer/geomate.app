@@ -6,8 +6,8 @@
         "en": "The best farmers markets"
       },
       "description": {
-        "de": "",
-        "en": ""
+        "de": "test",
+        "en": "test"
       },
       "slug": "die-schoensten-maerkte",
       "pois": [
@@ -77,8 +77,8 @@
         "en": "Welcome to Freihausviertel"
       },
       "description": {
-        "de": "",
-        "en": "Our neighbourhood.."
+        "de": "Welcome to our neighbourhood.. 🤗",
+        "en": "Welcome to our neighbourhood.. 🤗"
       },
       "slug": "willkommen-im-freihausviertel",
       "pois": [

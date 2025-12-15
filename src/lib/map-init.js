@@ -22,6 +22,22 @@ window.addEventListener('load', async function() {
 	// Initialize map centered on Vienna
 	const map = L.map('map').setView([48.2082, 16.3738], 12);
 
+	// Move default zoom control to the right side to avoid overlapping
+	// the mobile hamburger/menu at the top-left.
+	try {
+		if (map.zoomControl && typeof map.zoomControl.setPosition === 'function') {
+			map.zoomControl.setPosition('topright');
+		} else {
+			L.control.zoom({ position: 'topright' }).addTo(map);
+		}
+	} catch (err) {
+		console.warn('Could not reposition zoom control:', err);
+	}
+
+	// The locate control is implemented as a native Leaflet control later
+	// (do not move the static DOM node into the map). The control will be
+	// created after `showUserLocation` is defined so the handler can call it.
+
 	// Add greyscale tile layer
 	L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -1224,9 +1240,8 @@ function createCategoryFilters() {
 		const dropdown = document.getElementById('list-dropdown');
 		const clearButton = document.getElementById('clear-list');
 		const sidebarDiv = document.getElementById('poi-sidebar');
-		const sidebarTitle = document.getElementById('poi-sidebar-title');
-		const sidebarDescription = document.getElementById('poi-sidebar-description');
 		const sidebarItems = document.getElementById('poi-sidebar-items');
+		const sidebarDescription = document.getElementById('poi-sidebar-description');
 		const closeSidebar = document.getElementById('close-poi-sidebar');
 		const categoryToggle = document.getElementById('category-toggle');
 		const categoryDropdown = document.getElementById('category-dropdown');
@@ -1390,7 +1405,7 @@ function createCategoryFilters() {
 
 		// Update sidebar with list POIs
 		function updateSidebar(list) {
-			sidebarTitle.textContent = getTranslated(list.title);
+			// Show description between dropdown and POI list
 			const description = getTranslated(list.description);
 			sidebarDescription.textContent = description;
 			sidebarDescription.style.display = description ? 'block' : 'none';
@@ -1505,50 +1520,31 @@ function createCategoryFilters() {
 			// Update markers to show only list POIs
 			updateMarkers();
 
-			// For 'map' type, don't show sidebar
-			if (listType === 'map') {
-				// Close sidebar if it was open from previous list/walk
-				const nav = document.querySelector('.graetzl-nav');
-				if (nav) {
-					nav.classList.remove('poi-sidebar-visible');
-				}
-				const container = document.querySelector('.container');
-				const sidebarWasActive = container.classList.contains('sidebar-active');
-				container.classList.remove('sidebar-active');
+			// Show sidebar for all types (list, walk, map) to display description
+			updateSidebar(list);
+			const nav = document.querySelector('.graetzl-nav');
+			const container = document.querySelector('.container');
 
-				// Wait for sidebar to close if it was active, then invalidate map size
-				const delay = sidebarWasActive ? 350 : 50;
-				setTimeout(() => {
-					map.invalidateSize();
-					zoomToListPOIs(list.pois);
-				}, delay);
-			} else {
-				// Show sidebar for 'list' and 'walk' types
-				updateSidebar(list);
-				const nav = document.querySelector('.graetzl-nav');
-				const container = document.querySelector('.container');
-
-				if (nav) {
-					nav.classList.add('poi-sidebar-visible');
-				}
-				container.classList.add('sidebar-active');
-
-				// Wait for sidebar animation to complete, then invalidate map size and zoom
-				setTimeout(() => {
-					// Invalidate map size so it recalculates based on new container dimensions
-					map.invalidateSize();
-
-					// Zoom map to fit all list POIs
-					zoomToListPOIs(list.pois);
-
-					// Draw arrows for 'walk', numbers for 'list'
-					if (listType === 'walk') {
-						drawWalkthroughArrows(list.pois);
-					} else {
-						drawListNumbers(list.pois);
-					}
-				}, 350); // Wait for CSS transition (0.3s) plus a small buffer
+			if (nav) {
+				nav.classList.add('poi-sidebar-visible');
 			}
+			container.classList.add('sidebar-active');
+
+			// Wait for sidebar animation to complete, then invalidate map size and zoom
+			setTimeout(() => {
+				// Invalidate map size so it recalculates based on new container dimensions
+				map.invalidateSize();
+
+				// Zoom map to fit all list POIs
+				zoomToListPOIs(list.pois);
+
+				// Draw arrows for 'walk', numbers for 'list'
+				if (listType === 'walk') {
+					drawWalkthroughArrows(list.pois);
+				} else {
+					drawListNumbers(list.pois);
+				}
+			}, 350); // Wait for CSS transition (0.3s) plus a small buffer
 
 			// Update URL
 			updateUrlForList(list);
@@ -1618,29 +1614,9 @@ function createCategoryFilters() {
 			console.log('List deactivated');
 		}
 
-		// Function to toggle sidebar (integrated into left nav - no toggle needed)
-		function toggleSidebar() {
-			// Integrated sidebar is part of left nav, no toggle collapse/expand needed
-		}
-
-		// Mobile: tap header to toggle, desktop: use button
-		const sidebarHeader = document.querySelector('.poi-sidebar-header');
-		if (sidebarHeader && window.innerWidth <= 768) {
-			sidebarHeader.addEventListener('click', (e) => {
-				// Don't toggle if clicking on a link or button
-				if (e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
-					toggleSidebar();
-				}
-			});
-		}
-
-		// Desktop toggle button - close POI sidebar
-		const toggleSidebarBtn = document.getElementById('toggle-poi-sidebar');
-		if (toggleSidebarBtn) {
-			toggleSidebarBtn.addEventListener('click', () => {
-				deactivateList();
-			});
-		}
+		// Sidebar toggling removed — the POI sidebar is integrated into the
+		// left navigation and uses selection/deactivation logic without a
+		// separate collapse/expand control.
 
 		// Initial population
 		populateLists();
@@ -1793,17 +1769,10 @@ function createCategoryFilters() {
 			}
 		}
 
-		// Update sidebar if active
+		// Update sidebar items if active (header removed)
 		if (currentList) {
-			const sidebarTitle = document.getElementById('poi-sidebar-title');
-			const sidebarDescription = document.getElementById('poi-sidebar-description');
-			if (sidebarTitle) {
-				sidebarTitle.textContent = getTranslated(currentList.title);
-			}
-			if (sidebarDescription) {
-				const description = getTranslated(currentList.description);
-				sidebarDescription.textContent = description;
-			}
+			// Header/title removed; populate items container only
+			// (List item population handled elsewhere when opening the list)
 		}
 	}
 
@@ -1834,7 +1803,10 @@ function createCategoryFilters() {
 
 	// Geolocation functionality
 	function showUserLocation() {
-		const locateBtn = document.getElementById('locate-me-btn');
+		// Use the Leaflet control button element exposed at
+		// `window._geomateLocateButtonEl`. The legacy static DOM node was
+		// removed from the markup and is no longer supported.
+		const locateBtn = window._geomateLocateButtonEl;
 
 		if (!navigator.geolocation) {
 			alert(t('geolocation.notSupported') || 'Geolocation is not supported by your browser');
@@ -1916,11 +1888,49 @@ function createCategoryFilters() {
 		);
 	}
 
-	// Setup locate me button
-	const locateMeBtn = document.getElementById('locate-me-btn');
-	if (locateMeBtn) {
-		locateMeBtn.addEventListener('click', showUserLocation);
-	}
+	// Add a native Leaflet control for the locate button
+	(function() {
+		const LocateControl = L.Control.extend({
+			options: { position: 'bottomright' },
+			onAdd: function(mapInstance) {
+				const container = L.DomUtil.create('div', 'leaflet-control-locate leaflet-bar');
+				const btn = L.DomUtil.create('a', 'leaflet-control-locate-btn', container);
+				btn.href = '#';
+				btn.title = t('geolocation.locate') || 'Show my location';
+				btn.setAttribute('role', 'button');
+				btn.setAttribute('aria-label', btn.title);
+				btn.innerHTML = '📍';
+
+				// Prevent map interactions when clicking the control
+				L.DomEvent.disableClickPropagation(container);
+				L.DomEvent.disableScrollPropagation(container);
+
+				// Expose the button element for the geolocation function
+				window._geomateLocateButtonEl = btn;
+
+				L.DomEvent.on(btn, 'click', L.DomEvent.stop)
+					.on(btn, 'click', L.DomEvent.preventDefault)
+					.on(btn, 'click', function() {
+						// Add locating visual state; showUserLocation will remove it
+						btn.classList.add('locating');
+						try {
+							showUserLocation();
+						} catch (err) {
+							console.error('Error invoking showUserLocation from locate control', err);
+							btn.classList.remove('locating');
+						}
+					});
+
+				return container;
+			}
+		});
+
+		try {
+			map.addControl(new LocateControl());
+		} catch (err) {
+			console.warn('Could not add Leaflet locate control:', err);
+		}
+	})();
 
 	// Setup language system
 	setupLanguageSwitcher();
