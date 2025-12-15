@@ -1404,7 +1404,7 @@ function createCategoryFilters() {
 		});
 
 		// Update sidebar with list POIs
-		function updateSidebar(list) {
+		function updateSidebar(list, listType) {
 			// Show description between dropdown and POI list
 			const description = getTranslated(list.description);
 			sidebarDescription.textContent = description;
@@ -1422,8 +1422,9 @@ function createCategoryFilters() {
 				const item = document.createElement('div');
 				item.className = 'poi-sidebar-item';
 				item.dataset.poiId = poiId;
+				const numberHtml = listType !== 'map' ? `<div class="list-item-number">${index + 1}</div>` : '';
 				item.innerHTML = `
-					<div class="list-item-number">${index + 1}</div>
+					${numberHtml}
 					<div class="list-item-content">
 						<div class="list-item-name">${categoryIcon} ${poi.properties.name}</div>
 						${description ? `<div class="list-item-description">${description}</div>` : ''}
@@ -1521,7 +1522,7 @@ function createCategoryFilters() {
 			updateMarkers();
 
 			// Show sidebar for all types (list, walk, map) to display description
-			updateSidebar(list);
+			updateSidebar(list, listType);
 			const nav = document.querySelector('.graetzl-nav');
 			const container = document.querySelector('.container');
 
@@ -1538,10 +1539,10 @@ function createCategoryFilters() {
 				// Zoom map to fit all list POIs
 				zoomToListPOIs(list.pois);
 
-				// Draw arrows for 'walk', numbers for 'list'
+				// Draw arrows for 'walk', numbers for 'list' only (not 'map')
 				if (listType === 'walk') {
 					drawWalkthroughArrows(list.pois);
-				} else {
+				} else if (listType === 'list') {
 					drawListNumbers(list.pois);
 				}
 			}, 350); // Wait for CSS transition (0.3s) plus a small buffer
