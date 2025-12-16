@@ -192,7 +192,6 @@ window.addEventListener('load', async function() {
 				${categoryName ? `<div class="poi-category-label">${categoryName}</div>` : ''}
 				${photoHtml}
 				<p>${getTranslated(poiProperties.description)}</p>
-				${tagsHtml}
 				<div class="poi-actions">
 					${learnMoreLink}
 					${instagramLink}
