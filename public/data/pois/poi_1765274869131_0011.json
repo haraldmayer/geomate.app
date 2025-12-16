@@ -11,12 +11,13 @@
     "name": "Postamt",
     "category": "post-office",
     "description": {
-      "de": "Kleines Postamt",
-      "en": "Kleines Postamt"
+      "de": "",
+      "en": ""
     },
     "link": "",
-    "id": "poi_1765274869131_0011",
-    "website": "https://postamt.at",
-    "instagram": "https://instagram.com/postamt/"
+    "instagram": "",
+    "photo": "",
+    "tags": [],
+    "id": "poi_1765274869131_0011"
   }
 }

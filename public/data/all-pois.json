@@ -59,12 +59,13 @@
       "category": "market",
       "description": {
         "de": "Wiens bekanntester Markt mit internationalen Spezialitäten, frischen Produkten und Gastronomiebetrieben.",
-        "en": "Wiens bekanntester Markt mit internationalen Spezialitäten, frischen Produkten und Gastronomiebetrieben."
+        "en": "Vienna’s best-known market offers a vibrant culinary mix with around 120 market stalls"
       },
-      "link": "https://www.wien.info/de/einkaufen-essen-trinken/maerkte/naschmarkt-333208",
-      "id": "poi_1765274869130_0002",
-      "website": "https://naschmarkt.at",
-      "instagram": "https://instagram.com/naschmarkt/"
+      "link": "https://www.wien.info/de/essen-trinken/maerkte/naschmarkt-353540",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765274869130_0002"
     }
   },
   {
@@ -80,13 +81,14 @@
       "name": "Bao Bar",
       "category": "restaurant",
       "description": {
-        "de": "Modernes Asian Diner mit Baozi (gedämpfte chinesische Teigtaschen) und asiatischer Fusionsküche. Drei Standorte in Wien.",
-        "en": "Modernes Asian Diner mit Baozi (gedämpfte chinesische Teigtaschen) und asiatischer Fusionsküche. Drei Standorte in Wien."
+        "de": "",
+        "en": "Great snacks"
       },
       "link": "https://www.baobar.at",
       "instagram": "https://www.instagram.com/baobarwien/",
-      "id": "poi_1765274869130_0003",
-      "website": "https://bao-bar.at"
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765274869130_0003"
     }
   },
   {
@@ -216,9 +218,10 @@
         "en": "Einer der schönsten Märkte Wiens mit vielfältigen Ständen, Cafés und Restaurants in einem lebendigen Viertel."
       },
       "link": "https://www.wien.gv.at/freizeit/karmelitermarkt-1020",
-      "id": "poi_1765274869130_0009",
-      "website": "https://karmelitermarkt.at",
-      "instagram": "https://instagram.com/karmelitermarkt/"
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765274869130_0009"
     }
   },
   {
@@ -258,13 +261,14 @@
       "name": "Postamt",
       "category": "post-office",
       "description": {
-        "de": "Kleines Postamt",
-        "en": "Kleines Postamt"
+        "de": "",
+        "en": ""
       },
       "link": "",
-      "id": "poi_1765274869131_0011",
-      "website": "https://postamt.at",
-      "instagram": "https://instagram.com/postamt/"
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765274869131_0011"
     }
   },
   {
@@ -330,9 +334,10 @@
         "en": "Sichuan 🌶️"
       },
       "link": "",
-      "id": "poi_1765274869131_0014",
-      "website": "https://shu.at",
-      "instagram": "https://instagram.com/shu/"
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1765274869131_0014"
     }
   },
   {
@@ -532,12 +537,12 @@
         "en": ""
       },
       "link": "",
+      "instagram": "",
+      "photo": "",
       "tags": [
         "u4"
       ],
-      "id": "poi_1765279262983_996c7qpf5",
-      "website": "https://u-kettenbruckengasse.at",
-      "instagram": "https://instagram.com/u_kettenbruckengasse/"
+      "id": "poi_1765279262983_996c7qpf5"
     }
   },
   {
@@ -766,11 +771,11 @@
         "de": "",
         "en": ""
       },
-      "link": "http://www.homestorevienna.com/",
-      "instagram": "https://www.instagram.com/homestorevienna/",
+      "link": "",
+      "instagram": "",
+      "photo": "",
       "tags": [],
-      "id": "poi_1765301258081_r80rnd5f0",
-      "website": "https://home.at"
+      "id": "poi_1765301258081_r80rnd5f0"
     }
   },
   {
@@ -883,11 +888,11 @@
         "de": "",
         "en": ""
       },
-      "link": "",
+      "link": "https://evofitness.at/",
+      "instagram": "https://www.instagram.com/evofitness_austria/",
+      "photo": "",
       "tags": [],
-      "id": "poi_1765301596383_wn6wogpon",
-      "website": "https://evo.at",
-      "instagram": "https://instagram.com/evo/"
+      "id": "poi_1765301596383_wn6wogpon"
     }
   },
   {
@@ -907,10 +912,10 @@
         "en": ""
       },
       "link": "",
+      "instagram": "",
+      "photo": "",
       "tags": [],
-      "id": "poi_1765301669160_hzik8w0ea",
-      "website": "https://gourmet-spar.at",
-      "instagram": "https://instagram.com/gourmet_spar/"
+      "id": "poi_1765301669160_hzik8w0ea"
     }
   },
   {
@@ -930,10 +935,10 @@
         "en": ""
       },
       "link": "",
+      "instagram": "",
+      "photo": "",
       "tags": [],
-      "id": "poi_1765301711234_bm2787fqs",
-      "website": "https://post.at",
-      "instagram": "https://instagram.com/post/"
+      "id": "poi_1765301711234_bm2787fqs"
     }
   },
   {
@@ -1543,11 +1548,10 @@
         "en": ""
       },
       "link": "",
-      "instagram": "https://instagram.com/kasehutte/",
+      "instagram": "https://www.instagram.com/kaesehuette.naschmarkt/",
       "photo": "",
       "tags": [],
-      "id": "poi_1765609379368_oecm0c2ip",
-      "website": "https://kasehutte.at"
+      "id": "poi_1765609379368_oecm0c2ip"
     }
   },
   {
@@ -1957,7 +1961,7 @@
     },
     "properties": {
       "name": "DENNS Biomarkt",
-      "category": "shop",
+      "category": "lebensmittelgeschaeft",
       "description": {
         "de": "",
         "en": ""
@@ -1966,8 +1970,7 @@
       "instagram": "https://instagram.com/denns_biomarkt/",
       "photo": "",
       "tags": [],
-      "id": "poi_1765746710946_0nrn36uq1",
-      "website": "https://denns-biomarkt.at"
+      "id": "poi_1765746710946_0nrn36uq1"
     }
   },
   {
@@ -1981,7 +1984,7 @@
     },
     "properties": {
       "name": "Hofer",
-      "category": "shop",
+      "category": "lebensmittelgeschaeft",
       "description": {
         "de": "",
         "en": ""
@@ -1990,8 +1993,7 @@
       "instagram": "https://instagram.com/hofer/",
       "photo": "",
       "tags": [],
-      "id": "poi_1765746752967_wxg2e5qg8",
-      "website": "https://hofer.at"
+      "id": "poi_1765746752967_wxg2e5qg8"
     }
   },
   {
@@ -2011,11 +2013,10 @@
         "en": ""
       },
       "link": "",
-      "instagram": "https://instagram.com/u_karlsplatz/",
+      "instagram": "",
       "photo": "",
       "tags": [],
-      "id": "poi_1765764584759_y0zrtm9s2",
-      "website": "https://u-karlsplatz.at"
+      "id": "poi_1765764584759_y0zrtm9s2"
     }
   },
   {

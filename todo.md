@@ -1,0 +1,3 @@
+- swimming and loss of "locate me" button on iphone
+- on mobile, sidebar should be open on load
+- why is hamburger blue on mobile
