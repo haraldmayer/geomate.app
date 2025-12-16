@@ -1,0 +1,25 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      13.139340426309857,
+      56.9580454223915
+    ]
+  },
+  "properties": {
+    "name": "Knystaforsen",
+    "category": "restaurant",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "https://knystaforsen.se/",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "fine-dining"
+    ],
+    "id": "poi_1765898240065_dszxtbjhh"
+  }
+}

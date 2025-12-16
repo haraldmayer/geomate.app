@@ -2064,5 +2064,55 @@
       "tags": [],
       "id": "poi_1765808735463_7xjqh7gxn"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.139340426309857,
+        56.9580454223915
+      ]
+    },
+    "properties": {
+      "name": "Knystaforsen",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://knystaforsen.se/",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "fine-dining"
+      ],
+      "id": "poi_1765898240065_dszxtbjhh"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.38137433933393,
+        48.2047259141217
+      ]
+    },
+    "properties": {
+      "name": "Steirereck",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://www.steirereck.at/",
+      "instagram": "https://www.instagram.com/steirereck/?hl=de",
+      "photo": "",
+      "tags": [
+        "fine-dining"
+      ],
+      "id": "poi_1765898359771_331qt17cn"
+    }
   }
 ]

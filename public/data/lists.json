@@ -141,6 +141,23 @@
       ],
       "type": "list",
       "id": "list_1765733233739_lajoliavr"
+    },
+    {
+      "title": {
+        "de": "Places to go",
+        "en": "Places to go"
+      },
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "slug": "places-to-go",
+      "pois": [
+        "poi_1765898359771_331qt17cn",
+        "poi_1765898240065_dszxtbjhh"
+      ],
+      "type": "list",
+      "id": "list_1765898273425_b17gjiu43"
     }
   ]
 }
