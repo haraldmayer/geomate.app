@@ -2,11 +2,14 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [16.366730003268078, 48.194626989957705]
+    "coordinates": [
+      16.366730003268078,
+      48.194626989957705
+    ]
   },
   "properties": {
     "name": "Gourmet Spar",
-    "category": "shop",
+    "category": "lebensmittelgeschaeft",
     "description": {
       "de": "",
       "en": ""
@@ -14,7 +17,10 @@
     "link": "",
     "instagram": "",
     "photo": "",
-    "tags": ["prod", "m"],
+    "tags": [
+      "prod",
+      "m"
+    ],
     "id": "poi_1765301669160_hzik8w0ea"
   }
 }

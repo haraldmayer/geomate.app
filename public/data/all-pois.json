@@ -761,32 +761,6 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        16.36663276180235,
-        48.19662346278224
-      ]
-    },
-    "properties": {
-      "name": "Blumenkraft",
-      "category": "blumengeschaeft",
-      "description": {
-        "de": "",
-        "en": ""
-      },
-      "link": "https://www.blumenkraft.at",
-      "instagram": "https://instagram.com/blumenkraft.wien/",
-      "tags": [
-        "prod",
-        "m"
-      ],
-      "id": "poi_1765294415842_btjhx58n8",
-      "website": "https://blumenkraft.at"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
         16.366153285043467,
         48.19658500721967
       ]
@@ -1027,7 +1001,7 @@
     },
     "properties": {
       "name": "Gourmet Spar",
-      "category": "shop",
+      "category": "lebensmittelgeschaeft",
       "description": {
         "de": "",
         "en": ""
@@ -2312,7 +2286,6 @@
       "instagram": "",
       "photo": "",
       "tags": [
-        "prod",
         "m"
       ],
       "id": "poi_1765898240065_dszxtbjhh"
@@ -2342,6 +2315,32 @@
         "m"
       ],
       "id": "poi_1765898359771_331qt17cn"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.366649041182626,
+        48.19676499648639
+      ]
+    },
+    "properties": {
+      "name": "Blumenkraft",
+      "category": "blumengeschaeft",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "https://blumenkraft.at/",
+      "instagram": "https://www.instagram.com/blumenkraft.wien/",
+      "photo": "",
+      "tags": [
+        "m",
+        "prod"
+      ],
+      "id": "poi_1765956474357_8zpquvtr9"
     }
   }
 ]

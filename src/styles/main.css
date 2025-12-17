@@ -971,7 +971,7 @@ main {
 	.header-title {
 		flex: 1;
 		min-width: 0;
-		padding-left: 2.5rem;
+		padding-left: 3rem;
 	}
 
 	header h1 {

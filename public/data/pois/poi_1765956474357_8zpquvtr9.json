@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      16.366649041182626,
+      48.19676499648639
+    ]
+  },
+  "properties": {
+    "name": "Blumenkraft",
+    "category": "blumengeschaeft",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "https://blumenkraft.at/",
+    "instagram": "https://www.instagram.com/blumenkraft.wien/",
+    "photo": "",
+    "tags": [
+      "m",
+      "prod"
+    ],
+    "id": "poi_1765956474357_8zpquvtr9"
+  }
+}

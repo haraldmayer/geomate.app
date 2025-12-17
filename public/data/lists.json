@@ -118,15 +118,18 @@
         "poi_1765764584759_y0zrtm9s2",
         "poi_1765609379368_oecm0c2ip",
         "poi_1765792113638_ldhmgtuxq",
-        "poi_1765808735463_7xjqh7gxn"
+        "poi_1765808735463_7xjqh7gxn",
+        "poi_1765294415842_btjhx58n8",
+        "poi_1765956474357_8zpquvtr9",
+        "poi_1765601869516_e0jankrzm"
       ],
       "type": "map",
-      "order": 0,
-      "id": "list_1765727446200_9h88qwgzx",
       "tags": [
         "prod",
         "m"
-      ]
+      ],
+      "order": 0,
+      "id": "list_1765727446200_9h88qwgzx"
     },
     {
       "title": {
