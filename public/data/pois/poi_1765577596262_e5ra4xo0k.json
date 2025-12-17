@@ -17,7 +17,10 @@
     "link": "https://www.das-cafe.wien",
     "instagram": "https://www.instagram.com/dascafe_wien/",
     "photo": "",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765577596262_e5ra4xo0k",
     "website": "https://das-mobel.at"
   }

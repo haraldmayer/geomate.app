@@ -17,7 +17,10 @@
     "link": "https://cafephil.at/",
     "instagram": "https://www.instagram.com/phil.in.wien",
     "photo": "",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765792113638_ldhmgtuxq"
   }
 }

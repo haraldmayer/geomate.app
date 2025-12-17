@@ -16,7 +16,10 @@
     },
     "link": "https://www.zurherknerin.at/",
     "instagram": "https://www.instagram.com/zurherknerin/",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765301215244_1u45087vn",
     "website": "https://zur-herknerin.at"
   }

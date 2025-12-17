@@ -17,7 +17,10 @@
     "link": "https://www.glasfabrik.at",
     "instagram": "https://instagram.com/dieglasfabrik/",
     "photo": "",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765577423644_yh9e0s2c1",
     "website": "https://glasfabrik.at"
   }

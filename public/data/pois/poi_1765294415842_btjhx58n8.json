@@ -16,7 +16,10 @@
     },
     "link": "https://www.blumenkraft.at",
     "instagram": "https://instagram.com/blumenkraft.wien/",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765294415842_btjhx58n8",
     "website": "https://blumenkraft.at"
   }

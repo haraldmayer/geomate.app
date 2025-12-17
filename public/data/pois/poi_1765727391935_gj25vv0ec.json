@@ -17,7 +17,10 @@
     "link": "https://www.tancredi.at/",
     "instagram": "https://www.instagram.com/tancredi_restaurant/",
     "photo": "",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765727391935_gj25vv0ec",
     "website": "https://tancredi.at"
   }

@@ -16,7 +16,10 @@
     },
     "link": "https://www.mani.wien/",
     "instagram": "https://www.instagram.com/mani_im_vierten/",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765302007105_lqvd690ic",
     "website": "https://mani.at"
   }

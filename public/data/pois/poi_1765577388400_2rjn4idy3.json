@@ -17,7 +17,10 @@
     "link": "https://www.lichterloh.com",
     "instagram": "https://instagram.com/lichterloh_vienna/",
     "photo": "",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765577388400_2rjn4idy3",
     "website": "https://lichterloh.at"
   }

@@ -17,7 +17,10 @@
     "link": "",
     "instagram": "https://instagram.com/neue_donau/",
     "photo": "",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765522425743_qcw0sa33r",
     "website": "https://neue-donau.at"
   }

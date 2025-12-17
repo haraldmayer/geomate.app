@@ -17,7 +17,10 @@
     "link": "https://www.schikaneder.at",
     "instagram": "https://www.instagram.com/schikaneder.at/",
     "photo": "",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765295329999_6c16edf7p",
     "website": "https://schikaneder-kino-and-bar.at"
   }

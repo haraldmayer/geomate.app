@@ -17,7 +17,10 @@
     "link": "https://www.falter.at/zeitung/20221130/holzer-im-graetzel-schleifmuehlgasse",
     "instagram": "https://instagram.com/rosterei_alt_wien/",
     "photo": "",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765274869129_0000",
     "website": "https://rosterei-alt-wien.at"
   }

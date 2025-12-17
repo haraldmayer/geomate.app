@@ -17,6 +17,10 @@
     "link": "http://www.restaurantwetter.net/",
     "instagram": "https://www.instagram.com/restaurantwetterwien/",
     "id": "poi_1765276613531_e4x2pt3mh",
-    "website": "https://wetter.at"
+    "website": "https://wetter.at",
+    "tags": [
+      "public",
+      "m"
+    ]
   }
 }

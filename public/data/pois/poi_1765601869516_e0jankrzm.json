@@ -17,7 +17,10 @@
     "link": "",
     "instagram": "https://instagram.com/wiener_blumen/",
     "photo": "/uploads/poi_1765601869511.jpg",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765601869516_e0jankrzm",
     "website": "https://wiener-blumen.at"
   }

@@ -17,7 +17,10 @@
     "link": "https://www.crupi.at/",
     "instagram": "https://www.instagram.com/crupi_group/",
     "photo": "",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765274869130_0010",
     "website": "https://crupi.at"
   }

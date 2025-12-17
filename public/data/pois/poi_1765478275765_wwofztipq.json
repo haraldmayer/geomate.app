@@ -16,7 +16,10 @@
     },
     "link": "https://www.gaensehaeufel.at",
     "instagram": "https://instagram.com/gansehaufel/",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765478275765_wwofztipq",
     "website": "https://gansehaufel.at"
   }

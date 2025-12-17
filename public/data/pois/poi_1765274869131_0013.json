@@ -17,7 +17,10 @@
     "link": "https://babettes.at/",
     "instagram": "https://www.instagram.com/babettesspices/",
     "photo": "/uploads/poi_1765602020265.jpg",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765274869131_0013",
     "website": "https://babettes.at"
   }

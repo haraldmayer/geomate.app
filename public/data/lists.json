@@ -20,7 +20,11 @@
       ],
       "showAsWalk": false,
       "id": "list_1765475474952_ojsmqc88l",
-      "order": 2
+      "order": 2,
+      "tags": [
+        "public",
+        "m"
+      ]
     },
     {
       "title": {
@@ -44,7 +48,11 @@
       ],
       "type": "list",
       "order": 3,
-      "id": "list_1765478372407_o59hbz5bs"
+      "id": "list_1765478372407_o59hbz5bs",
+      "tags": [
+        "public",
+        "m"
+      ]
     },
     {
       "title": {
@@ -69,7 +77,11 @@
       ],
       "type": "walk",
       "order": 1,
-      "id": "list_1765577637788_15qtlk1gs"
+      "id": "list_1765577637788_15qtlk1gs",
+      "tags": [
+        "public",
+        "m"
+      ]
     },
     {
       "title": {
@@ -111,7 +123,11 @@
       ],
       "type": "map",
       "order": 0,
-      "id": "list_1765727446200_9h88qwgzx"
+      "id": "list_1765727446200_9h88qwgzx",
+      "tags": [
+        "public",
+        "m"
+      ]
     },
     {
       "title": {
@@ -140,7 +156,11 @@
         "poi_1765733540822_cwurjtk9p"
       ],
       "type": "list",
-      "id": "list_1765733233739_lajoliavr"
+      "id": "list_1765733233739_lajoliavr",
+      "tags": [
+        "public",
+        "m"
+      ]
     },
     {
       "title": {
@@ -157,7 +177,11 @@
         "poi_1765898240065_dszxtbjhh"
       ],
       "type": "list",
-      "id": "list_1765898273425_b17gjiu43"
+      "id": "list_1765898273425_b17gjiu43",
+      "tags": [
+        "public",
+        "m"
+      ]
     }
   ]
 }

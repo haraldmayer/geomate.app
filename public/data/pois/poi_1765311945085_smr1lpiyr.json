@@ -16,7 +16,10 @@
     },
     "link": "https://christinekoeniggalerie.com",
     "instagram": "https://instagram.com/christinekoeniggalerie/",
-    "tags": [],
+    "tags": [
+      "public",
+      "m"
+    ],
     "id": "poi_1765311945085_smr1lpiyr",
     "website": "https://galerie-konig.at"
   }

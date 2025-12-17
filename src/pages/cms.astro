@@ -799,6 +799,22 @@ const title = "POI Management System";
             </div>
 
             <div class="full">
+              <label>Tags (internal only)</label>
+              <div class="tags-input-container">
+                <div class="selected-tags" id="selectedListTags"></div>
+                <input
+                  id="listTagInput"
+                  type="text"
+                  list="listTagSuggestions"
+                  placeholder="Add tags..."
+                  autocomplete="off"
+                />
+                <datalist id="listTagSuggestions"></datalist>
+              </div>
+              <div class="hint">Type and press Enter to add tags (not shown on frontend)</div>
+            </div>
+
+            <div class="full">
               <label>Select POIs</label>
               <div class="poi-selector">
                 <div class="poi-selector-input-wrapper">
@@ -1561,6 +1577,7 @@ const title = "POI Management System";
 
       let lists = [];
       let selectedListPOIs = []; // Array of POI IDs in order
+      let selectedListTags = []; // Array of tag keys for lists
       let currentListId = null;
       let currentListOrder = undefined; // Store order when editing
       let draggedElement = null;
@@ -1582,6 +1599,81 @@ const title = "POI Management System";
           .replace(/ß/g, "ss")
           .replace(/[^a-z0-9]+/g, "-")
           .replace(/^-+|-+$/g, "");
+      }
+
+      // List tag management functions
+      function renderListTags() {
+        const container = document.getElementById("selectedListTags");
+        container.innerHTML = selectedListTags
+          .map((tagKey) => {
+            const tag = tagsData[tagKey] || { name: tagKey };
+            return `
+          <div class="tag-chip">
+            <span>${tag.name}</span>
+            <button class="remove-tag" onclick="removeListTag('${tagKey}')" type="button">×</button>
+          </div>
+        `;
+          })
+          .join("");
+      }
+
+      function addListTag(tagKey) {
+        if (!tagKey) return;
+
+        // Normalize tag key
+        tagKey = categoryToKey(tagKey);
+
+        // Check if already added
+        if (selectedListTags.includes(tagKey)) {
+          return;
+        }
+
+        // Add tag
+        selectedListTags.push(tagKey);
+
+        // Ensure tag exists in tags.json
+        ensureTagExists(tagKey);
+
+        renderListTags();
+      }
+
+      window.removeListTag = function (tagKey) {
+        selectedListTags = selectedListTags.filter((t) => t !== tagKey);
+        renderListTags();
+      };
+
+      function setupListTagInput() {
+        const input = document.getElementById("listTagInput");
+        const datalist = document.getElementById("listTagSuggestions");
+
+        // Populate tag suggestions from existing tags
+        Object.entries(tagsData).forEach(([key, value]) => {
+          const option = document.createElement("option");
+          option.value = key;
+          option.label = value.name;
+          datalist.appendChild(option);
+        });
+
+        // Add tag on Enter or comma
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === ",") {
+            e.preventDefault();
+            const value = input.value.trim();
+            if (value) {
+              addListTag(value);
+              input.value = "";
+            }
+          }
+        });
+
+        // Add tag on blur if there's a value
+        input.addEventListener("blur", () => {
+          const value = input.value.trim();
+          if (value) {
+            addListTag(value);
+            input.value = "";
+          }
+        });
       }
 
       // Tab switching
@@ -1606,8 +1698,15 @@ const title = "POI Management System";
           activeTab.style.display = "block";
 
           // Load lists when switching to that tab
-          if (tabId === "lists" && lists.length === 0) {
-            loadLists();
+          if (tabId === "lists") {
+            if (lists.length === 0) {
+              loadLists();
+            }
+            // Setup list tag input on first access
+            if (!window.listTagInputSetup) {
+              setupListTagInput();
+              window.listTagInputSetup = true;
+            }
           }
         });
       });
@@ -1727,6 +1826,10 @@ const title = "POI Management System";
         document.getElementById('listTypeList').checked = (listType === 'list');
         document.getElementById('listTypeWalk').checked = (listType === 'walk');
         document.getElementById('listTypeMap').checked = (listType === 'map');
+
+        // Load tags
+        selectedListTags = list.tags || [];
+        renderListTags();
 
         selectedListPOIs = [...list.pois];
         renderSelectedListPOIs();
@@ -1989,7 +2092,9 @@ const title = "POI Management System";
         document.getElementById("listDescription-en").value = "";
         document.getElementById("listTypeList").checked = true;
         selectedListPOIs = [];
+        selectedListTags = [];
         renderSelectedListPOIs();
+        renderListTags();
       }
 
       // List form submission
@@ -2038,6 +2143,7 @@ const title = "POI Management System";
               slug: generateSlug(titleDe), // Generate slug from German title
               pois: selectedListPOIs,
               type: selectedType,
+              tags: selectedListTags,
             };
 
             // Preserve order if editing
