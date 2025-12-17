@@ -1566,6 +1566,25 @@ const title = "POI Management System";
       // Cancel editing
       document.getElementById("cancelBtn").addEventListener("click", resetForm);
 
+      // Keyboard shortcuts for saving POI form (Ctrl+S / Cmd+S)
+      document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+          e.preventDefault();
+
+          // Determine which tab is active and submit the appropriate form
+          const activeTab = document.querySelector('.tab-content.active');
+          if (activeTab && activeTab.id === 'pois-tab') {
+            // Submit POI form
+            document.getElementById('poiForm').requestSubmit();
+            showToast('Saving POI... (Ctrl+S)', 'success');
+          } else if (activeTab && activeTab.id === 'lists-tab') {
+            // Submit List form
+            document.getElementById('listForm').requestSubmit();
+            showToast('Saving list... (Ctrl+S)', 'success');
+          }
+        }
+      });
+
       // Initialize
       loadCategories();
       loadTags();

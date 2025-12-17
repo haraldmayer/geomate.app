@@ -2,7 +2,10 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [-122.86971394994261, 38.61248693290427]
+    "coordinates": [
+      -122.86971394994261,
+      38.61248693290427
+    ]
   },
   "properties": {
     "name": "Single Thread",
@@ -14,8 +17,9 @@
     "link": "https://guide.michelin.com/us/en/california/healdsburg/restaurant/singlethread",
     "instagram": "https://instagram.com/single_thread/",
     "photo": "",
-    "tags": ["prod", "m"],
-    "id": "poi_1765733725769_zse5mj500",
-    "website": "https://single-thread.at"
+    "tags": [
+      "m"
+    ],
+    "id": "poi_1765733725769_zse5mj500"
   }
 }
