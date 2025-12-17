@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.33443095753456,
-      48.214949969320706
-    ]
+    "coordinates": [16.33443095753456, 48.214949969320706]
   },
   "properties": {
     "name": "Wetter",
@@ -18,9 +15,6 @@
     "instagram": "https://www.instagram.com/restaurantwetterwien/",
     "id": "poi_1765276613531_e4x2pt3mh",
     "website": "https://wetter.at",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

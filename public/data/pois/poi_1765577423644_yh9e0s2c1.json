@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.334844083511474,
-      48.197272998381976
-    ]
+    "coordinates": [16.334844083511474, 48.197272998381976]
   },
   "properties": {
     "name": "Glasfabrik",
@@ -17,10 +14,7 @@
     "link": "https://www.glasfabrik.at",
     "instagram": "https://instagram.com/dieglasfabrik/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765577423644_yh9e0s2c1",
     "website": "https://glasfabrik.at"
   }

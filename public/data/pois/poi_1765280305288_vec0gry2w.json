@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.402189025841516,
-      48.22171017750721
-    ]
+    "coordinates": [16.402189025841516, 48.22171017750721]
   },
   "properties": {
     "name": "Vorgartenmarkt",
@@ -15,10 +12,7 @@
       "en": ""
     },
     "link": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765280305288_vec0gry2w",
     "website": "https://vorgartenmarkt.at",
     "instagram": "https://instagram.com/vorgartenmarkt/"

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.336786284184004,
-      48.214419205523726
-    ]
+    "coordinates": [16.336786284184004, 48.214419205523726]
   },
   "properties": {
     "name": "Yppenplatz",
@@ -16,10 +13,7 @@
     },
     "link": "",
     "instagram": "https://instagram.com/yppenplatz/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765275411428_9qljz6ydm",
     "website": "https://yppenplatz.at"
   }

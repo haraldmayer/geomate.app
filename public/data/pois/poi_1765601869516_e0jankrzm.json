@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.3598167,
-      48.1971083
-    ]
+    "coordinates": [16.3598167, 48.1971083]
   },
   "properties": {
     "name": "Wiener Blumen",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/wiener_blumen/",
     "photo": "/uploads/poi_1765601869511.jpg",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765601869516_e0jankrzm",
     "website": "https://wiener-blumen.at"
   }

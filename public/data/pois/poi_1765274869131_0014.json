@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.36596075451302,
-      48.19827685274822
-    ]
+    "coordinates": [16.36596075451302, 48.19827685274822]
   },
   "properties": {
     "name": "SHU",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765274869131_0014"
   }
 }

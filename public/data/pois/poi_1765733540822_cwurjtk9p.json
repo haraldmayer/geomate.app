@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      2.6414185255405727,
-      39.572688311151296
-    ]
+    "coordinates": [2.6414185255405727, 39.572688311151296]
   },
   "properties": {
     "name": "Mombo",
@@ -17,10 +14,7 @@
     "link": "https://guide.michelin.com/us/en/islas-baleares/palma/restaurant/mombo",
     "instagram": "https://instagram.com/mombo/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765733540822_cwurjtk9p",
     "website": "https://mombo.at"
   }

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.359094736388695,
-      48.20264580661819
-    ]
+    "coordinates": [16.359094736388695, 48.20264580661819]
   },
   "properties": {
     "name": "Leopold Museum",
@@ -15,10 +12,7 @@
       "en": ""
     },
     "link": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765301568699_uwaiqg7hy",
     "website": "https://leopold-museum.at",
     "instagram": "https://instagram.com/leopold_museum/"

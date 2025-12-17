@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.319089608149362,
-      48.19624819514787
-    ]
+    "coordinates": [16.319089608149362, 48.19624819514787]
   },
   "properties": {
     "name": "Gasthaus Jagetsberger",
@@ -16,10 +13,7 @@
     },
     "link": "https://www.anna-jagetsberger.at/",
     "instagram": "https://www.instagram.com/gasthaus_jagetsberger/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765294330841_i011cqu5p",
     "website": "https://gasthaus-jagetsberger.at"
   }

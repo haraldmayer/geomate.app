@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.401962554185303,
-      48.22193544228238
-    ]
+    "coordinates": [16.401962554185303, 48.22193544228238]
   },
   "properties": {
     "name": "Chicken Karate",
@@ -15,10 +12,7 @@
       "en": ""
     },
     "link": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765280336645_tznalctnq",
     "website": "https://chicken-karate.at",
     "instagram": "https://instagram.com/chicken_karate/"

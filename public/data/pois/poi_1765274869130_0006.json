@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.330189,
-      48.20195
-    ]
+    "coordinates": [16.330189, 48.20195]
   },
   "properties": {
     "name": "Café Kriemhild",
@@ -18,9 +15,6 @@
     "instagram": "https://www.instagram.com/cafe.kriemhild/",
     "id": "poi_1765274869130_0006",
     "website": "https://cafe-kriemhild.at",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

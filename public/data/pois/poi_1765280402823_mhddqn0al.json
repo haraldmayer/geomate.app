@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.36455168536053,
-      48.19802091921777
-    ]
+    "coordinates": [16.36455168536053, 48.19802091921777]
   },
   "properties": {
     "name": "Anzengruber",
@@ -16,10 +13,7 @@
     },
     "link": "https://anzengruber.cafe/",
     "instagram": "https://www.instagram.com/explore/locations/840479/anzengruber-cafe/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765280402823_mhddqn0al",
     "website": "https://anzengruber.at"
   }

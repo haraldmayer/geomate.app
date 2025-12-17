@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.309383738835734,
-      48.201338755800656
-    ]
+    "coordinates": [16.309383738835734, 48.201338755800656]
   },
   "properties": {
     "name": "Breitenseer Lichtspiele",
@@ -18,9 +15,6 @@
     "instagram": "https://instagram.com/breitenseerlichtspiele/",
     "id": "poi_1765277602818_pnkzhrayo",
     "website": "https://breitenseer-lichtspiele.at",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

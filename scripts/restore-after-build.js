@@ -1,4 +1,4 @@
-import { renameSync, existsSync, rmSync } from 'fs';
+import { renameSync, existsSync, rmSync, copyFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -6,6 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const srcDir = join(__dirname, '..', 'src');
 const pagesDir = join(srcDir, 'pages');
+const dataDir = join(__dirname, '..', 'public', 'data');
 const tempDir = join(__dirname, '..', '.temp-build');
 
 console.log('🔄 Restoring source files...');
@@ -24,6 +25,15 @@ if (existsSync(cmsBackupPath)) {
 if (existsSync(apiBackupPath)) {
   renameSync(apiBackupPath, apiPath);
   console.log('✅ Restored /api directory');
+}
+
+// Restore lists.json from backup
+const listsPath = join(dataDir, 'lists.json');
+const listsBackupPath = join(tempDir, 'lists.json');
+
+if (existsSync(listsBackupPath)) {
+  copyFileSync(listsBackupPath, listsPath);
+  console.log('✅ Restored lists.json');
 }
 
 // Clean up temp directory

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.345658066320325,
-      48.202646034508035
-    ]
+    "coordinates": [16.345658066320325, 48.202646034508035]
   },
   "properties": {
     "name": "Möbel vom Wiesinger",
@@ -17,10 +14,7 @@
     "link": "https://wiesinger.furniture",
     "instagram": "https://instagram.com/wiesinger.furniture/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765577563632_nbb0n3zux",
     "website": "https://mobel-vom-wiesinger.at"
   }

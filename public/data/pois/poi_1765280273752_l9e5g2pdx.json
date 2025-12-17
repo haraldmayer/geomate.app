@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.38622933933484,
-      48.223156716587894
-    ]
+    "coordinates": [16.38622933933484, 48.223156716587894]
   },
   "properties": {
     "name": "Volkertmarkt",
@@ -15,10 +12,7 @@
       "en": ""
     },
     "link": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765280273752_l9e5g2pdx",
     "website": "https://volkertmarkt.at",
     "instagram": "https://instagram.com/volkertmarkt/"

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.361140097084487,
-      48.20035789063113
-    ]
+    "coordinates": [16.361140097084487, 48.20035789063113]
   },
   "properties": {
     "name": "phil",
@@ -17,10 +14,7 @@
     "link": "https://cafephil.at/",
     "instagram": "https://www.instagram.com/phil.in.wien",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765792113638_ldhmgtuxq"
   }
 }

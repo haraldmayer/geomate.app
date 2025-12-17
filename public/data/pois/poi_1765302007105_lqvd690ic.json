@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.365700144014347,
-      48.19684531236729
-    ]
+    "coordinates": [16.365700144014347, 48.19684531236729]
   },
   "properties": {
     "name": "Mani",
@@ -16,10 +13,7 @@
     },
     "link": "https://www.mani.wien/",
     "instagram": "https://www.instagram.com/mani_im_vierten/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765302007105_lqvd690ic",
     "website": "https://mani.at"
   }

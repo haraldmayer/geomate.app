@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      13.139340426309857,
-      56.9580454223915
-    ]
+    "coordinates": [13.139340426309857, 56.9580454223915]
   },
   "properties": {
     "name": "Knystaforsen",
@@ -17,10 +14,7 @@
     "link": "https://knystaforsen.se/",
     "instagram": "",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765898240065_dszxtbjhh"
   }
 }

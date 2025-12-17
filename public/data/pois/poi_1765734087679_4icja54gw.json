@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      -118.23312442253905,
-      34.04182035732012
-    ]
+    "coordinates": [-118.23312442253905, 34.04182035732012]
   },
   "properties": {
     "name": "Bavel",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/bavel/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765734087679_4icja54gw",
     "website": "https://bavel.at"
   }

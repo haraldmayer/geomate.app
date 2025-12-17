@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.366461891340485,
-      48.19643052033441
-    ]
+    "coordinates": [16.366461891340485, 48.19643052033441]
   },
   "properties": {
     "name": "Galerie König",
@@ -16,10 +13,7 @@
     },
     "link": "https://christinekoeniggalerie.com",
     "instagram": "https://instagram.com/christinekoeniggalerie/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765311945085_smr1lpiyr",
     "website": "https://galerie-konig.at"
   }

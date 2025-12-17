@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.36443382382972,
-      48.19786513449719
-    ]
+    "coordinates": [16.36443382382972, 48.19786513449719]
   },
   "properties": {
     "name": "Babette's",
@@ -17,10 +14,7 @@
     "link": "https://babettes.at/",
     "instagram": "https://www.instagram.com/babettesspices/",
     "photo": "/uploads/poi_1765602020265.jpg",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765274869131_0013",
     "website": "https://babettes.at"
   }

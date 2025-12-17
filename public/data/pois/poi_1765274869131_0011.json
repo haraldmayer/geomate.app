@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.36534444823908,
-      48.19910522898673
-    ]
+    "coordinates": [16.36534444823908, 48.19910522898673]
   },
   "properties": {
     "name": "Postamt",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765274869131_0011"
   }
 }

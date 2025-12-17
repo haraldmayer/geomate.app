@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.31229958351273,
-      48.22185101370678
-    ]
+    "coordinates": [16.31229958351273, 48.22185101370678]
   },
   "properties": {
     "name": "Kongressbad",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/kongressbad/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765558124347_1ak7chzav",
     "website": "https://kongressbad.at"
   }

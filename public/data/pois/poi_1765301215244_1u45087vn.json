@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.366835583511342,
-      48.19521835895723
-    ]
+    "coordinates": [16.366835583511342, 48.19521835895723]
   },
   "properties": {
     "name": "Zur Herknerin",
@@ -16,10 +13,7 @@
     },
     "link": "https://www.zurherknerin.at/",
     "instagram": "https://www.instagram.com/zurherknerin/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765301215244_1u45087vn",
     "website": "https://zur-herknerin.at"
   }

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.365483566320258,
-      48.19977078279889
-    ]
+    "coordinates": [16.365483566320258, 48.19977078279889]
   },
   "properties": {
     "name": "Umar Fisch",
@@ -17,10 +14,7 @@
     "link": "https://www.umarfisch.at/",
     "instagram": "",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765808735463_7xjqh7gxn"
   }
 }

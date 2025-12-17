@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      -118.31101249000623,
-      34.07675517776411
-    ]
+    "coordinates": [-118.31101249000623, 34.07675517776411]
   },
   "properties": {
     "name": "Antico Nuevo",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/antico_nuevo/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765734010728_xotjo4un4",
     "website": "https://antico-nuevo.at"
   }

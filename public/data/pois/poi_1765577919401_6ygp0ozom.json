@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.352265997004743,
-      48.198623754305444
-    ]
+    "coordinates": [16.352265997004743, 48.198623754305444]
   },
   "properties": {
     "name": "Vintagerie",
@@ -17,10 +14,7 @@
     "link": "https://www.vintagerie.at",
     "instagram": "https://instagram.com/vintagerie_vienna/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765577919401_6ygp0ozom",
     "website": "https://vintagerie.at"
   }

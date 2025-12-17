@@ -1,4 +1,4 @@
-import { renameSync, existsSync, mkdirSync } from 'fs';
+import { renameSync, existsSync, mkdirSync, copyFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -6,6 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const srcDir = join(__dirname, '..', 'src');
 const pagesDir = join(srcDir, 'pages');
+const dataDir = join(__dirname, '..', 'public', 'data');
 const tempDir = join(__dirname, '..', '.temp-build');
 
 console.log('🔧 Preparing for static build...');
@@ -29,6 +30,15 @@ if (existsSync(cmsPath)) {
 if (existsSync(apiPath)) {
   renameSync(apiPath, apiBackupPath);
   console.log('✅ Temporarily moved /api directory');
+}
+
+// Backup lists.json before potential filtering
+const listsPath = join(dataDir, 'lists.json');
+const listsBackupPath = join(tempDir, 'lists.json');
+
+if (existsSync(listsPath)) {
+  copyFileSync(listsPath, listsBackupPath);
+  console.log('✅ Backed up lists.json');
 }
 
 console.log('✨ Ready for static build!');

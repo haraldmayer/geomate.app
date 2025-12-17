@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.336405071639252,
-      48.21386698449984
-    ]
+    "coordinates": [16.336405071639252, 48.21386698449984]
   },
   "properties": {
     "name": "KENT",
@@ -16,10 +13,7 @@
     },
     "link": "http://www.kentrestaurant.at/",
     "instagram": "https://www.instagram.com/kentrestaurants.vienna/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765275696103_horj8pmur",
     "website": "https://kent.at"
   }

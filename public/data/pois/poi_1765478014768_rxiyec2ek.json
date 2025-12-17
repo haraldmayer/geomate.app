@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.36108520528431,
-      48.19994789760283
-    ]
+    "coordinates": [16.36108520528431, 48.19994789760283]
   },
   "properties": {
     "name": "Cafe Sperl",
@@ -16,10 +13,7 @@
     },
     "link": "https://www.cafesperl.at/",
     "instagram": "https://www.instagram.com/cafesperl/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765478014768_rxiyec2ek",
     "website": "https://cafe-sperl.at"
   }

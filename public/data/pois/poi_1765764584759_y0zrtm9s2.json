@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.37044432151105,
-      48.200065911432326
-    ]
+    "coordinates": [16.37044432151105, 48.200065911432326]
   },
   "properties": {
     "name": "U Karlsplatz",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765764584759_y0zrtm9s2"
   }
 }

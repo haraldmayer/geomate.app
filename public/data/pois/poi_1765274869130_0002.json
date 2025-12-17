@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.364,
-      48.1985
-    ]
+    "coordinates": [16.364, 48.1985]
   },
   "properties": {
     "name": "Naschmarkt",
@@ -17,10 +14,7 @@
     "link": "https://www.wien.info/de/essen-trinken/maerkte/naschmarkt-353540",
     "instagram": "",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765274869130_0002"
   }
 }

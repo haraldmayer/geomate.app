@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.429209810561797,
-      48.22869254350631
-    ]
+    "coordinates": [16.429209810561797, 48.22869254350631]
   },
   "properties": {
     "name": "Gänsehäufel",
@@ -16,10 +13,7 @@
     },
     "link": "https://www.gaensehaeufel.at",
     "instagram": "https://instagram.com/gansehaufel/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765478275765_wwofztipq",
     "website": "https://gansehaufel.at"
   }

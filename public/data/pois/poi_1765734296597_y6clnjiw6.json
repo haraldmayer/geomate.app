@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      9.194774468121706,
-      45.468617526350194
-    ]
+    "coordinates": [9.194774468121706, 45.468617526350194]
   },
   "properties": {
     "name": "Bacaro Montenapoleone",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/bacaro_montenapoleone/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765734296597_y6clnjiw6",
     "website": "https://bacaro-montenapoleone.at"
   }

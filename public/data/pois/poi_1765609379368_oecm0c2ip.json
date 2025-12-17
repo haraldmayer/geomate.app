@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.36228408351153,
-      48.19797364804036
-    ]
+    "coordinates": [16.36228408351153, 48.19797364804036]
   },
   "properties": {
     "name": "Käsehütte",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://www.instagram.com/kaesehuette.naschmarkt/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765609379368_oecm0c2ip"
   }
 }

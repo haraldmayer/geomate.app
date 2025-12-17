@@ -15,24 +15,24 @@ poiFiles.forEach(file => {
   const content = readFileSync(filePath, 'utf-8');
   const poi = JSON.parse(content);
 
-  // Set tags to ["public", "m"]
-  poi.properties.tags = ["public", "m"];
+  // Set tags to ["prod", "m"]
+  poi.properties.tags = ["prod", "m"];
 
   writeFileSync(filePath, JSON.stringify(poi, null, 2) + '\n', 'utf-8');
   poisUpdated++;
 });
 
-console.log(`✓ Updated ${poisUpdated} POIs with tags: ["public", "m"]`);
+console.log(`✓ Updated ${poisUpdated} POIs with tags: ["prod", "m"]`);
 
 // Update all lists
 const listsContent = readFileSync(listsFile, 'utf-8');
 const listsData = JSON.parse(listsContent);
 
 listsData.lists.forEach(list => {
-  list.tags = ["public", "m"];
+  list.tags = ["prod", "m"];
 });
 
 writeFileSync(listsFile, JSON.stringify(listsData, null, 2) + '\n', 'utf-8');
 
-console.log(`✓ Updated ${listsData.lists.length} lists with tags: ["public", "m"]`);
-console.log('\nDone! All POIs and lists now have tags: ["public", "m"]');
+console.log(`✓ Updated ${listsData.lists.length} lists with tags: ["prod", "m"]`);
+console.log('\nDone! All POIs and lists now have tags: ["prod", "m"]');

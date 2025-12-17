@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.360634823991372,
-      48.19982944211317
-    ]
+    "coordinates": [16.360634823991372, 48.19982944211317]
   },
   "properties": {
     "name": "Lichterloh",
@@ -17,10 +14,7 @@
     "link": "https://www.lichterloh.com",
     "instagram": "https://instagram.com/lichterloh_vienna/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765577388400_2rjn4idy3",
     "website": "https://lichterloh.at"
   }

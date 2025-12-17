@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.37164326816906,
-      48.1952791141761
-    ]
+    "coordinates": [16.37164326816906, 48.1952791141761]
   },
   "properties": {
     "name": "Post",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765301711234_bm2787fqs"
   }
 }

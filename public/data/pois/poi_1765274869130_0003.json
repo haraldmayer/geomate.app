@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.3658069,
-      48.1979108
-    ]
+    "coordinates": [16.3658069, 48.1979108]
   },
   "properties": {
     "name": "Bao Bar",
@@ -17,10 +14,7 @@
     "link": "https://www.baobar.at",
     "instagram": "https://www.instagram.com/baobarwien/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765274869130_0003"
   }
 }

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.333178941181767,
-      48.18083737443849
-    ]
+    "coordinates": [16.333178941181767, 48.18083737443849]
   },
   "properties": {
     "name": "Meidlinger Markt",
@@ -18,9 +15,6 @@
     "id": "poi_1765275205509_w5p13bcym",
     "website": "https://meidlinger-markt.at",
     "instagram": "https://instagram.com/meidlinger_markt/",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

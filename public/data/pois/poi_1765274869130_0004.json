@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.3294563,
-      48.2022857
-    ]
+    "coordinates": [16.3294563, 48.2022857]
   },
   "properties": {
     "name": "Buchkontor",
@@ -18,9 +15,6 @@
     "instagram": "https://instagram.com/buchkontor1150/",
     "id": "poi_1765274869130_0004",
     "website": "https://buchkontor.at",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

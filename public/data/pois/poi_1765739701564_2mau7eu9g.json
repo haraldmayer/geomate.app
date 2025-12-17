@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      -122.4659902592881,
-      37.76252255233695
-    ]
+    "coordinates": [-122.4659902592881, 37.76252255233695]
   },
   "properties": {
     "name": "Kothai Republic",
@@ -17,10 +14,7 @@
     "link": "https://kothairepublic.com/",
     "instagram": "https://instagram.com/kothai_republic/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765739701564_2mau7eu9g",
     "website": "https://kothai-republic.at"
   }

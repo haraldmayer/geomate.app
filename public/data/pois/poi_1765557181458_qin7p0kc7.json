@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.36438872719027,
-      48.19802149812315
-    ]
+    "coordinates": [16.36438872719027, 48.19802149812315]
   },
   "properties": {
     "name": "Lisboa Lounge",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/lisboa_lounge/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765557181458_qin7p0kc7",
     "website": "https://lisboa-lounge.at"
   }

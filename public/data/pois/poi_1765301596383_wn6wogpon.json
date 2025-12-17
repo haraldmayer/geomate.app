@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.365744681662413,
-      48.19697385785821
-    ]
+    "coordinates": [16.365744681662413, 48.19697385785821]
   },
   "properties": {
     "name": "EVO",
@@ -17,10 +14,7 @@
     "link": "https://evofitness.at/",
     "instagram": "https://www.instagram.com/evofitness_austria/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765301596383_wn6wogpon"
   }
 }

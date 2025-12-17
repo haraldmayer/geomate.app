@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.36498208166234,
-      48.19624395262766
-    ]
+    "coordinates": [16.36498208166234, 48.19624395262766]
   },
   "properties": {
     "name": "DENNS Biomarkt",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/denns_biomarkt/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765746710946_0nrn36uq1"
   }
 }

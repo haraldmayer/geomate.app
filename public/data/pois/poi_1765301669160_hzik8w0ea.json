@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.366730003268078,
-      48.194626989957705
-    ]
+    "coordinates": [16.366730003268078, 48.194626989957705]
   },
   "properties": {
     "name": "Gourmet Spar",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765301669160_hzik8w0ea"
   }
 }

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.31522395467498,
-      48.17948855905937
-    ]
+    "coordinates": [16.31522395467498, 48.17948855905937]
   },
   "properties": {
     "name": "Schönbrunner Bad",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/schonbrunner_bad/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765558092176_k3gye9w99",
     "website": "https://schonbrunner-bad.at"
   }

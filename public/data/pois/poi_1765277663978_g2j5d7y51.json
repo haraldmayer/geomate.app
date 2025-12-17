@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.309314527689487,
-      48.2018316401354
-    ]
+    "coordinates": [16.309314527689487, 48.2018316401354]
   },
   "properties": {
     "name": "Anna & Jagetsberger",
@@ -18,9 +15,6 @@
     "instagram": "https://www.instagram.com/annaundjagetsberger/",
     "id": "poi_1765277663978_g2j5d7y51",
     "website": "https://anna-and-jagetsberger.at",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

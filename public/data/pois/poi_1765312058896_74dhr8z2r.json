@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.370790839333456,
-      48.195048466781756
-    ]
+    "coordinates": [16.370790839333456, 48.195048466781756]
   },
   "properties": {
     "name": "Galerie Neuwirth",
@@ -15,10 +12,7 @@
       "en": ""
     },
     "link": "https://galerie-neuwirth.com",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765312058896_74dhr8z2r",
     "website": "https://galerie-neuwirth.at",
     "instagram": "https://instagram.com/galerie_neuwirth/"

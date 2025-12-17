@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.36017068166236,
-      48.1959801840249
-    ]
+    "coordinates": [16.36017068166236, 48.1959801840249]
   },
   "properties": {
     "name": "XO",
@@ -18,9 +15,6 @@
     "instagram": "https://www.instagram.com/xo_grill/",
     "id": "poi_1765274869131_0016",
     "website": "https://xo.at",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.416836803816445,
-      48.24251186836927
-    ]
+    "coordinates": [16.416836803816445, 48.24251186836927]
   },
   "properties": {
     "name": "Strandbad Alte Donau",
@@ -16,10 +13,7 @@
     },
     "link": "",
     "instagram": "https://instagram.com/strandbad_alte_donau/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765478475573_a16us2z0h",
     "website": "https://strandbad-alte-donau.at"
   }

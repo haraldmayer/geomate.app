@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.38137433933393,
-      48.2047259141217
-    ]
+    "coordinates": [16.38137433933393, 48.2047259141217]
   },
   "properties": {
     "name": "Steirereck",
@@ -17,10 +14,7 @@
     "link": "https://www.steirereck.at/",
     "instagram": "https://www.instagram.com/steirereck/?hl=de",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765898359771_331qt17cn"
   }
 }

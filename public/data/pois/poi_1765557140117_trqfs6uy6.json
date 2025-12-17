@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.337349768169958,
-      48.214084600346254
-    ]
+    "coordinates": [16.337349768169958, 48.214084600346254]
   },
   "properties": {
     "name": "Kafeneon",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/kafeneon/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765557140117_trqfs6uy6",
     "website": "https://kafeneon.at"
   }

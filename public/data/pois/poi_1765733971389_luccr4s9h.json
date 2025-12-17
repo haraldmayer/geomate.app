@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      -118.3609197458291,
-      34.07196597590626
-    ]
+    "coordinates": [-118.3609197458291, 34.07196597590626]
   },
   "properties": {
     "name": "Sora Temaki handroll bar rooftop",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/sora_temaki_handroll_bar_rooft/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765733971389_luccr4s9h",
     "website": "https://sora-temaki-handroll-bar-rooftop.at"
   }

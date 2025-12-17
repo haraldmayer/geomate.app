@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.364086589301394,
-      48.19818869640931
-    ]
+    "coordinates": [16.364086589301394, 48.19818869640931]
   },
   "properties": {
     "name": "Rösterei Alt Wien",
@@ -17,10 +14,7 @@
     "link": "https://www.falter.at/zeitung/20221130/holzer-im-graetzel-schleifmuehlgasse",
     "instagram": "https://instagram.com/rosterei_alt_wien/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765274869129_0000",
     "website": "https://rosterei-alt-wien.at"
   }

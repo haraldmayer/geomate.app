@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.349198154676213,
-      48.20502081440197
-    ]
+    "coordinates": [16.349198154676213, 48.20502081440197]
   },
   "properties": {
     "name": "Felicitas",
@@ -17,10 +14,7 @@
     "link": "https://www.felicitas-home.at",
     "instagram": "https://instagram.com/felicitas/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765577310724_yjan2lwz6",
     "website": "https://felicitas.at"
   }

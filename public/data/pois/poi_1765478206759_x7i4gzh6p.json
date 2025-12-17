@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.47278501908926,
-      48.195848158414805
-    ]
+    "coordinates": [16.47278501908926, 48.195848158414805]
   },
   "properties": {
     "name": "Alte Naufahrt",
@@ -16,10 +13,7 @@
     },
     "link": "",
     "instagram": "https://instagram.com/alte_naufahrt/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765478206759_x7i4gzh6p",
     "website": "https://alte-naufahrt.at"
   }

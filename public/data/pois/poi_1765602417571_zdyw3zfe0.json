@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.3581611,
-      48.1987806
-    ]
+    "coordinates": [16.3581611, 48.1987806]
   },
   "properties": {
     "name": "Bakalowits",
@@ -17,10 +14,7 @@
     "link": "https://www.bakalowits.com",
     "instagram": "https://instagram.com/bakalowits/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765602417571_zdyw3zfe0",
     "website": "https://bakalowits.at"
   }

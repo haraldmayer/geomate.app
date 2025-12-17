@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.361376654676032,
-      48.20014890235271
-    ]
+    "coordinates": [16.361376654676032, 48.20014890235271]
   },
   "properties": {
     "name": "Das Möbel",
@@ -17,10 +14,7 @@
     "link": "https://www.das-cafe.wien",
     "instagram": "https://www.instagram.com/dascafe_wien/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765577596262_e5ra4xo0k",
     "website": "https://das-mobel.at"
   }

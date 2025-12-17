@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.36674992567765,
-      48.197624900430014
-    ]
+    "coordinates": [16.36674992567765, 48.197624900430014]
   },
   "properties": {
     "name": "Crupi",
@@ -17,10 +14,7 @@
     "link": "https://www.crupi.at/",
     "instagram": "https://www.instagram.com/crupi_group/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765274869130_0010",
     "website": "https://crupi.at"
   }

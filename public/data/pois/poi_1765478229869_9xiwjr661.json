@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.406862954741563,
-      48.23104075380825
-    ]
+    "coordinates": [16.406862954741563, 48.23104075380825]
   },
   "properties": {
     "name": "Pier 22",
@@ -16,10 +13,7 @@
     },
     "link": "",
     "instagram": "https://instagram.com/pier_22/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765478229869_9xiwjr661",
     "website": "https://pier-22.at"
   }

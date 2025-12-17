@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.3279644,
-      48.2037131
-    ]
+    "coordinates": [16.3279644, 48.2037131]
   },
   "properties": {
     "name": "Alles Fahnen",
@@ -18,9 +15,6 @@
     "instagram": "https://instagram.com/allesfahnen/",
     "id": "poi_1765274869130_0008",
     "website": "https://alles-fahnen.at",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.3294563,
-      48.2022857
-    ]
+    "coordinates": [16.3294563, 48.2022857]
   },
   "properties": {
     "name": "franzundjulius",
@@ -18,9 +15,6 @@
     "instagram": "https://www.instagram.com/franzundjulius/",
     "id": "poi_1765274869130_0005",
     "website": "https://franzundjulius.at",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

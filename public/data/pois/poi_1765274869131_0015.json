@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.366054606373545,
-      48.19796485686659
-    ]
+    "coordinates": [16.366054606373545, 48.19796485686659]
   },
   "properties": {
     "name": "Matcha Komachi",
@@ -18,9 +15,6 @@
     "instagram": "https://www.instagram.com/matchakomachi_vienna/",
     "id": "poi_1765274869131_0015",
     "website": "https://matcha-komachi.at",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

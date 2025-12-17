@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.376981,
-      48.217386
-    ]
+    "coordinates": [16.376981, 48.217386]
   },
   "properties": {
     "name": "Karmelitermarkt",
@@ -17,10 +14,7 @@
     "link": "https://www.wien.gv.at/freizeit/karmelitermarkt-1020",
     "instagram": "",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765274869130_0009"
   }
 }

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.45578456261896,
-      48.20405419149171
-    ]
+    "coordinates": [16.45578456261896, 48.20405419149171]
   },
   "properties": {
     "name": "Schillerwasser",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/schillerwasser/",
     "photo": "/uploads/poi_1765522606936.jpg",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765478155056_yvvfbq634",
     "website": "https://schillerwasser.at"
   }

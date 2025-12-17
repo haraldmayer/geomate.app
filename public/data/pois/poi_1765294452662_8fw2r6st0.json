@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.366153285043467,
-      48.19658500721967
-    ]
+    "coordinates": [16.366153285043467, 48.19658500721967]
   },
   "properties": {
     "name": "Wunderl",
@@ -16,10 +13,7 @@
     },
     "link": "",
     "instagram": "https://instagram.com/wunderl_/",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765294452662_8fw2r6st0",
     "website": "https://wunderl.at"
   }

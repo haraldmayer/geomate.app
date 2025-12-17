@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.359819554512733,
-      48.19250462346606
-    ]
+    "coordinates": [16.359819554512733, 48.19250462346606]
   },
   "properties": {
     "name": "Filmcasino",
@@ -18,9 +15,6 @@
     "instagram": "https://www.instagram.com/filmcasino/",
     "id": "poi_1765274869129_0001",
     "website": "https://filmcasino.at",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

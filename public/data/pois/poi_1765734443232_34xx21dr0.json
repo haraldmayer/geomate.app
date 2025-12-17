@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.31698316836662,
-      48.200284225495125
-    ]
+    "coordinates": [16.31698316836662, 48.200284225495125]
   },
   "properties": {
     "name": "Herzig",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "https://instagram.com/herzig/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765734443232_34xx21dr0",
     "website": "https://herzig.at"
   }

@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      2.652615967869528,
-      39.5692161314835
-    ]
+    "coordinates": [2.652615967869528, 39.5692161314835]
   },
   "properties": {
     "name": "Quadrat",
@@ -17,10 +14,7 @@
     "link": "https://guide.michelin.com/us/en/islas-baleares/palma/restaurant/quadrat",
     "instagram": "https://instagram.com/quadrat/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765733621098_whl8fj8av",
     "website": "https://quadrat.at"
   }

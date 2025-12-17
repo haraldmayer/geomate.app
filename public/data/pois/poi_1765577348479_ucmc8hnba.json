@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.363158312346723,
-      48.19139040382033
-    ]
+    "coordinates": [16.363158312346723, 48.19139040382033]
   },
   "properties": {
     "name": "CARLA",
@@ -17,10 +14,7 @@
     "link": "https://www.carla-wien.at",
     "instagram": "https://instagram.com/carlaladen/",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765577348479_ucmc8hnba",
     "website": "https://carla.at"
   }

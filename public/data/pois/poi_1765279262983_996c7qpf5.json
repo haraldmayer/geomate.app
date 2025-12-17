@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.358965535143362,
-      48.19688074840358
-    ]
+    "coordinates": [16.358965535143362, 48.19688074840358]
   },
   "properties": {
     "name": "U Kettenbrückengasse",
@@ -17,10 +14,7 @@
     "link": "",
     "instagram": "",
     "photo": "",
-    "tags": [
-      "public",
-      "m"
-    ],
+    "tags": ["prod", "m"],
     "id": "poi_1765279262983_996c7qpf5"
   }
 }

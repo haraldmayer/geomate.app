@@ -2,10 +2,7 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [
-      16.358475328835407,
-      48.19277444701453
-    ]
+    "coordinates": [16.358475328835407, 48.19277444701453]
   },
   "properties": {
     "name": "John Harris 1040",
@@ -18,9 +15,6 @@
     "id": "poi_1765274869131_0012",
     "website": "https://john-harris-1040.at",
     "instagram": "https://instagram.com/john_harris_1040/",
-    "tags": [
-      "public",
-      "m"
-    ]
+    "tags": ["prod", "m"]
   }
 }

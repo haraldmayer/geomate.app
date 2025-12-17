@@ -22,7 +22,7 @@
       "id": "list_1765475474952_ojsmqc88l",
       "order": 2,
       "tags": [
-        "public",
+        "prod",
         "m"
       ]
     },
@@ -47,12 +47,11 @@
         "poi_1765558092176_k3gye9w99"
       ],
       "type": "list",
-      "order": 3,
-      "id": "list_1765478372407_o59hbz5bs",
       "tags": [
-        "public",
-        "m"
-      ]
+        "prod"
+      ],
+      "order": 3,
+      "id": "list_1765478372407_o59hbz5bs"
     },
     {
       "title": {
@@ -79,7 +78,7 @@
       "order": 1,
       "id": "list_1765577637788_15qtlk1gs",
       "tags": [
-        "public",
+        "prod",
         "m"
       ]
     },
@@ -125,7 +124,7 @@
       "order": 0,
       "id": "list_1765727446200_9h88qwgzx",
       "tags": [
-        "public",
+        "prod",
         "m"
       ]
     },
@@ -158,7 +157,7 @@
       "type": "list",
       "id": "list_1765733233739_lajoliavr",
       "tags": [
-        "public",
+        "prod",
         "m"
       ]
     },
@@ -179,7 +178,7 @@
       "type": "list",
       "id": "list_1765898273425_b17gjiu43",
       "tags": [
-        "public",
+        "prod",
         "m"
       ]
     }
