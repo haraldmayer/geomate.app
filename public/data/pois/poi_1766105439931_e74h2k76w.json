@@ -1,0 +1,23 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      16.400058383643053,
+      48.19222615171913
+    ]
+  },
+  "properties": {
+    "name": "Mix Markt",
+    "category": "supermarket",
+    "description": {
+      "de": "",
+      "en": "Eastern European Supermarket with large selection of Ukrainian food"
+    },
+    "link": "",
+    "instagram": "",
+    "photo": "",
+    "tags": [],
+    "id": "poi_1766105439931_e74h2k76w"
+  }
+}

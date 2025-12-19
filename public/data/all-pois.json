@@ -1026,7 +1026,7 @@
       ]
     },
     "properties": {
-      "name": "Post",
+      "name": "Post (parcel pick-up)",
       "category": "post-office",
       "description": {
         "de": "",
@@ -1036,7 +1036,6 @@
       "instagram": "",
       "photo": "",
       "tags": [
-        "prod",
         "m"
       ],
       "id": "poi_1765301711234_bm2787fqs"
@@ -2341,6 +2340,285 @@
         "prod"
       ],
       "id": "poi_1765956474357_8zpquvtr9"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.3671628128512,
+        48.19655195417753
+      ]
+    },
+    "properties": {
+      "name": "Bankomat",
+      "category": "bank",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m"
+      ],
+      "id": "poi_1766072459335_ykj236a5l"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.363977491641922,
+        48.19558944519327
+      ]
+    },
+    "properties": {
+      "name": "Apotheke zum Einhorn",
+      "category": "pharmacy",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m"
+      ],
+      "id": "poi_1766072521546_ltmlj08ap"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.421016197006278,
+        48.22793600475158
+      ]
+    },
+    "properties": {
+      "name": "Markt 44a",
+      "category": "lebensmittelgeschaeft",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m",
+        ""
+      ],
+      "id": "poi_1766105018876_laotjnvni"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.38837155467627,
+        48.20523691315012
+      ]
+    },
+    "properties": {
+      "name": "Elvira's",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m",
+        ""
+      ],
+      "id": "poi_1766105090436_jxw6irizo"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.390526494656324,
+        48.19687253471839
+      ]
+    },
+    "properties": {
+      "name": "Das Essen FM",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m",
+        ""
+      ],
+      "id": "poi_1766105239829_qievry2hj"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.400058383643053,
+        48.19222615171913
+      ]
+    },
+    "properties": {
+      "name": "Mix Markt",
+      "category": "supermarket",
+      "description": {
+        "de": "",
+        "en": "Eastern European Supermarket with large selection of Ukrainian food"
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1766105439931_e74h2k76w"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.33481841049831,
+        48.203746383344075
+      ]
+    },
+    "properties": {
+      "name": "Mix Markt Lugnercity",
+      "category": "supermarket",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m",
+        ""
+      ],
+      "id": "poi_1766105537347_qs171mfp3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.326708223991766,
+        48.2079773215555
+      ]
+    },
+    "properties": {
+      "name": "Kolos",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m",
+        ""
+      ],
+      "id": "poi_1766105662033_vktus01c3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.376128996517274,
+        48.23084727176623
+      ]
+    },
+    "properties": {
+      "name": "Rosebar Centrala",
+      "category": "restaurant",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m",
+        ""
+      ],
+      "id": "poi_1766105718936_wq0ac0nem"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.371891418521606,
+        48.19121694264433
+      ]
+    },
+    "properties": {
+      "name": "Malvina Russian Market",
+      "category": "supermarket",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m"
+      ],
+      "id": "poi_1766105820796_pz1y9lrg5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.3759693683303,
+        48.19048488138838
+      ]
+    },
+    "properties": {
+      "name": "Ararat Russian Armenian Market",
+      "category": "lebensmittelgeschaeft",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m"
+      ],
+      "id": "poi_1766105884325_uwf43mkmt"
     }
   }
 ]

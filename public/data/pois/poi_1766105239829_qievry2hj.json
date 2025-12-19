@@ -3,13 +3,13 @@
   "geometry": {
     "type": "Point",
     "coordinates": [
-      16.37164326816906,
-      48.1952791141761
+      16.390526494656324,
+      48.19687253471839
     ]
   },
   "properties": {
-    "name": "Post (parcel pick-up)",
-    "category": "post-office",
+    "name": "Das Essen FM",
+    "category": "restaurant",
     "description": {
       "de": "",
       "en": ""
@@ -18,8 +18,9 @@
     "instagram": "",
     "photo": "",
     "tags": [
-      "m"
+      "m",
+      ""
     ],
-    "id": "poi_1765301711234_bm2787fqs"
+    "id": "poi_1766105239829_qievry2hj"
   }
 }

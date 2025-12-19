@@ -3,13 +3,13 @@
   "geometry": {
     "type": "Point",
     "coordinates": [
-      16.37164326816906,
-      48.1952791141761
+      16.371891418521606,
+      48.19121694264433
     ]
   },
   "properties": {
-    "name": "Post (parcel pick-up)",
-    "category": "post-office",
+    "name": "Malvina Russian Market",
+    "category": "supermarket",
     "description": {
       "de": "",
       "en": ""
@@ -20,6 +20,6 @@
     "tags": [
       "m"
     ],
-    "id": "poi_1765301711234_bm2787fqs"
+    "id": "poi_1766105820796_pz1y9lrg5"
   }
 }

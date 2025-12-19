@@ -3,13 +3,13 @@
   "geometry": {
     "type": "Point",
     "coordinates": [
-      16.37164326816906,
-      48.1952791141761
+      16.326708223991766,
+      48.2079773215555
     ]
   },
   "properties": {
-    "name": "Post (parcel pick-up)",
-    "category": "post-office",
+    "name": "Kolos",
+    "category": "restaurant",
     "description": {
       "de": "",
       "en": ""
@@ -18,8 +18,9 @@
     "instagram": "",
     "photo": "",
     "tags": [
-      "m"
+      "m",
+      ""
     ],
-    "id": "poi_1765301711234_bm2787fqs"
+    "id": "poi_1766105662033_vktus01c3"
   }
 }

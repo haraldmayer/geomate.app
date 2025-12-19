@@ -121,7 +121,9 @@
         "poi_1765808735463_7xjqh7gxn",
         "poi_1765294415842_btjhx58n8",
         "poi_1765956474357_8zpquvtr9",
-        "poi_1765601869516_e0jankrzm"
+        "poi_1765601869516_e0jankrzm",
+        "poi_1766072521546_ltmlj08ap",
+        "poi_1766072459335_ykj236a5l"
       ],
       "type": "map",
       "tags": [
@@ -182,6 +184,34 @@
         "m"
       ],
       "id": "list_1765898273425_b17gjiu43"
+    },
+    {
+      "title": {
+        "de": "Ukraine in Wien",
+        "en": "Ukraine in Vienna"
+      },
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "slug": "ukraine-in-wien",
+      "pois": [
+        "poi_1765301258081_r80rnd5f0",
+        "poi_1766105018876_laotjnvni",
+        "poi_1766105090436_jxw6irizo",
+        "poi_1766105439931_e74h2k76w",
+        "poi_1766105537347_qs171mfp3",
+        "poi_1766105239829_qievry2hj",
+        "poi_1766105662033_vktus01c3",
+        "poi_1766105718936_wq0ac0nem",
+        "poi_1766105820796_pz1y9lrg5",
+        "poi_1766105884325_uwf43mkmt"
+      ],
+      "type": "map",
+      "tags": [
+        "m"
+      ],
+      "id": "list_1766105132458_eo9a7og7p"
     }
   ]
 }

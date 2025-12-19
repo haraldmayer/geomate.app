@@ -3,13 +3,13 @@
   "geometry": {
     "type": "Point",
     "coordinates": [
-      16.37164326816906,
-      48.1952791141761
+      16.421016197006278,
+      48.22793600475158
     ]
   },
   "properties": {
-    "name": "Post (parcel pick-up)",
-    "category": "post-office",
+    "name": "Markt 44a",
+    "category": "lebensmittelgeschaeft",
     "description": {
       "de": "",
       "en": ""
@@ -18,8 +18,9 @@
     "instagram": "",
     "photo": "",
     "tags": [
-      "m"
+      "m",
+      ""
     ],
-    "id": "poi_1765301711234_bm2787fqs"
+    "id": "poi_1766105018876_laotjnvni"
   }
 }
