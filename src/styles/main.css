@@ -971,7 +971,7 @@ main {
 	.header-title {
 		flex: 1;
 		min-width: 0;
-		padding-left: 3rem;
+		padding-left: 1rem;
 	}
 
 	header h1 {
@@ -1037,7 +1037,7 @@ main {
 		width: 280px;
 		max-width: 85vw;
 		z-index: 2000;
-		transform: translateX(-100%);
+		transform: translateX(calc(-100% + 6px));
 		transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 		box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
 		padding: 1rem;
@@ -1052,21 +1052,27 @@ main {
 	/* Mobile nav toggle button */
 	.mobile-nav-toggle {
 		position: fixed;
-		left: 1rem;
-		top: 0.875rem;
+		left: 6px;
+		top: 50%;
+		transform: translateY(-50%);
 		z-index: 2001;
 		background: #ffffff;
 		border: 1px solid #e5e5e5;
-		border-radius: 0.5rem;
-		width: 36px;
-		height: 36px;
+		border-left: none;
+		border-radius: 0 0.5rem 0.5rem 0;
+		width: 32px;
+		height: 80px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
-		font-size: 1.25rem;
-		transition: all 0.15s ease;
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		font-size: 1.125rem;
+		transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.15s ease, border-color 0.15s ease;
+		box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.mobile-nav-toggle.nav-open {
+		left: calc(min(280px, 85vw) + 6px);
 	}
 
 	.mobile-nav-toggle:hover {
@@ -1075,7 +1081,12 @@ main {
 	}
 
 	.mobile-nav-toggle:active {
-		transform: scale(0.95);
+		background: #eeeeee;
+	}
+
+	.toggle-icon {
+		transition: transform 0.2s ease;
+		display: inline-block;
 	}
 
 	/* Overlay when nav is open */

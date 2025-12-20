@@ -41,7 +41,7 @@ const { title = "Geomate" } = Astro.props;
         title="Toggle navigation"
         aria-label="Toggle navigation"
       >
-        ☰
+        <span class="toggle-icon">▶</span>
       </button>
 
       <!-- Mobile Navigation Overlay -->
@@ -69,17 +69,22 @@ const { title = "Geomate" } = Astro.props;
         const mobileNavToggle = document.getElementById('mobile-nav-toggle');
         const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
         const nav = document.querySelector('.graetzl-nav');
+        const toggleIcon = mobileNavToggle?.querySelector('.toggle-icon');
 
         if (mobileNavToggle && mobileNavOverlay && nav) {
           function openMobileNav() {
             nav.classList.add('mobile-nav-open');
             mobileNavOverlay.classList.add('active');
+            mobileNavToggle.classList.add('nav-open');
+            if (toggleIcon) toggleIcon.textContent = '◀';
             document.body.style.overflow = 'hidden'; // Prevent scrolling when nav is open
           }
 
           function closeMobileNav() {
             nav.classList.remove('mobile-nav-open');
             mobileNavOverlay.classList.remove('active');
+            mobileNavToggle.classList.remove('nav-open');
+            if (toggleIcon) toggleIcon.textContent = '▶';
             document.body.style.overflow = '';
           }
 
