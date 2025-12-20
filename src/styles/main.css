@@ -1072,7 +1072,7 @@ main {
 	}
 
 	.mobile-nav-toggle.nav-open {
-		left: calc(min(280px, 85vw) + 6px);
+		left: min(280px, 85vw);
 	}
 
 	.mobile-nav-toggle:hover {
