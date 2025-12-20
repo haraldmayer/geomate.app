@@ -1,0 +1,25 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      16.367170567731577,
+      48.1982418249627
+    ]
+  },
+  "properties": {
+    "name": "Aykol Wäscherei",
+    "category": "putzerei",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "m"
+    ],
+    "id": "poi_1766201161397_r5wmhmdgq"
+  }
+}

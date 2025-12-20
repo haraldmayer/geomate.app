@@ -284,6 +284,15 @@
       "emoji": "🐟",
       "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M6 12h-.01M2 12c0 0 2-4 6-4h4c3.31 0 6 2.69 6 6s-2.69 6-6 6h-4c-4 0-6-4-6-4z'/><path d='M18 12l3-3M18 12l3 3'/><circle cx='14.5' cy='10.5' r='1' fill='currentColor'/></svg>",
       "color": "#0EA5E9"
+    },
+    "putzerei": {
+      "name": {
+        "de": "Putzerei",
+        "en": "Dry Cleaning"
+      },
+      "emoji": "🧺",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M8 4h8M8 4a2 2 0 0 1-2 2H4v14h16V6h-2a2 2 0 0 1-2-2'/><path d='M9 10h6M9 14h6M9 18h6'/><circle cx='16' cy='9' r='1' fill='currentColor'/></svg>",
+      "color": "#60A5FA"
     }
   }
 }

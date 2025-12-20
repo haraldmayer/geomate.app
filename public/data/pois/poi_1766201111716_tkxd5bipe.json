@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      16.36732730772539,
+      48.19319272216484
+    ]
+  },
+  "properties": {
+    "name": "Hellenic Market",
+    "category": "lebensmittelgeschaeft",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "m",
+      "prod"
+    ],
+    "id": "poi_1766201111716_tkxd5bipe"
+  }
+}
