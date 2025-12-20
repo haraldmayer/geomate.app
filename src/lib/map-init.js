@@ -1647,7 +1647,10 @@ function createCategoryFilters() {
 		// Header
 		const headerSubtitle = document.getElementById('header-subtitle');
 		if (headerSubtitle) {
-			headerSubtitle.textContent = t('header.subtitle');
+			// Only update subtitle if there's no tag-specific subtitle
+			if (!tagMetadata || !tagMetadata.subtitle) {
+				headerSubtitle.textContent = t('header.subtitle');
+			}
 		}
 
 		// Navigation sections
