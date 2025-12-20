@@ -48,11 +48,23 @@ window.addEventListener('load', async function() {
 	// Load data
 	let geoData = null;
 	let graetzlData = null;
+	let tagMetadata = null;
 	try {
 		geoData = await geoquery.loadGeoData();
 		graetzlData = await geoquery.loadGraetzlData();
 		console.log('POI data loaded:', geoData.features.length, 'features');
 		console.log('Grätzl data loaded:', graetzlData.features.length, 'features');
+
+		// Load tag metadata
+		try {
+			const tagMetadataResponse = await fetch('/data/tag-metadata.json');
+			if (tagMetadataResponse.ok) {
+				tagMetadata = await tagMetadataResponse.json();
+				console.log('Tag metadata loaded:', tagMetadata);
+			}
+		} catch (err) {
+			console.log('No tag metadata found (non-tagged build)');
+		}
 	} catch (error) {
 		console.error('Error loading data:', error);
 		return;
@@ -750,6 +762,16 @@ function createCategoryFilters() {
 				} else {
 					console.warn('Grätzl not found for slug:', graetzlSlug);
 					showAllPOIs();
+				}
+			// If tag metadata has a focus POI, center map on it
+			} else if (tagMetadata && tagMetadata.focus) {
+				const focusPoi = geoData.features.find(f => f.properties.id === tagMetadata.focus);
+				if (focusPoi) {
+					const coords = geoquery.featureToLeafletCoords(focusPoi);
+					console.log(`Focusing map on POI "${focusPoi.properties.name}" at`, coords);
+					map.setView(coords, 16);
+				} else {
+					console.warn(`Focus POI "${tagMetadata.focus}" not found in compiled POIs`);
 				}
 			} else {
 				console.log('Showing all POIs...');

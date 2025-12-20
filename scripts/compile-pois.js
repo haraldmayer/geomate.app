@@ -18,6 +18,8 @@ const poisDir = join(__dirname, '..', 'public', 'data', 'pois');
 const outputFile = join(__dirname, '..', 'public', 'data', 'all-pois.json');
 const listsInputFile = join(__dirname, '..', 'public', 'data', 'lists.json');
 const listsOutputFile = join(__dirname, '..', 'public', 'data', 'lists.json');
+const tagsInputFile = join(__dirname, '..', 'public', 'data', 'tags.json');
+const tagMetadataOutputFile = join(__dirname, '..', 'public', 'data', 'tag-metadata.json');
 
 try {
   // Read all POI files
@@ -55,6 +57,28 @@ try {
     // Write filtered lists
     writeFileSync(listsOutputFile, JSON.stringify({ lists: filteredLists }, null, 2) + '\n');
     console.log(`✅ Filtered ${filteredLists.length} lists with tag "${tagFilter}"`);
+  }
+
+  // Write tag metadata if tag filter is specified
+  if (tagFilter) {
+    const tagsContent = readFileSync(tagsInputFile, 'utf-8');
+    const tagsData = JSON.parse(tagsContent);
+
+    const tagInfo = tagsData.tags[tagFilter] || {};
+    const metadata = {
+      tag: tagFilter,
+      focus: tagInfo.focus || null
+    };
+
+    writeFileSync(tagMetadataOutputFile, JSON.stringify(metadata, null, 2));
+    console.log(`✅ Written tag metadata${metadata.focus ? ` with focus on "${metadata.focus}"` : ''}`);
+  } else {
+    // Write empty metadata for non-tagged builds
+    const metadata = {
+      tag: null,
+      focus: null
+    };
+    writeFileSync(tagMetadataOutputFile, JSON.stringify(metadata, null, 2));
   }
 
 } catch (error) {

@@ -1,72 +1,56 @@
 {
   "tags": {
     "vegetarian": {
-      "name": "Vegetarisch",
-      "count": 0
+      "name": "Vegetarisch"
     },
     "vegan": {
-      "name": "Vegan",
-      "count": 0
+      "name": "Vegan"
     },
     "outdoor-seating": {
-      "name": "Schanigarten",
-      "count": 0
+      "name": "Schanigarten"
     },
     "wifi": {
-      "name": "WiFi",
-      "count": 0
+      "name": "WiFi"
     },
     "accessible": {
-      "name": "Barrierefrei",
-      "count": 0
+      "name": "Barrierefrei"
     },
     "dogs-welcome": {
-      "name": "Hundefreundlich",
-      "count": 0
+      "name": "Hundefreundlich"
     },
     "cash-only": {
-      "name": "Nur Bargeld",
-      "count": 0
+      "name": "Nur Bargeld"
     },
     "kid-friendly": {
-      "name": "Kinderfreundlich",
-      "count": 0
+      "name": "Kinderfreundlich"
     },
     "tuerkisch": {
-      "name": "Tuerkisch",
-      "count": 0
+      "name": "Tuerkisch"
     },
     "u4": {
-      "name": "U4",
-      "count": 0
+      "name": "U4"
     },
     "wiener-kueche": {
-      "name": "Wiener Kueche",
-      "count": 0
+      "name": "Wiener Kueche"
     },
     "burger": {
-      "name": "Burger",
-      "count": 0
+      "name": "Burger"
     },
     "fine-dining": {
-      "name": "Fine Dining",
-      "count": 0
+      "name": "Fine Dining"
     },
     "maria": {
-      "name": "Maria",
-      "count": 0
+      "name": "Maria"
     },
     "prod": {
-      "name": "Prod",
-      "count": 0
+      "name": "Prod"
     },
     "m": {
       "name": "M",
-      "count": 0
+      "focus": "poi_1765301258081_r80rnd5f0"
     },
     "ukrain": {
-      "name": "Ukrain",
-      "count": 0
+      "name": "Ukrain"
     }
   }
 }
