@@ -2,12 +2,26 @@
 import Header from "../components/Header.astro";
 import Navigation from "../components/Navigation.astro";
 import "../styles/main.css";
+import { readFileSync } from "fs";
+import { join } from "path";
 
 interface Props {
   title?: string;
 }
 
-const { title = "Geomate" } = Astro.props;
+// Try to load tag metadata at build time
+let tagMetadata: any = null;
+try {
+  const tagMetadataPath = join(process.cwd(), "public", "data", "tag-metadata.json");
+  const tagMetadataContent = readFileSync(tagMetadataPath, "utf-8");
+  tagMetadata = JSON.parse(tagMetadataContent);
+} catch (error) {
+  // Tag metadata doesn't exist yet or can't be read
+}
+
+// Use tag-specific title/subtitle if available, otherwise use defaults
+const siteTitle = tagMetadata?.title || Astro.props.title || "Geomate";
+const siteSubtitle = tagMetadata?.subtitle || "Explore what Vienna has to offer";
 ---
 
 <html lang="en">
@@ -16,10 +30,11 @@ const { title = "Geomate" } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={siteSubtitle} />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>{title}</title>
+    <title>{siteTitle}</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -31,7 +46,7 @@ const { title = "Geomate" } = Astro.props;
   </head>
   <body>
     <div class="container">
-      <Header />
+      <Header title={siteTitle} subtitle={siteSubtitle} />
 
       <!-- Mobile Navigation Toggle -->
       <button

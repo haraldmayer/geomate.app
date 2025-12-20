@@ -67,16 +67,20 @@ try {
     const tagInfo = tagsData.tags[tagFilter] || {};
     const metadata = {
       tag: tagFilter,
-      focus: tagInfo.focus || null
+      focus: tagInfo.focus || null,
+      title: tagInfo.title || null,
+      subtitle: tagInfo.subtitle || null
     };
 
     writeFileSync(tagMetadataOutputFile, JSON.stringify(metadata, null, 2));
-    console.log(`✅ Written tag metadata${metadata.focus ? ` with focus on "${metadata.focus}"` : ''}`);
+    console.log(`✅ Written tag metadata${metadata.focus ? ` with focus on "${metadata.focus}"` : ''}${metadata.title ? ` with title "${metadata.title}"` : ''}`);
   } else {
     // Write empty metadata for non-tagged builds
     const metadata = {
       tag: null,
-      focus: null
+      focus: null,
+      title: null,
+      subtitle: null
     };
     writeFileSync(tagMetadataOutputFile, JSON.stringify(metadata, null, 2));
   }

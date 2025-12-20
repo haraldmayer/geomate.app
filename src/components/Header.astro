@@ -1,8 +1,17 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const { title = "Geomate", subtitle = "Explore what Vienna has to offer" } = Astro.props;
+---
+
 <header>
   <div class="header-content">
     <div class="header-title">
-      <h1>Geomate</h1>
-      <p id="header-subtitle" class="subtitle">Explore what Vienna has to offer</p>
+      <h1>{title}</h1>
+      <p id="header-subtitle" class="subtitle">{subtitle}</p>
     </div>
     <button
       id="language-switcher"
