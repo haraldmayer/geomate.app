@@ -1563,14 +1563,7 @@ function createCategoryFilters() {
 			}
 			container.classList.remove('sidebar-active');
 
-			// Wait for sidebar animation to complete, then invalidate map size
-			setTimeout(() => {
-				// Invalidate map size so it recalculates based on new container dimensions
-				map.invalidateSize();
-			}, 350); // Wait for CSS transition (0.3s) plus a small buffer
-
 			// Clear sidebar content
-			if (sidebarTitle) sidebarTitle.textContent = '';
 			if (sidebarDescription) {
 				sidebarDescription.textContent = '';
 				sidebarDescription.style.display = 'none';
@@ -1588,8 +1581,14 @@ function createCategoryFilters() {
 			clearListMarkers();
 			clearWalkthroughArrows();
 
-			// Update markers to show filtered POIs
-			updateMarkers();
+			// Wait for sidebar animation to complete, then reset view
+			setTimeout(() => {
+				// Invalidate map size so it recalculates based on new container dimensions
+				map.invalidateSize();
+
+				// Reset to initial state - show all POIs
+				showAllPOIs();
+			}, 350); // Wait for CSS transition (0.3s) plus a small buffer
 
 			// Update URL (go back to root)
 			updateUrlForList(null);
