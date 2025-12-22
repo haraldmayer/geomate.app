@@ -518,6 +518,86 @@ const title = "POI Management System";
         transform: translateY(-2px);
         box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
       }
+
+      /* Searchable dropdown styles */
+      .searchable-select {
+        position: relative;
+      }
+
+      .graetzl-search-input {
+        width: 100%;
+        padding: 8px 60px 8px 10px;
+        border-radius: 6px;
+        border: 1px solid #d1d5db;
+        font-size: 14px;
+        font-family: inherit;
+      }
+
+      .dropdown-icon {
+        position: absolute;
+        right: 36px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #6b7280;
+        font-size: 12px;
+      }
+
+      .clear-button {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #e5e7eb;
+        border: none;
+        border-radius: 4px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #6b7280;
+        font-size: 18px;
+        line-height: 1;
+        padding: 0;
+        transition: all 0.15s ease;
+      }
+
+      .clear-button:hover {
+        background: #d1d5db;
+        color: #374151;
+      }
+
+      .graetzl-dropdown {
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        right: 0;
+        background: white;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        max-height: 300px;
+        overflow-y: auto;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .graetzl-option {
+        padding: 10px 12px;
+        cursor: pointer;
+        transition: background 0.15s ease;
+        font-size: 14px;
+      }
+
+      .graetzl-option:hover {
+        background: #f3f4f6;
+      }
+
+      .graetzl-option:first-child {
+        font-weight: 600;
+        color: #2563eb;
+      }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/exifr@7/dist/lite.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js"></script>
@@ -585,14 +665,27 @@ const title = "POI Management System";
 
               <div class="full">
                 <label>Category *</label>
-                <input
-                  id="category"
-                  type="text"
-                  list="categories"
-                  placeholder="Type or select a category..."
-                  required
-                />
-                <datalist id="categories"></datalist>
+                <div class="searchable-select">
+                  <input
+                    type="text"
+                    id="category"
+                    class="graetzl-search-input"
+                    placeholder="Type or select a category..."
+                    autocomplete="off"
+                    data-selected="false"
+                    required
+                  />
+                  <span class="dropdown-icon">▼</span>
+                  <button
+                    id="clear-category"
+                    class="clear-button"
+                    type="button"
+                    style="display: none;"
+                    title="Clear selection">×</button>
+                  <div id="category-dropdown" class="graetzl-dropdown" style="display: none;">
+                    <!-- Options will be populated dynamically -->
+                  </div>
+                </div>
                 <div class="hint">
                   Select existing or type new category name
                 </div>
@@ -704,9 +797,26 @@ const title = "POI Management System";
               placeholder="🔍 Search POIs by name..."
               style="margin-bottom: 8px;"
             />
-            <select id="filterCategory" style="margin-bottom: 8px;">
-              <option value="">All Categories</option>
-            </select>
+            <div class="searchable-select" style="margin-bottom: 8px;">
+              <input
+                type="text"
+                id="filterCategory"
+                class="graetzl-search-input"
+                placeholder="All Categories"
+                autocomplete="off"
+                data-selected="false"
+              />
+              <span class="dropdown-icon">▼</span>
+              <button
+                id="clear-category-filter"
+                class="clear-button"
+                type="button"
+                style="display: none;"
+                title="Clear selection">×</button>
+              <div id="category-filter-dropdown" class="graetzl-dropdown" style="display: none;">
+                <!-- Options will be populated dynamically -->
+              </div>
+            </div>
           </div>
 
           <div class="poi-list" id="poiList">
@@ -903,29 +1013,158 @@ const title = "POI Management System";
           const response = await fetch("/data/categories.json");
           const data = await response.json();
           categoriesData = data.categories;
-          const datalist = document.getElementById("categories");
-          const filterSelect = document.getElementById("filterCategory");
 
-          Object.entries(data.categories).forEach(([key, value]) => {
-            // Handle multilingual names
-            const name =
-              typeof value.name === "object" ? value.name.de : value.name;
-
-            // Add to input datalist
-            const option = document.createElement("option");
-            option.value = key;
-            option.label = `${value.emoji} ${name}`;
-            datalist.appendChild(option);
-
-            // Add to filter dropdown
-            const filterOption = document.createElement("option");
-            filterOption.value = key;
-            filterOption.textContent = `${value.emoji} ${name}`;
-            filterSelect.appendChild(filterOption);
-          });
+          // Populate both dropdowns
+          populateCategoryDropdown();
+          populateFormCategoryDropdown();
         } catch (error) {
           console.error("Failed to load categories:", error);
         }
+      }
+
+      // Populate category dropdown with options
+      function populateCategoryDropdown() {
+        const dropdown = document.getElementById("category-filter-dropdown");
+        dropdown.innerHTML = "";
+
+        // Add "All Categories" option
+        const allOption = document.createElement("div");
+        allOption.className = "graetzl-option";
+        allOption.dataset.value = "";
+        allOption.textContent = "All Categories";
+        allOption.addEventListener("click", () => selectCategory("", "All Categories"));
+        dropdown.appendChild(allOption);
+
+        // Add category options
+        Object.entries(categoriesData).forEach(([key, value]) => {
+          const name = typeof value.name === "object" ? value.name.de : value.name;
+          const option = document.createElement("div");
+          option.className = "graetzl-option";
+          option.dataset.value = key;
+          option.dataset.name = name.toLowerCase();
+          option.textContent = `${value.emoji} ${name}`;
+          option.addEventListener("click", () => selectCategory(key, `${value.emoji} ${name}`));
+          dropdown.appendChild(option);
+        });
+      }
+
+      // Select a category
+      function selectCategory(categoryKey, displayText) {
+        const input = document.getElementById("filterCategory");
+        const dropdown = document.getElementById("category-filter-dropdown");
+        const clearButton = document.getElementById("clear-category-filter");
+
+        input.value = displayText;
+        input.dataset.selected = categoryKey ? "true" : "false";
+        currentCategoryFilter = categoryKey;
+        dropdown.style.display = "none";
+
+        clearButton.style.display = categoryKey ? "flex" : "none";
+        renderPOIs();
+      }
+
+      // Filter dropdown options
+      function filterCategoryDropdown(searchTerm) {
+        const dropdown = document.getElementById("category-filter-dropdown");
+        const options = dropdown.querySelectorAll(".graetzl-option");
+        const term = searchTerm.toLowerCase();
+
+        let visibleCount = 0;
+        options.forEach((option) => {
+          const name = option.dataset.name || option.textContent.toLowerCase();
+          if (name.includes(term) || option.dataset.value === "") {
+            option.style.display = "block";
+            visibleCount++;
+          } else {
+            option.style.display = "none";
+          }
+        });
+
+        dropdown.style.display = visibleCount > 0 ? "block" : "none";
+      }
+
+      // Populate form category dropdown
+      function populateFormCategoryDropdown() {
+        const dropdown = document.getElementById("category-dropdown");
+        dropdown.innerHTML = "";
+
+        // Add category options (no "All Categories" option for form)
+        Object.entries(categoriesData).forEach(([key, value]) => {
+          const name = typeof value.name === "object" ? value.name.de : value.name;
+          const option = document.createElement("div");
+          option.className = "graetzl-option";
+          option.dataset.value = key;
+          option.dataset.name = name.toLowerCase();
+          option.textContent = `${value.emoji} ${name}`;
+          option.addEventListener("click", () => selectFormCategory(key, `${value.emoji} ${name}`));
+          dropdown.appendChild(option);
+        });
+      }
+
+      // Select a category in the form
+      function selectFormCategory(categoryKey, displayText) {
+        const input = document.getElementById("category");
+        const dropdown = document.getElementById("category-dropdown");
+        const clearButton = document.getElementById("clear-category");
+
+        input.value = categoryKey; // Store the key for form submission
+        input.dataset.selected = "true";
+        dropdown.style.display = "none";
+        clearButton.style.display = "flex";
+      }
+
+      // Filter form category dropdown
+      function filterFormCategoryDropdown(searchTerm) {
+        const dropdown = document.getElementById("category-dropdown");
+        const options = dropdown.querySelectorAll(".graetzl-option");
+        const term = searchTerm.toLowerCase();
+
+        let visibleCount = 0;
+        options.forEach((option) => {
+          const name = option.dataset.name || option.textContent.toLowerCase();
+          const value = option.dataset.value || "";
+          if (name.includes(term) || value.includes(term)) {
+            option.style.display = "block";
+            visibleCount++;
+          } else {
+            option.style.display = "none";
+          }
+        });
+
+        dropdown.style.display = visibleCount > 0 ? "block" : "none";
+      }
+
+      // Setup form category dropdown handlers
+      function setupFormCategoryDropdown() {
+        const input = document.getElementById("category");
+        const dropdown = document.getElementById("category-dropdown");
+        const clearButton = document.getElementById("clear-category");
+
+        input.addEventListener("input", (e) => {
+          input.dataset.selected = "false";
+          filterFormCategoryDropdown(e.target.value);
+          clearButton.style.display = "none";
+        });
+
+        input.addEventListener("focus", () => {
+          filterFormCategoryDropdown(input.value);
+          dropdown.style.display = "block";
+        });
+
+        clearButton.addEventListener("click", (e) => {
+          e.preventDefault();
+          input.value = "";
+          input.dataset.selected = "false";
+          clearButton.style.display = "none";
+          input.focus();
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", (e) => {
+          if (!e.target.closest(".searchable-select") || e.target.closest("#filterCategory")) {
+            dropdown.style.display = "none";
+          }
+        });
       }
 
       // Check if category exists, create if not
@@ -1207,16 +1446,41 @@ const title = "POI Management System";
       // Filter event handlers
       function setupFilters() {
         const searchInput = document.getElementById("searchPOI");
-        const categorySelect = document.getElementById("filterCategory");
+        const categoryInput = document.getElementById("filterCategory");
+        const categoryDropdown = document.getElementById("category-filter-dropdown");
+        const clearButton = document.getElementById("clear-category-filter");
 
+        // POI name search
         searchInput.addEventListener("input", (e) => {
           currentSearchTerm = e.target.value.trim();
           renderPOIs();
         });
 
-        categorySelect.addEventListener("change", (e) => {
-          currentCategoryFilter = e.target.value;
-          renderPOIs();
+        // Category dropdown input
+        categoryInput.addEventListener("input", (e) => {
+          categoryInput.dataset.selected = "false";
+          filterCategoryDropdown(e.target.value);
+        });
+
+        // Show dropdown on focus
+        categoryInput.addEventListener("focus", () => {
+          if (categoryInput.dataset.selected === "false" || !categoryInput.dataset.selected) {
+            categoryInput.value = "";
+          }
+          filterCategoryDropdown("");
+          categoryDropdown.style.display = "block";
+        });
+
+        // Clear button
+        clearButton.addEventListener("click", () => {
+          selectCategory("", "All Categories");
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", (e) => {
+          if (!e.target.closest(".searchable-select")) {
+            categoryDropdown.style.display = "none";
+          }
         });
       }
 
@@ -1355,8 +1619,16 @@ const title = "POI Management System";
           document.getElementById("lat").value = poi.geometry.coordinates[1];
           document.getElementById("lng").value = poi.geometry.coordinates[0];
           document.getElementById("name").value = poi.properties.name || "";
-          document.getElementById("category").value =
-            poi.properties.category || "";
+
+          // Set category with dropdown
+          const categoryKey = poi.properties.category || "";
+          if (categoryKey && categoriesData[categoryKey]) {
+            const categoryInfo = categoriesData[categoryKey];
+            const name = typeof categoryInfo.name === "object" ? categoryInfo.name.de : categoryInfo.name;
+            selectFormCategory(categoryKey, `${categoryInfo.emoji} ${name}`);
+          } else {
+            document.getElementById("category").value = categoryKey;
+          }
 
           // Handle multilingual descriptions
           const description = poi.properties.description || {};
@@ -1590,6 +1862,7 @@ const title = "POI Management System";
       loadTags();
       loadPOIs();
       setupFilters();
+      setupFormCategoryDropdown();
       setupTagInput();
 
       // ============ LIST & WALK MANAGEMENT ============
