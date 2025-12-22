@@ -3,12 +3,12 @@
   "geometry": {
     "type": "Point",
     "coordinates": [
-      16.366730003268078,
-      48.194626989957705
+      16.365482387144667,
+      48.19649865535192
     ]
   },
   "properties": {
-    "name": "Gourmet Spar",
+    "name": "Billa Margaretenstraße",
     "category": "supermarket",
     "description": {
       "de": "",
@@ -20,6 +20,6 @@
     "tags": [
       "m"
     ],
-    "id": "poi_1765301669160_hzik8w0ea"
+    "id": "poi_1766396799399_h2sojfxr3"
   }
 }

@@ -1001,7 +1001,7 @@
     },
     "properties": {
       "name": "Gourmet Spar",
-      "category": "lebensmittelgeschaeft",
+      "category": "supermarket",
       "description": {
         "de": "",
         "en": ""
@@ -1010,7 +1010,6 @@
       "instagram": "",
       "photo": "",
       "tags": [
-        "prod",
         "m"
       ],
       "id": "poi_1765301669160_hzik8w0ea"
@@ -2146,7 +2145,7 @@
     },
     "properties": {
       "name": "DENNS Biomarkt",
-      "category": "lebensmittelgeschaeft",
+      "category": "supermarket",
       "description": {
         "de": "",
         "en": ""
@@ -2172,7 +2171,7 @@
     },
     "properties": {
       "name": "Hofer",
-      "category": "lebensmittelgeschaeft",
+      "category": "supermarket",
       "description": {
         "de": "",
         "en": ""
@@ -2181,7 +2180,6 @@
       "instagram": "https://instagram.com/hofer/",
       "photo": "",
       "tags": [
-        "prod",
         "m"
       ],
       "id": "poi_1765746752967_wxg2e5qg8"
@@ -2670,6 +2668,31 @@
         "m"
       ],
       "id": "poi_1766201161397_r5wmhmdgq"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.365482387144667,
+        48.19649865535192
+      ]
+    },
+    "properties": {
+      "name": "Billa Margaretenstraße",
+      "category": "supermarket",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m"
+      ],
+      "id": "poi_1766396799399_h2sojfxr3"
     }
   }
 ]

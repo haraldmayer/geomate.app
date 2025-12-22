@@ -2,11 +2,14 @@
   "type": "Feature",
   "geometry": {
     "type": "Point",
-    "coordinates": [16.365862909162026, 48.195941944372144]
+    "coordinates": [
+      16.365862909162026,
+      48.195941944372144
+    ]
   },
   "properties": {
     "name": "Hofer",
-    "category": "lebensmittelgeschaeft",
+    "category": "supermarket",
     "description": {
       "de": "",
       "en": ""
@@ -14,7 +17,9 @@
     "link": "",
     "instagram": "https://instagram.com/hofer/",
     "photo": "",
-    "tags": ["prod", "m"],
+    "tags": [
+      "m"
+    ],
     "id": "poi_1765746752967_wxg2e5qg8"
   }
 }
