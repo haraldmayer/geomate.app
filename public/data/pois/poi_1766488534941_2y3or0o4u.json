@@ -1,0 +1,23 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      16.366934196933975,
+      48.193930614714
+    ]
+  },
+  "properties": {
+    "name": "Goldene Kugel",
+    "category": "shop",
+    "description": {
+      "de": "",
+      "en": "best krimskrams shop (household goods and more)"
+    },
+    "link": "",
+    "instagram": "",
+    "photo": "",
+    "tags": [],
+    "id": "poi_1766488534941_2y3or0o4u"
+  }
+}

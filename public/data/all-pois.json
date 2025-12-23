@@ -2691,5 +2691,53 @@
       "tags": [],
       "id": "poi_1766397170012_krnjvh0u0"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.366934196933975,
+        48.193930614714
+      ]
+    },
+    "properties": {
+      "name": "Goldene Kugel",
+      "category": "shop",
+      "description": {
+        "de": "",
+        "en": "best krimskrams shop (household goods and more)"
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1766488534941_2y3or0o4u"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.362944352464222,
+        48.19546699483439
+      ]
+    },
+    "properties": {
+      "name": "BIPA",
+      "category": "shop",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [
+        "m"
+      ],
+      "id": "poi_1766488621628_0gha7zwqj"
+    }
   }
 ]

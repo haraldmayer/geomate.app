@@ -1,0 +1,25 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      16.362944352464222,
+      48.19546699483439
+    ]
+  },
+  "properties": {
+    "name": "BIPA",
+    "category": "shop",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "link": "",
+    "instagram": "",
+    "photo": "",
+    "tags": [
+      "m"
+    ],
+    "id": "poi_1766488621628_0gha7zwqj"
+  }
+}
