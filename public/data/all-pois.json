@@ -2739,5 +2739,28 @@
       ],
       "id": "poi_1766488621628_0gha7zwqj"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.359788289729607,
+        48.196543087861805
+      ]
+    },
+    "properties": {
+      "name": "Bananas",
+      "category": "moebel",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "link": "",
+      "instagram": "",
+      "photo": "",
+      "tags": [],
+      "id": "poi_1766500151154_upppbvjqw"
+    }
   }
 ]
